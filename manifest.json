@@ -1,0 +1,24 @@
+{
+    "name": "Bondlayer Dark Theme",
+    "description": "Bondlayer Dark Theme",
+    "version": "1.0.7",
+    "permissions": ["activeTab"],
+    "icons": { "128": "darklogo.png" },
+    "background": {
+        "scripts": ["bl-dark-theme.js"]
+    },
+    "content_scripts": [{
+        "matches": ["https://editor.bondlayer.com/*"],
+        "js": ["bl-dark-theme.js"],
+        "run_at": "document_start"
+    }],
+    "browser_action": {
+        "default_title": "Bondlayer Dark Theme",
+        "default_icon": "darklogo.png"
+    },
+
+    "manifest_version": 2,
+    "web_accessible_resources": [
+        "bl-dark-theme.css"
+    ]
+}
