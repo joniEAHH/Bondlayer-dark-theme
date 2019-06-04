@@ -6,7 +6,7 @@ window.addEventListener('DOMNodeRemoved', function() {
     link.id     = 'bl-dark-theme';
     link.rel    = 'stylesheet';
     link.type   = 'text/css';
-    link.href   = chrome.extension.getURL('bl-dark-theme.css');
+    link.href   = chrome.extension.getURL('bl-dark-theme.min.css');
     link.media  = 'all';
 
     head.appendChild(link);
