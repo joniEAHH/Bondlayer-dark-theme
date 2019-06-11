@@ -1,327 +1,359 @@
 :root {
     --main-bg: rgb(28, 30, 31);
-    --secondary-bg: rgb(26, 28, 29);
-    --main-color: rgb(192, 188, 179);
-    --secondary-color: rgb(255, 255, 255);
-    --main-border: #080808;
+    --secondary-bg: rgb(34, 36, 37);
+    --main-color: rgb(235, 235, 235);
+    --secondary-color: rgb(210, 210, 210);
+    --main-border: rgb(64, 64, 64);
     --is-active: rgb(0, 255, 0);
+    --is-active-bg: rgb(0, 127, 0);
     --is-hover: rgb(150, 123, 209);
 }
 
-body,
-input,
-textarea,
-select,
+.addFolder--jss-0-1984,
+.modalContent--jss-0-515,
 .newMain--jss-0-2550,
 .valuesListItem--jss-0-303,
-.modalContent--jss-0-515,
-.addFolder--jss-0-1984 {
-    background: var(--main-bg) !important;
+body,
+select,
+.contentEditorWrap--jss-0-1086 {
+    background: var(--main-bg)!important;
     border-color: #575757;
+    color: var(--main-color) !important
+}
+
+.contentCollectionsFooter--jss-0-1010,
+.inspectorBoard--jss-0-129>div>div,
+.libHeadbar--jss-0-3145,
+.libItem--jss-0-3111,
+.medium-editor-element,
+.propGroup--jss-0-130.sub,
+input:not(.inputRangeElement--jss-0-157),
+textarea {
+    background: var(--main-bg) !important
+}
+
+.inputRangeElement--jss-0-157::-webkit-slider-thumb {
+    background: var(--secondary-color) !important
+}
+
+.contentWorkspace__col2--jss-0-3395,
+div.docmapMain--jss-0-3347>div>div>input[type=text],
+div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1),
+.buttonGroup__itemFirst--jss-0-255.vertical.slim {
+    border-color: var(--main-border) !important
+}
+
+[style*="color: rgb(136, 136, 136);"],
+[style*="color: rgb(102, 102, 102);"] {
     color: var(--main-color) !important;
 }
 
-.libHeadbar--jss-0-3145,
-.libItem--jss-0-3111,
-.contentCollectionsFooter--jss-0-1010,
-.inspectorBoard--jss-0-129>div>div {
+[style*="color: rgb(0, 0, 0);"] {
+    color: var(--is-active) !important;
+}
+
+[style*="color: rgb(51, 51, 51);"] {
+    color: var(--secondary-color) !important;
+}
+
+[style*="background: rgb(241, 241, 241);"],
+[style*="background-color: rgb(241, 241, 241)"] {
     background: var(--main-bg) !important;
 }
 
-input,
-textarea {
-    background: var(--secondary-bg) !important;
+[style*="border-bottom: 1px solid rgb(204, 204, 204);"],
+[style*="border: 1px solid rgb(221, 221, 221);"] {
+    border-color: var(--main-border) !important;
 }
 
+[style*="background-color: rgb(221, 221, 221);"] {
+    background-color: var(--secondary-bg);
+}
 
-/* custom hover - need work */
-
-.isHover:not(.treeFold--jss-0-1282):not(.isActive) {
-    color: var(--main-bg) !important;
+[style*="background: rgb(143, 253, 144);"] {
+    background: var(--is-active-bg) !important;
 }
 
 .isHover .treeIcon--jss-0-1285>div>svg {
     color: var(--is-hover) !important;
 }
 
-a {
-    background-color: transparent;
+a,
+a:visited {
+    color: var(--main-color);
+}
+
+a:hover {
+    color: var(--secondary-color);
 }
 
 input,
 optgroup,
 select,
 textarea {
-    color: inherit;
+    color: inherit
 }
 
 .chrome-picker {
-    box-shadow: none!important;
+    box-shadow: none!important
 }
 
 :focus {
-    outline-color: initial;
+    outline-color: initial
 }
 
 body {
     background-image: initial;
-    background-color: var(--main-bg);
+    background-color: var(--main-bg)
 }
 
 a:focus {
-    outline-color: initial;
+    outline-color: initial
 }
 
 a:active,
 a:hover {
-    outline-color: initial;
+    outline-color: initial
 }
 
 #trace {
     background-image: initial;
-    background-color: rgb(39, 41, 43);
-    color: rgb(255, 255, 255);
+    background-color: #27292b;
+    color: #fff
 }
 
 body {
     background-image: initial;
-    background-color: rgb(27, 29, 30);
+    background-color: #1b1d1e
 }
 
 ::placeholder {
-    color: rgb(209, 206, 199);
+    color: #d1cec7
 }
 
 ::-webkit-scrollbar-track {
     box-shadow: none;
     background-image: initial;
-    background-color: rgb(28, 30, 31);
+    background-color: #1c1e1f
 }
 
 ::-webkit-scrollbar-thumb {
     border-color: initial;
     background-image: initial;
-    background-color: rgb(43, 45, 47);
-    box-shadow: none;
+    background-color: #2b2d2f;
+    box-shadow: none
 }
 
 .item--jss-0-92 {
-    color: rgb(110, 110, 110);
-    background-color: rgb(189, 189, 189);
+    color: var(--main-color);
+    background-color: #bdbdbd
 }
 
 .item--jss-0-92:hover {
-    color: rgb(255, 255, 255);
+    color: #fff
 }
 
 .item--jss-0-92.active {
-    color: rgb(50, 50, 50);
-    background-color: #F1F1F1;
+    color: #323232;
+    background-color: #f1f1f1
 }
 
 .tabsContainer--jss-0-97 {
-    background-color: rgb(241, 241, 241);
+    background-color: #f1f1f1
 }
 
 .item--jss-0-92 {
-    color: rgb(192, 188, 179);
-    background-color: rgb(43, 46, 48);
+    color: #c0bcb3;
+    background-color: #2b2e30
 }
 
 .item--jss-0-92:hover {
-    color: rgb(255, 255, 255);
+    color: #fff
 }
 
 .item--jss-0-92.active {
-    color: rgb(214, 211, 205);
-    background-color: rgb(28, 30, 31);
+    color: #d6d3cd;
+    background-color: #1c1e1f
 }
 
 .tabsContainer--jss-0-97 {
-    background-color: rgb(28, 30, 31);
+    background-color: #1c1e1f
 }
 
 .tabContent--jss-0-109 {
-    background-color: rgb(241, 241, 241);
-}
-
-.tabContent--jss-0-109 {
-    background-color: rgb(28, 30, 31);
+    background-color: #1c1e1f
 }
 
 .inspector--jss-0-120 {
-    border-bottom: 1px solid rgb(189, 189, 189);
+    border-bottom: 1px solid #bdbdbd
 }
 
 .inspector--jss-0-120:hover {
-    background-color: rgb(249, 249, 249);
+    background-color: #f9f9f9
 }
 
 .inspector--jss-0-120.open:hover {
-    background-color: rgb(241, 241, 241);
+    background-color: #f1f1f1
 }
 
 .inspectorTitle--jss-0-125 {
-    color: rgb(130, 130, 130);
+    color: #828282
 }
 
 .inspector--jss-0-120 {
-    border-bottom-color: rgb(64, 64, 64);
+    border-bottom-color: #404040
 }
 
 .inspector--jss-0-120:hover {
-    background-color: rgb(26, 28, 29);
+    background-color: #1a1c1d
 }
 
 .inspector--jss-0-120.open:hover {
-    background-color: rgb(28, 30, 31);
+    background-color: #1c1e1f
 }
 
 .inspectorTitle--jss-0-125 {
-    color: rgb(186, 181, 171);
+    color: #bab5ab
 }
 
 .propGroupTitle--jss-0-132 {
-    color: rgb(189, 189, 189);
+    color: #bdbdbd
 }
 
 .grouptTitleSeam--jss-0-133 {
-    border-bottom: 1px dotted rgb(189, 189, 189);
+    border-bottom: 1px dotted #bdbdbd
 }
 
 .propGroupTitle__locale--jss-0-134 {
-    border: 1px solid rgb(189, 189, 189);
-    background-color: rgb(241, 241, 241);
-    color: rgb(130, 130, 130);
+    border: 1px solid #bdbdbd;
+    background-color: #f1f1f1;
+    color: #828282
 }
 
 .propGroupTitle--jss-0-132 {
-    color: rgb(196, 191, 182);
+    color: #c4bfb6
 }
 
 .grouptTitleSeam--jss-0-133 {
-    border-bottom-color: rgb(64, 64, 64);
+    border-bottom-color: #404040
 }
 
 .propGroupTitle__locale--jss-0-134 {
-    border-color: rgb(64, 64, 64);
-    background-color: rgb(28, 30, 31);
-    color: rgb(186, 181, 171);
+    border-color: #404040;
+    background-color: #1c1e1f;
+    color: #bab5ab
 }
 
 .inputElement--jss-0-140 {
-    color: rgb(130, 130, 130);
+    color: #828282
 }
 
 .inputElement--jss-0-140:disabled {
-    background-color: rgb(214, 214, 214);
+    background-color: #d6d6d6
 }
 
 .inputElement--jss-0-140 {
-    color: rgb(186, 181, 171);
+    color: #bab5ab
 }
 
 .inputElement--jss-0-140:focus {
-    outline-color: initial;
+    outline-color: initial
 }
 
 .inputElement--jss-0-140:disabled {
-    background-color: rgb(36, 38, 40);
+    background-color: #242628
 }
 
 .inputTextWrap--jss-0-145 {
     border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 0 0 #d6d6d6
 }
 
 .inputTextWrap--jss-0-145:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    box-shadow: 0 0 0 2px #d6d6d6
 }
 
 .inputTextWrap--jss-0-145 {
     border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
 }
 
 .inputTextWrap--jss-0-145:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    box-shadow: #242628 0 0 0 2px
 }
 
 .selectElement--jss-0-203 {
-    background: none;
+    background: 0 0;
     background-color: transparent;
-    color: rgb(130, 130, 130);
+    color: #828282
 }
 
 .selectElement--jss-0-203 {
-    color: rgb(186, 181, 171);
+    color: #bab5ab
 }
 
 .inputSelectWrap--jss-0-209 {
-    background-color: rgb(248, 248, 248);
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 0 0 #d6d6d6
 }
 
 .inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
 }
 
 .selectLabel--jss-0-216 {
-    color: rgb(189, 189, 189);
+    color: #bdbdbd
 }
 
 .inputWrap--jss-0-208 {
-    border-color: transparent;
+    border-color: transparent
 }
 
 .inputSelectWrap--jss-0-209 {
     border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
 }
 
 .inputSelectWrap--jss-0-209:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    box-shadow: #242628 0 0 0 2px
 }
 
 .selectLabel--jss-0-216 {
-    color: rgb(196, 191, 182);
+    color: #c4bfb6
 }
 
-
-/* limpar */
-
 .itemTitle--jss-0-218 {
-    background-color: rgb(50, 50, 50);
-    color: rgb(240, 240, 240);
+    background-color: #323232;
+    color: #f0f0f0;
     border-radius: 1px;
     padding: 5px;
     position: absolute;
     transform: translateY(-110%);
     z-index: 0;
     visibility: hidden;
-    transition: all 0.1s linear 0s;
+    transition: all .1s linear 0s;
     pointer-events: none;
-    opacity: 0.5;
+    opacity: .5
 }
 
 .itemTitle--jss-0-218:after {
     content: '';
-    width: 0px;
-    height: 0px;
+    width: 0;
+    height: 0;
     position: absolute;
-    border-color: rgb(50, 50, 50);
+    border-color: #323232;
     border-width: 10px;
     border-style: solid;
-    white-space: nowrap;
+    white-space: nowrap
 }
 
 .itemTitle--jss-0-218.tl {
     top: -10px;
-    left: 0px;
+    left: 0
 }
 
 .itemTitle--jss-0-218.tl:after {
@@ -330,97 +362,83 @@ body {
     border-width: 5px;
     border-left-color: transparent;
     border-bottom-color: transparent;
-    border-right-color: transparent;
+    border-right-color: transparent
 }
 
 .itemTitle--jss-0-218 {
-    background-color: rgb(48, 50, 53);
-    color: rgb(242, 241, 239);
+    background-color: #303235;
+    color: #f2f1ef
 }
 
 .itemTitle--jss-0-218::after {
-    border-color: rgb(92, 92, 92);
+    border-color: #5c5c5c
 }
 
 .itemTitle--jss-0-218.tl::after {
     border-left-color: transparent;
     border-bottom-color: transparent;
-    border-right-color: transparent;
+    border-right-color: transparent
 }
 
 .inputWrap--jss-0-228 {
     position: relative;
-    border: 3px solid transparent;
-}
-
-.inputUnitsWrap--jss-0-229 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputUnitsWrap--jss-0-229:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
+    border: 3px solid transparent
 }
 
 .inputUnits--jss-0-232 {
     display: flex;
-    align-items: center;
+    align-items: center
 }
 
 .inputValue--jss-0-233 {
-    flex: 1;
+    flex: 1
 }
 
 .inputUnitsLabel--jss-0-235 {
     font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: rgb(189, 189, 189);
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: #bdbdbd;
     padding: 3px;
-    text-transform: uppercase;
+    text-transform: uppercase
 }
 
 .inputWrap--jss-0-228 {
-    border-color: transparent;
+    border-color: transparent
 }
 
 .inputUnitsWrap--jss-0-229 {
     border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    background-color: #1a1c1d;
+    box-shadow: var(--main-border) 0 1px 0 0
 }
 
 .inputUnitsWrap--jss-0-229:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    box-shadow: var(--main-border) 0 0 0 2px
 }
 
 .inputUnitsLabel--jss-0-235 {
-    color: rgb(196, 191, 182);
+    color: #c4bfb6
 }
 
 .gridItem--jss-0-237 {
     display: flex;
     flex: 1;
     height: auto;
-    flex-flow: column nowrap;
+    flex-flow: column nowrap
 }
 
 .gridLabel--jss-0-238 {
     font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: rgb(189, 189, 189);
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: #bdbdbd;
     padding: 3px;
     text-transform: uppercase;
     flex: 0 0 auto;
-    width: 100%;
+    width: 100%
 }
 
 .gridLabel--jss-0-238 {
-    color: rgb(196, 191, 182);
+    color: #c4bfb6
 }
 
 .grid--jss-0-239 {
@@ -430,7 +448,7 @@ body {
     flex-flow: row wrap;
     justify-content: flex-start;
     align-items: center;
-    align-content: flex-start;
+    align-content: flex-start
 }
 
 .buttonGroup__item--jss-0-247 {
@@ -438,12 +456,3930 @@ body {
     line-height: 1em;
     flex: 1 1 auto;
     text-align: center;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1
+}
+
+.buttonGroup__itemLabel--jss-0-250 {
+    padding: 8px 5px;
+    display: block;
+    background-color: #f1f1f1
+}
+
+.buttonGroup__itemLabel--jss-0-250.active {
+    background-color: #80ff80;
+    color: #323232;
+    box-shadow: none
+}
+
+.buttonGroup__itemLabel--jss-0-250.inherited {
+    background-color: #d7cdee;
+    color: #323232
+}
+
+.buttonGroup__itemFirst--jss-0-255 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: Nitti, 'Lucida Console', sans-serif;
     cursor: pointer;
     border-radius: 1px;
     position: relative;
     z-index: 1;
+    border-left-width: 0;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px
 }
+
+.buttonGroup__itemLast--jss-0-258 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px
+}
+
+.buttonGroup__itemLabel--jss-0-250 {
+    background-color: #1c1e1f
+}
+
+.buttonGroup__itemLabel--jss-0-250.active {
+    background-color: var(--is-active-bg);
+    color: #d6d3cd;
+    box-shadow: none
+}
+
+.buttonGroup__itemLabel--jss-0-250.inherited {
+    background-color: #26292b;
+    color: #d6d3cd
+}
+
+.buttonGroup--jss-0-270 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid #e3e3e3;
+    border-bottom: 0;
+    border-radius: 1px;
+    background-color: #f4f4f4;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    padding: 2px
+}
+
+.buttonGroup--jss-0-270 {
+    border-top-color: #393939;
+    border-right-color: #393939;
+    border-left-color: #393939;
+    border-bottom-color: initial;
+    background-color: #1b1d1e;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputWrap--jss-0-344 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputNumberWrap--jss-0-345 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputNumberWrap--jss-0-345:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.inputElement--jss-0-349 {
+    -webkit-appearance: none;
+    outline: 0;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.inputElement--jss-0-349:focus {
+    outline: 0
+}
+
+.inputElement--jss-0-349:hover {
+    cursor: text
+}
+
+.inputElement--jss-0-349:disabled {
+    background-color: #d6d6d6
+}
+
+.textLabel--jss-0-353 {
+    font-size: 10px;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: #bdbdbd;
+    padding: 3px;
+    text-transform: uppercase
+}
+
+.inputWrap--jss-0-344 {
+    border-color: transparent
+}
+
+.inputNumberWrap--jss-0-345 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputNumberWrap--jss-0-345:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+.inputElement--jss-0-349 {
+    outline-color: initial;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    color: #bab5ab
+}
+
+.inputElement--jss-0-349:focus {
+    outline-color: initial
+}
+
+.inputElement--jss-0-349:disabled {
+    background-color: #242628
+}
+
+.textLabel--jss-0-353 {
+    color: #c4bfb6
+}
+
+.trblSet--jss-0-369 {
+    border: 1px dashed #bdbdbd;
+    position: relative;
+    height: 80px;
+    width: 60%;
+    margin: 20px auto
+}
+
+.trblSet__ItemTop--jss-0-372 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.trblSet__ItemRight--jss-0-373 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.trblSet__ItemBottom--jss-0-374 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.trblSet__ItemLeft--jss-0-375 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    left: -30%;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+.trblSet--jss-0-369 {
+    border-color: #404040
+}
+
+.seam--jss-0-376 {
+    height: 0;
+    width: 100%;
+    margin: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, .12);
+    border-bottom: 1px solid rgba(255, 255, 255, .15)
+}
+
+.seam--jss-0-376 {
+    border-top-color: rgba(102, 102, 102, .12);
+    border-bottom-color: rgba(51, 51, 51, .15)
+}
+
+.swatchesColor--jss-0-395 {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px
+}
+
+.swatchesColor--jss-0-395:hover {
+    opacity: .8
+}
+
+.swatchesWrapper--jss-0-398 {
+    display: flex;
+    border-top: 1px solid #f1f1f1;
+    width: 100%;
+    justify-content: space-around;
+    padding: 4px;
+    align-items: center;
+    height: 40px;
+    background: var(--secondary-color)
+}
+
+.inputWrap--jss-0-399 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputColorWrap--jss-0-400 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputColorWrap--jss-0-400:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.colorLabel--jss-0-404 {
+    font-size: 10px;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: #bdbdbd;
+    padding: 3px;
+    text-transform: uppercase
+}
+
+.swatchesColor--jss-0-395 {
+    border-color: #3a3a3a
+}
+
+.swatchesWrapper--jss-0-398 {
+    border-top-color: #363636;
+    background-image: initial;
+    background-color: var(--main-bg)
+}
+
+.inputWrap--jss-0-399 {
+    border-color: transparent
+}
+
+.inputColorWrap--jss-0-400 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputColorWrap--jss-0-400:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+.colorLabel--jss-0-404 {
+    color: #c4bfb6
+}
+
+.positionPreset__item--jss-0-440 {
+    cursor: pointer;
+    flex: none;
+    padding: 10px
+}
+
+.positionPreset--jss-0-442 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around
+}
+
+.actions--jss-0-456 {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center
+}
+
+.action--jss-0-457 {
+    padding: 4px;
+    display: inline-block
+}
+
+.action--jss-0-457:hover {
+    background-color: #fff
+}
+
+.inputImageWrap--jss-0-459 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.dropZonePreview--jss-0-464 {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 1px;
+    color: #323232;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+.dropZonePreview--jss-0-464:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(241, 241, 241, .2)
+}
+
+.action--jss-0-457:hover {
+    background-color: var(--main-bg)
+}
+
+.inputImageWrap--jss-0-459 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+.dropZonePreview--jss-0-464 {
+    color: #d6d3cd
+}
+
+.dropZonePreview--jss-0-464::before {
+    background-color: rgba(28, 30, 31, .2)
+}
+
+.InputSwitch--jss-0-476 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+.Inputlabel--jss-0-477 {
+    flex: 1 0 auto;
+    margin-left: 10px
+}
+
+.InputSwitchTrack--jss-0-479 {
+    box-shadow: inset 0 0 0 0 #bdbdbd
+}
+
+.InputSwitchKnob--jss-0-481 {
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: inherit;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
+    transition-duration: .4s;
+    transition-property: transform;
+    box-shadow: 0 0 3px #bdbdbd, 0 0 0 1px #bdbdbd;
+    pointer-events: none
+}
+
+.InputSwitchTrack--jss-0-479 {
+    border-color: #404040;
+    background-color: #1b1d1e;
+    box-shadow: #2b2e30 0 0 0 0 inset
+}
+
+.InputSwitchKnob--jss-0-481 {
+    background-color: #fff;
+    box-shadow: #2b2e30 0 0 3px, #2b2e30 0 0 0 1px
+}
+
+.inspectors--jss-0-511 {
+    flex: 1
+}
+
+.wrap--jss-0-667 {
+    color: #fff
+}
+
+.wrapLeft--jss-0-668 {
+    color: #666
+}
+
+.sideButtonSettings--jss-0-671 {
+    border-right: 1px solid #2a2a2a
+}
+
+.sideButtonSettings--jss-0-671:hover {
+    color: #f0f0f0;
+    background-color: #2a2a2a
+}
+
+.controlIcon--jss-0-677:hover {
+    opacity: .3;
+    color: #f0f0f0
+}
+
+.screenPreview--jss-0-679:hover {
+    opacity: 1;
+    color: #323232;
+    background-color: #fff;
+    border-color: #fff
+}
+
+.wrap--jss-0-667 {
+    color: #fff
+}
+
+.wrapLeft--jss-0-668 {
+    color: #c3bfb6
+}
+
+.sideButtonSettings--jss-0-671 {
+    border-right-color: #5e5e5e
+}
+
+.sideButtonSettings--jss-0-671:hover {
+    color: #f2f1ef;
+    background-color: #282a2c
+}
+
+.controlIcon--jss-0-677:hover {
+    color: #f2f1ef
+}
+
+.screenPreview--jss-0-679:hover {
+    color: #d6d3cd;
+    background-color: var(--main-bg);
+    border-color: #333
+}
+
+.inputTextArea--jss-0-877 {
+    background-color: #fff
+}
+
+.inputTextArea--jss-0-877 textarea {
+    border: 1px solid transparent;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.inputTextArea--jss-0-877 textarea:focus {
+    outline: 0
+}
+
+.inputTextArea--jss-0-877 textarea:hover {
+    cursor: text
+}
+
+.inputTextAreaLabel--jss-0-882 {
+    font-size: 10px;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: var(--main-color)
+}
+
+.inputTextArea--jss-0-877 {
+    background-color: var(--main-bg)
+}
+
+.inputTextArea--jss-0-877 textarea {
+    outline-color: initial;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    color: #bab5ab
+}
+
+.inputTextArea--jss-0-877 textarea:focus {
+    outline-color: initial
+}
+
+.inputTextAreaLabel--jss-0-882 {
+    color: #c0bcb3
+}
+
+.inspectors--jss-0-941 {
+    flex: 1
+}
+
+.elementPathNode--jss-0-1106 {
+    color: #a3a3a3
+}
+
+.elementPathNode--jss-0-1106.isActive {
+    color: #323232
+}
+
+.elementPathNode--jss-0-1106:hover {
+    color: #323232
+}
+
+.elementPathNode--jss-0-1106 {
+    color: #bab5ab
+}
+
+.elementPathNode--jss-0-1106.isActive {
+    color: #d6d3cd
+}
+
+.elementPathNode--jss-0-1106:hover {
+    color: #d6d3cd
+}
+
+.treeActionsRight--jss-0-1271 {
+    color: #bdbdbd;
+    display: flex
+}
+
+.treeActionsRight--jss-0-1271:hover {
+    color: #17151c
+}
+
+.treeDropIndicator--jss-0-1273 {
+    height: 2px;
+    position: relative;
+    background-color: transparent;
+    z-index: 100
+}
+
+.treeItem--jss-0-1278 {
+    flex: 1;
+    z-index: 100;
+    border-bottom: 1px solid #dedede;
+    position: relative
+}
+
+.treeItem--jss-0-1278.active {
+    background: #fff
+}
+
+.treeFold--jss-0-1282 {
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #323232;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: rotate(-90deg);
+    transition: transform .2s ease-in-out
+}
+
+.treeFold--jss-0-1282:hover {
+    background-color: #323232;
+    color: #fff
+}
+
+.treeIcon--jss-0-1285 {
+    flex: 0 0 16px;
+    margin: 0 5px;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    color: #828282
+}
+
+.treeIcon--jss-0-1285.isActive {
+    color: #0f0
+}
+
+.treeActionsRight--jss-0-1271 {
+    color: #c4bfb6
+}
+
+.treeActionsRight--jss-0-1271:hover {
+    color: #dfdcd7
+}
+
+.treeDropIndicator--jss-0-1273 {
+    background-color: transparent
+}
+
+.treeItem--jss-0-1278 {
+    border-bottom-color: #3a3a3a
+}
+
+.treeFold--jss-0-1282 {
+    background-color: var(--main-bg);
+    color: #d6d3cd
+}
+
+.treeItem--jss-0-1278.ishover {
+    background: rgb(235, 235, 235);
+    color: var(--main-bg);
+}
+
+.treeFold--jss-0-1282:hover {
+    background-color: #303235;
+    color: #fff
+}
+
+.treeIcon--jss-0-1285 {
+    color: #bab5ab
+}
+
+.treeIcon--jss-0-1285.isActive {
+    color: #3f3
+}
+
+.treeWrap--jss-0-1366 {
+    font-size: 12px;
+    flex: 1;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: #17151c;
+    padding-bottom: 100px;
+    position: absolute;
+    min-width: 100%
+}
+
+.treeWrap--jss-0-1366 {
+    color: #dfdcd7
+}
+
+.screenPreviewWrap--jss-0-3319 {
+    z-index: 20000;
+    display: flex;
+    position: fixed;
+    width: 120px;
+    top: 10px;
+    right: 20px;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.screenPreviewLanguage--jss-0-3320 {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center
+}
+
+.screenPreviewBreakpoint--jss-0-3321 {
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center
+}
+
+.screenPreview--jss-0-3322 {
+    color: var(--secondary-color)
+}
+
+.workspace--jss-0-3326 {
+    background-color: #fff
+}
+
+.rightEdge--jss-0-3327 {
+    background-color: #f1f1f1;
+    border-left: 1px solid #d6d6d6
+}
+
+.wksTopBar--jss-0-3329 {
+    background-color: #2d2d2d;
+    border-bottom: 1px solid #000
+}
+
+.wksBottomBar--jss-0-3335 {
+    background-color: #f1f1f1;
+    border-top: 1px solid #d6d6d6
+}
+
+.loadingOverlay--jss-0-3336 {
+    background: rgba(32, 33, 35, .7)
+}
+
+.docmap--jss-0-3342 {
+    background-color: #e8e8e8
+}
+
+.docmapExpand--jss-0-3345 {
+    background-color: #ccc
+}
+
+.stage--jss-0-3367 {
+    background-color: #fff
+}
+
+.stage--jss-0-3367:before {
+    background-color: #f0f0f0
+}
+
+.docmapTrigger--jss-0-3375 {
+    border-right: 1px solid #d6d6d6
+}
+
+.docmapToggle--jss-0-3376:hover {
+    color: #323232
+}
+
+.canvasOperations--jss-0-3380 {
+    border-left: 1px solid #d6d6d6
+}
+
+.canvasOperationsButton--jss-0-3381:hover {
+    color: #323232
+}
+
+.panelHeader__Element--jss-0-3386 {
+    border: 1px solid #ddd
+}
+
+.panelHeader__Operations--jss-0-3388 {
+    border-bottom: 1px solid #fff
+}
+
+.gridBox--jss-0-3402 {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, .2)
+}
+
+.screenPreviewWrap--jss-0-3319 {
+    background-color: rgba(0, 0, 0, .4)
+}
+
+.screenPreviewLanguage--jss-0-3320 {
+    color: #fff
+}
+
+.screenPreviewBreakpoint--jss-0-3321 {
+    color: #fff
+}
+
+.screenPreview--jss-0-3322 {
+    color: #fff
+}
+
+.workspace--jss-0-3326 {
+    background-color: var(--main-bg)
+}
+
+.rightEdge--jss-0-3327 {
+    background-color: #1c1e1f;
+    border-left-color: #3b3b3b
+}
+
+.wksTopBar--jss-0-3329 {
+    background-color: #2b2d2f;
+    border-bottom-color: #666
+}
+
+.wksBottomBar--jss-0-3335 {
+    background-color: #1c1e1f;
+    border-top-color: #3b3b3b
+}
+
+.loadingOverlay--jss-0-3336 {
+    background-image: initial;
+    background-color: rgba(32, 34, 35, .7)
+}
+
+.docmap--jss-0-3342 {
+    background-color: #1f2122
+}
+
+.docmapExpand--jss-0-3345 {
+    background-color: #27292b
+}
+
+.stage--jss-0-3367 {
+    background-color: var(--main-bg)
+}
+
+.stage--jss-0-3367::before {
+    background-color: #1c1e1f
+}
+
+.docmapTrigger--jss-0-3375 {
+    border-right-color: #3b3b3b
+}
+
+.docmapToggle--jss-0-3376:hover {
+    color: #d6d3cd
+}
+
+.canvasOperations--jss-0-3380 {
+    border-left-color: #3b3b3b
+}
+
+.canvasOperationsButton--jss-0-3381:hover {
+    color: #d6d3cd
+}
+
+.panelHeader__Element--jss-0-3386 {
+    border-color: #3a3a3a
+}
+
+.panelHeader__Operations--jss-0-3388 {
+    border-bottom-color: #333
+}
+
+.gridBox--jss-0-3402 {
+    box-shadow: rgba(204, 0, 0, .2) 0 0 0 1px inset
+}
+
+.treeItem--jss-0-1907 {
+    flex: 1;
+    z-index: 1;
+    display: flex;
+    border-bottom: 1px solid #ddd
+}
+
+.treeItem--jss-0-1907.active {
+    background: #80ff80
+}
+
+.treeLabel--jss-0-1916:focus {
+    background-color: #fff
+}
+
+.treeActionsRight--jss-0-1918 {
+    width: 30px;
+    color: #bdbdbd
+}
+
+.treeItem--jss-0-1907 {
+    border-bottom-color: #3a3a3a
+}
+
+.treeItem--jss-0-1907.isHome {
+    border-bottom-color: initial
+}
+
+.treeItem--jss-0-1907.active {
+    background-image: initial;
+    background-color: var(--is-active-bg)
+}
+
+.treeLabel--jss-0-1916:focus {
+    background-color: #181a1b
+}
+
+.treeActionsRight--jss-0-1918 {
+    color: #c4bfb6
+}
+
+.listItem--jss-0-2422:hover {
+    background-color: var(--secondary-bg)
+}
+
+.project--jss-0-3595 {
+    border-color: #bdbdbd;
+    background-color: #fff
+}
+
+.projectRoles--jss-0-3599 {
+    color: #666
+}
+
+.projectInfo--jss-0-3600 {
+    background-color: #fff;
+    border-bottom: 1px solid #bdbdbd
+}
+
+.projectName--jss-0-3606 {
+    color: #323232
+}
+
+.projectMgmt--jss-0-3608 {
+    background-color: #f0f0f0
+}
+
+.projectMgmtAction--jss-0-3610 {
+    border: 1px solid #bdbdbd;
+    color: #828282
+}
+
+.projectMgmtAction--jss-0-3610:hover {
+    cursor: pointer;
+    border: 1px solidvar(--main-color);
+    background-color: #828282;
+    color: var(--secondary-color)
+}
+
+.projectsItem--jss-0-3594 {
+    text-decoration-color: initial
+}
+
+.project--jss-0-3595 {
+    text-decoration-color: initial;
+    border-color: #404040;
+    background-color: #181a1b;
+    box-shadow: rgba(0, 0, 0, .2) 0 1px 2px
+}
+
+.projectRoles--jss-0-3599 {
+    color: #c3bfb6
+}
+
+.projectInfo--jss-0-3600 {
+    background-color: #181a1b;
+    border-bottom-color: #404040
+}
+
+.projectName--jss-0-3606 {
+    color: #d6d3cd
+}
+
+.projectMgmt--jss-0-3608 {
+    background-color: #1c1e1f
+}
+
+.projectMgmtAction--jss-0-3610 {
+    border-color: #404040;
+    color: #bab5ab
+}
+
+.projectMgmtAction--jss-0-3610:hover {
+    border-color: #505050;
+    background-color: #3c4042;
+    color: #fff
+}
+
+.projectsList--jss-0-3646 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-left: -40px;
+    margin: 0 auto
+}
+
+.tiny--jss-0-14 svg {
+    fill: currentcolor
+}
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.inputSelect--jss-0-212 {
+    position: relative
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none
+}
+
+.inputWrap--jss-0-208 {
+    border-color: transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+.gridItem--jss-0-237 {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-flow: column nowrap
+}
+
+.grid--jss-0-239 {
+    display: flex;
+    flex: 1 1 auto;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start
+}
+
+.grid--jss-0-239>div>div,
+.inputCheckboxLabel--jss-0-242,
+.inputCheckboxToggle--jss-0-243 {
+    color: var(--main-color)!important
+}
+
+.row--jss-0-296 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+    min-height: 26px;
+    margin-left: -10px
+}
+
+.rowItemAuto--jss-0-297 {
+    flex: 1 1;
+    margin-left: 10px
+}
+
+.rowItemFixed--jss-0-298 {
+    flex: none;
+    margin-left: 10px
+}
+
+.valuesListItem--jss-0-303 {
+    background-color: #fff;
+    border-radius: 1px;
+    margin-top: 2px;
+    display: flex
+}
+
+.valuesListItem__drag--jss-0-307 {
+    padding: 3px;
+    opacity: .5;
+    cursor: -webkit-grab
+}
+
+.valuesListItem__delete--jss-0-309 {
+    padding: 3px;
+    opacity: .5;
+    cursor: pointer
+}
+
+.valuesListItem__label--jss-0-311 {
+    font-size: 10px
+}
+
+.valuesListItem--jss-0-303 {
+    background-color: #181a1b
+}
+
+.valuesList--jss-0-323 {
+    background-color: #e3e3e3;
+    border-radius: 1px;
+    margin: 5px 0
+}
+
+.valuesList--jss-0-323 {
+    background-color: #202224
+}
+
+.actions--jss-0-456 {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center
+}
+
+.action--jss-0-457 {
+    padding: 4px;
+    display: inline-block
+}
+
+.action--jss-0-457:hover {
+    background-color: #fff
+}
+
+.inputImageWrap--jss-0-459 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.dropZonePreview--jss-0-464 {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 1px;
+    color: #323232;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+.dropZonePreview--jss-0-464:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(241, 241, 241, .2)
+}
+
+.action--jss-0-457:hover {
+    background-color: #181a1b
+}
+
+.inputImageWrap--jss-0-459 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+.dropZonePreview--jss-0-464 {
+    color: #d6d3cd
+}
+
+.dropZonePreview--jss-0-464::before {
+    background-color: rgba(28, 30, 31, .2)
+}
+
+.modalStyle--jss-0-512 {
+    position: absolute;
+    z-index: 1001;
+    box-shadow: 4px 20px 30px #323232;
+    display: flex;
+    flex-direction: column
+}
+
+.modalTitle--jss-0-513 {
+    flex: 1 0;
+    flex-basis: 30px;
+    font-size: 10px;
+    color: #828282;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: #323232;
+    justify-content: space-between
+}
+
+.modalContent--jss-0-515 {
+    flex: 1 auto;
+    max-width: 800px;
+    min-width: 230px;
+    min-height: 300px;
+    overflow-y: auto;
+    background-color: #f0f0f0
+}
+
+.modalTitleLabel--jss-0-517 {
+    flex: 0 0 auto;
+    color: #fff;
+    margin: 5px 0;
+    padding: 3px 10px;
+    letter-spacing: .05em
+}
+
+.modalTitleClose--jss-0-518 {
+    flex: 0 0 auto;
+    cursor: pointer;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.modalTitleClose--jss-0-518:hover {
+    color: #17151c;
+    background-color: #0f0
+}
+
+.modalStyle--jss-0-512 {
+    box-shadow: #303235 4px 20px 30px
+}
+
+.modalTitle--jss-0-513 {
+    color: #bab5ab;
+    background-color: #303235
+}
+
+.modalContent--jss-0-515 {
+    background-color: #1c1e1f
+}
+
+.modalTitleLabel--jss-0-517 {
+    color: #fff
+}
+
+.modalTitleClose--jss-0-518 {
+    color: #fff
+}
+
+.modalTitleClose--jss-0-518:hover {
+    color: #dfdcd7;
+    background-color: #0c0
+}
+
+.inputPlainText--jss-0-858 {
+    border-color: #f0f0f0
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline: 0;
+    border: 1px solid #bdbdbd
+}
+
+.inputPlainText--jss-0-858 {
+    border-color: #363636
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline-color: initial;
+    border-color: #404040
+}
+
+.inputTextArea--jss-0-877 {
+    background-color: #fff
+}
+
+.inputTextArea--jss-0-877 textarea {
+    border: 1px solid transparent;
+    border-radius: 1px;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.inputTextArea--jss-0-877 textarea:focus {
+    outline: 0
+}
+
+.inputTextArea--jss-0-877 textarea:hover {
+    cursor: text
+}
+
+.inputTextAreaLabel--jss-0-882 {
+    color: var(--main-color)
+}
+
+.inputTextArea--jss-0-877 {
+    background-color: #181a1b
+}
+
+.inputTextArea--jss-0-877 textarea {
+    outline-color: initial;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    color: #bab5ab
+}
+
+.inputTextArea--jss-0-877 textarea:focus {
+    outline-color: initial
+}
+
+.inputTextAreaLabel--jss-0-882 {
+    color: #c0bcb3
+}
+
+.fieldLabel--jss-0-901 {
+    color: var(--main-color)
+}
+
+.microCopy--jss-0-905 {
+    color: #828282
+}
+
+.fieldLabel--jss-0-901 {
+    color: #c0bcb3
+}
+
+.microCopy--jss-0-905 {
+    color: #bab5ab
+}
+
+.noResults--jss-0-910 {
+    color: #f0f0f0
+}
+
+.results_wrapper--jss-0-920 {
+    background: #828282;
+    border: 1px solid #444;
+    box-shadow: 0 0 5px #999
+}
+
+.noResults--jss-0-910 {
+    color: #f2f1ef
+}
+
+.results_wrapper--jss-0-920 {
+    background-image: initial;
+    background-color: #3c4042;
+    border-color: #585858;
+    box-shadow: #35393b 0 0 5px
+}
+
+.newMain--jss-0-2550 {
+    background-color: #f5f5f5
+}
+
+.newMain--jss-0-2550 {
+    background-color: #1b1d1e
+}
+
+.button--jss-0-16 {
+    color: #fff;
+    background: var(--main-color);
+    border: 1px solid transparent
+}
+
+.button--jss-0-16:hover {
+    background-color: #0f0;
+    border-color: #0f0
+}
+
+.button--jss-0-16:focus {
+    outline: 0;
+    border-color: #0f0;
+    background-color: #0f0
+}
+
+.button--jss-0-16:active {
+    transform: translateY(1px)
+}
+
+.button--jss-0-16:disabled {
+    cursor: not-allowed;
+    opacity: .6
+}
+
+.buttonLabel--jss-0-31 {
+    flex: 1 1 auto
+}
+
+.button--jss-0-16 {
+    outline-color: initial;
+    color: #fff;
+    background-image: initial;
+    background-color: #3d4043;
+    border-color: transparent
+}
+
+.button--jss-0-16:hover {
+    background-color: #0c0;
+    border-color: #0c0
+}
+
+.button--jss-0-16:focus {
+    outline-color: initial;
+    border-color: #0c0;
+    background-color: #0c0
+}
+
+.inputCheckboxLabel--jss-0-242 {
+    color: var(--main-color)
+}
+
+.inputCheckboxToggle--jss-0-243 {
+    cursor: pointer;
+    color: var(--main-color)
+}
+
+.inputCheckboxLabel--jss-0-242 {
+    color: #c0bcb3
+}
+
+.inputCheckboxToggle--jss-0-243 {
+    color: #c0bcb3
+}
+
+.inputPlainText--jss-0-858 {
+    border: 0;
+    border-style: solid;
+    border-color: #f0f0f0
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline: 0;
+    border: 1px solid #bdbdbd
+}
+
+.inputPlainText--jss-0-858 {
+    border-color: #363636
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline-color: initial;
+    border-color: #404040
+}
+
+.inputTextArea--jss-0-877 {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 1px
+}
+
+.inputTextArea--jss-0-877 textarea {
+    -webkit-appearance: none;
+    outline: 0;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.inputTextArea--jss-0-877 textarea:focus {
+    outline: 0
+}
+
+.inputTextArea--jss-0-877 textarea:hover {
+    cursor: text
+}
+
+.inputTextAreaLabel--jss-0-882 {
+    color: var(--main-color)
+}
+
+.inputTextArea--jss-0-877 {
+    background-color: #181a1b
+}
+
+.inputTextArea--jss-0-877 textarea {
+    outline-color: initial;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    color: #bab5ab
+}
+
+.inputTextArea--jss-0-877 textarea:focus {
+    outline-color: initial
+}
+
+.inputTextAreaLabel--jss-0-882 {
+    color: #c0bcb3
+}
+
+.fieldLabel--jss-0-901 {
+    color: var(--main-color)
+}
+
+.microCopy--jss-0-905 {
+    color: #828282
+}
+
+.fieldLabel--jss-0-901 {
+    color: #c0bcb3
+}
+
+.microCopy--jss-0-905 {
+    color: #bab5ab
+}
+
+.tip--jss-0-1104 {
+    color: #999
+}
+
+.tip--jss-0-1104 {
+    color: #bab5ab
+}
+
+.modalContent--jss-0-3058 {
+    background-color: #f0f0f0
+}
+
+.modalContent--jss-0-3058 {
+    background-color: #1c1e1f
+}
+
+.modalHeadbar--jss-0-3079 {
+    background-color: #323232;
+    color: #fff
+}
+
+.modalActions--jss-0-3081:hover {
+    color: #0f0
+}
+
+.modalHeadbar--jss-0-3079 {
+    background-color: #303235;
+    color: #fff
+}
+
+.modalActions--jss-0-3081:hover {
+    color: #3f3
+}
+
+.returnDashboard--jss-0-2026 {
+    background-image: initial;
+    background-color: #222425
+}
+
+.listsSep--jss-0-1950 {
+    color: rgba(232, 230, 227, .4)
+}
+
+.treeWrap--jss-0-1990 {
+    color: #dfdcd7
+}
+
+.chrome-picker,
+div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-child(2),
+div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
+    box-shadow: none!important;
+    background: var(--main-bg)!important
+}
+
+.swatchesColor--jss-0-395 {
+    border-color: #3a3a3a
+}
+
+.swatchesColorActive--jss-0-397 {
+    background-image: initial;
+    background-color: #0c0
+}
+
+.swatchesWrapper--jss-0-398 {
+    border-top-color: #363636;
+    background-image: initial;
+    background-color: #181a1b
+}
+
+
+/*! CSS Used from: Embedded */
+
+.treeNodeChildren--jss-0-1259.isActive {
+    background: rgba(255, 255, 255, .3)
+}
+
+.tree--jss-0-1262 {
+    display: flex;
+    flex-flow: column;
+    color: var(--main-color);
+    z-index: 1;
+    font-size: 11px
+}
+
+.isActive.tree--jss-0-1262 {
+    color: var(--main-bg);
+}
+
+.tree--jss-0-1262.disabled {
+    opacity: .6
+}
+
+.treeInner--jss-0-1267 {
+    display: flex;
+    align-items: center;
+    padding-left: 8px
+}
+
+.treeDetails--jss-0-1270 {
+    position: relative;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    flex: 1
+}
+
+.treeActionsRight--jss-0-1271 {
+    color: #bdbdbd;
+    display: flex
+}
+
+.treeActionsRight--jss-0-1271:hover {
+    color: #17151c
+}
+
+.treeDropIndicator--jss-0-1273 {
+    height: 2px;
+    position: relative;
+    background-color: transparent;
+    z-index: 100
+}
+
+.treeItem--jss-0-1278 {
+    flex: 1;
+    z-index: 100;
+    border-bottom: 1px solid #dedede;
+    position: relative
+}
+
+.treeItem--jss-0-1278.active {
+    background: #fff
+}
+
+.treeFold--jss-0-1282 {
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #323232;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    transform: rotate(-90deg);
+    transition: transform .2s ease-in-out
+}
+
+.treeFold--jss-0-1282:hover {
+    background-color: #323232;
+    color: #fff
+}
+
+.treeFold--jss-0-1282.isActive {
+    transform: rotate(0)
+}
+
+.treeIcon--jss-0-1285 {
+    flex: 0 0 16px;
+    margin: 0 5px;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    color: #828282
+}
+
+.treeIcon--jss-0-1285.isActive {
+    color: #0f0
+}
+
+.treeNodeChildren--jss-0-1259.isActive {
+    background-image: initial;
+    background-color: rgba(24, 26, 27, .3)
+}
+
+.treeActionsRight--jss-0-1271 {
+    color: #c4bfb6
+}
+
+.treeActionsRight--jss-0-1271:hover {
+    color: #dfdcd7
+}
+
+.treeDropIndicator--jss-0-1273 {
+    background-color: transparent
+}
+
+.treeItem--jss-0-1278 {
+    border-bottom-color: #3a3a3a
+}
+
+.treeFold--jss-0-1282 {
+    background-color: #181a1b;
+    color: #d6d3cd
+}
+
+.treeFold--jss-0-1282:hover {
+    background-color: #303235;
+    color: #fff
+}
+
+.treeIcon--jss-0-1285 {
+    color: #bab5ab
+}
+
+.treeIcon--jss-0-1285.isActive {
+    color: #3f3
+}
+
+
+/*! CSS Used from: Embedded */
+
+.button--jss-0-16 {
+    cursor: pointer;
+    outline: 0;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    font-family: EuclidFlex, 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background: var(--main-color);
+    border: 1px solid transparent;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    vertical-align: middle
+}
+
+.button--jss-0-16:hover {
+    background-color: #0f0;
+    border-color: #0f0
+}
+
+.button--jss-0-16:focus {
+    outline: 0;
+    border-color: #0f0;
+    background-color: #0f0
+}
+
+.button--jss-0-16:active {
+    transform: translateY(1px)
+}
+
+.button--jss-0-16:disabled {
+    cursor: not-allowed;
+    opacity: .6
+}
+
+.button--jss-0-16.dynamic {
+    color: #00f;
+    background: #fff;
+    border: 1px solid #00f
+}
+
+.button--jss-0-16.dynamic:hover {
+    background-color: #00f;
+    color: #fff;
+    border-color: #0f0
+}
+
+.buttonLabel--jss-0-31 {
+    flex: 1 1 auto
+}
+
+.button--jss-0-16 {
+    outline-color: initial;
+    color: #fff;
+    background-image: initial;
+    background-color: #3d4043;
+    border-color: transparent
+}
+
+.button--jss-0-16:hover {
+    background-color: #0c0;
+    border-color: #0c0
+}
+
+.button--jss-0-16:focus {
+    outline-color: initial;
+    border-color: #0c0;
+    background-color: #0c0
+}
+
+.button--jss-0-16.dynamic {
+    color: #337dff;
+    background-image: initial;
+    background-color: #181a1b;
+    border-color: #00c
+}
+
+.button--jss-0-16.dynamic:hover {
+    background-color: #00c;
+    color: #fff;
+    border-color: #0c0
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.inputSelect--jss-0-212 {
+    position: relative
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none
+}
+
+.inputWrap--jss-0-208 {
+    border-color: transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalStyle--jss-0-512 {
+    position: absolute;
+    z-index: 1001;
+    box-shadow: 4px 20px 30px #323232;
+    display: flex;
+    flex-direction: column
+}
+
+.modalTitle--jss-0-513 {
+    flex: 1 0;
+    flex-basis: 30px;
+    font-size: 10px;
+    color: #828282;
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: #323232;
+    justify-content: space-between
+}
+
+.modalContent--jss-0-515 {
+    flex: 1 auto;
+    max-width: 800px;
+    min-width: 230px;
+    min-height: 300px;
+    overflow-y: auto;
+    background-color: #f0f0f0
+}
+
+.modalTitleLabel--jss-0-517 {
+    flex: 0 0 auto;
+    color: #fff;
+    margin: 5px 0;
+    padding: 3px 10px;
+    letter-spacing: .05em
+}
+
+.modalTitleClose--jss-0-518 {
+    flex: 0 0 auto;
+    cursor: pointer;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    color: #fff;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.modalTitleClose--jss-0-518:hover {
+    color: #17151c;
+    background-color: #0f0
+}
+
+.modalStyle--jss-0-512 {
+    box-shadow: #303235 4px 20px 30px
+}
+
+.modalTitle--jss-0-513 {
+    color: #bab5ab;
+    background-color: #303235
+}
+
+.modalContent--jss-0-515 {
+    background-color: #1c1e1f
+}
+
+.modalTitleLabel--jss-0-517 {
+    color: #fff
+}
+
+.modalTitleClose--jss-0-518 {
+    color: #fff
+}
+
+.modalTitleClose--jss-0-518:hover {
+    color: #dfdcd7;
+    background-color: #0c0
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTableCell--jss-0-1540 {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    word-wrap: break-word;
+    padding: 15px;
+    word-break: break-word
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTableRow--jss-0-1543 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #f5f5f5;
+    position: relative;
+    z-index: 1;
+    margin-top: -1px
+}
+
+.flexTableRow--jss-0-1543:hover {
+    z-index: 10;
+    background-color: #fff;
+    border-color: #bdbdbd
+}
+
+.flexTableRow--jss-0-1543 {
+    border-top-color: #363636;
+    border-bottom-color: #363636;
+    background-color: #1b1d1e
+}
+
+.flexTableRow--jss-0-1543:hover {
+    background-color: #181a1b;
+    border-color: #404040
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTableHeader--jss-0-1547 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    border-top: 0;
+    border-bottom: 1px solid #f1f1f1;
+    background-color: #bdbdbd;
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+    text-transform: uppercase
+}
+
+.flexTableHeader--jss-0-1547 {
+    border-top-color: initial;
+    border-bottom-color: #363636;
+    background-color: #2b2e30
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTable--jss-0-1551 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-betwwen;
+    border: 1px solid #bdbdbd;
+    color: #323232;
+    font-family: Nitti, 'Lucida Console', sans-serif
+}
+
+.flexTable--jss-0-1551 {
+    border-color: #404040;
+    color: #d6d3cd
+}
+
+
+/*! CSS Used from: Embedded */
+
+.pagination--jss-0-1594 {
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px
+}
+
+.contentEditorHeader--jss-0-1599 {
+    width: 100%;
+    flex: 0 0 60px;
+    background: #f0f0f0;
+    border-bottom: 1px solid #fff;
+    z-index: 10;
+    padding: 10px;
+    box-shadow: 0 2px 1px -1px #bdbdbd;
+    color: var(--main-color)
+}
+
+.contentEditorFooter--jss-0-1600 {
+    font-size: 12px;
+    width: 100%;
+    flex: 0 0 60px;
+    display: flex;
+    justify-content: flex-center;
+    padding: 10px;
+    padding-left: 40px;
+    background: #fff;
+    border-top: 1px solid #fff;
+    z-index: 10;
+    box-shadow: 0 -2px 1px -1px #bdbdbd;
+    color: #fff
+}
+
+.repeaterName--jss-0-1607 {
+    font-size: 14px;
+    display: inline;
+    vertical-align: middle;
+    font-weight: 500;
+    color: #17151c
+}
+
+.pagination--jss-0-1594 {
+    background-image: initial;
+    background-color: #1c1e1f;
+    border-top-color: #3a3a3a
+}
+
+.contentEditorHeader--jss-0-1599 {
+    background-image: initial;
+    background-color: #1c1e1f;
+    border-bottom-color: #333;
+    box-shadow: #2b2e30 0 2px 1px -1px;
+    color: #c0bcb3
+}
+
+.contentEditorFooter--jss-0-1600 {
+    background-image: initial;
+    background-color: #181a1b;
+    border-top-color: #333;
+    box-shadow: #2b2e30 0 -2px 1px -1px;
+    color: #fff
+}
+
+.repeaterName--jss-0-1607 {
+    color: #dfdcd7
+}
+
+
+/*! CSS Used from: Embedded */
+
+.tiny--jss-0-14 {
+    width: 8px;
+    height: 8px
+}
+
+.tiny--jss-0-14 svg {
+    display: block;
+    fill: currentColor;
+    width: 8px;
+    height: 8px
+}
+
+.tiny--jss-0-14 svg {
+    fill: currentcolor
+}
+
+
+/*! CSS Used from: Embedded */
+
+.button--jss-0-16 {
+    cursor: pointer;
+    outline: 0;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    font-family: EuclidFlex, 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #fff;
+    background: var(--main-color);
+    border: 1px solid transparent;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    vertical-align: middle
+}
+
+.button--jss-0-16:hover {
+    background-color: #0f0;
+    border-color: #0f0
+}
+
+.button--jss-0-16:focus {
+    outline: 0;
+    border-color: #0f0;
+    background-color: #0f0
+}
+
+.button--jss-0-16:active {
+    transform: translateY(1px)
+}
+
+.button--jss-0-16:disabled {
+    cursor: not-allowed;
+    opacity: .6
+}
+
+.button--jss-0-16.dynamic {
+    color: #00f;
+    background: #fff;
+    border: 1px solid #00f
+}
+
+.button--jss-0-16.dynamic:hover {
+    background-color: #00f;
+    color: #fff;
+    border-color: #0f0
+}
+
+.button--jss-0-16.ghost {
+    color: var(--main-color);
+    background: 0 0;
+    text-decoration: underline
+}
+
+.button--jss-0-16.ghost:hover {
+    background: 0 0;
+    color: #17151c;
+    border-color: #bdbdbd
+}
+
+.buttonLabel--jss-0-31 {
+    flex: 1 1 auto
+}
+
+.button--jss-0-16 {
+    outline-color: initial;
+    color: #fff;
+    background-image: initial;
+    background-color: #3d4043;
+    border-color: transparent
+}
+
+.button--jss-0-16:hover {
+    background-color: #0c0;
+    border-color: #0c0
+}
+
+.button--jss-0-16:focus {
+    outline-color: initial;
+    border-color: #0c0;
+    background-color: #0c0
+}
+
+.button--jss-0-16.dynamic {
+    color: #337dff;
+    background-image: initial;
+    background-color: #181a1b;
+    border-color: #00c
+}
+
+.button--jss-0-16.dynamic:hover {
+    background-color: #00c;
+    color: #fff;
+    border-color: #0c0
+}
+
+.button--jss-0-16.ghost {
+    color: #c0bcb3;
+    background-image: initial;
+    background-color: transparent;
+    text-decoration-color: initial
+}
+
+.button--jss-0-16.ghost:hover {
+    background-image: initial;
+    background-color: transparent;
+    color: #dfdcd7;
+    border-color: #404040
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.inputSelect--jss-0-212 {
+    position: relative
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none
+}
+
+.inputWrap--jss-0-208 {
+    border-color: transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-344 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputNumberWrap--jss-0-345 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputNumberWrap--jss-0-345:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.inputElement--jss-0-349 {
+    -webkit-appearance: none;
+    outline: 0;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.inputElement--jss-0-349:focus {
+    outline: 0
+}
+
+.inputElement--jss-0-349:hover {
+    cursor: text
+}
+
+.inputElement--jss-0-349:disabled {
+    background-color: #d6d6d6
+}
+
+.inputWrap--jss-0-344 {
+    border-color: transparent
+}
+
+.inputNumberWrap--jss-0-345 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputNumberWrap--jss-0-345:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+.inputElement--jss-0-349 {
+    outline-color: initial;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    color: #bab5ab
+}
+
+.inputElement--jss-0-349:focus {
+    outline-color: initial
+}
+
+.inputElement--jss-0-349:disabled {
+    background-color: #242628
+}
+
+
+/*! CSS Used from: Embedded */
+
+.actions--jss-0-456 {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center
+}
+
+.action--jss-0-457 {
+    padding: 4px;
+    display: inline-block
+}
+
+.action--jss-0-457:hover {
+    background-color: #fff
+}
+
+.inputImageWrap--jss-0-459 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.dropZonePreview--jss-0-464 {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 1px;
+    color: #323232;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center
+}
+
+.dropZonePreview--jss-0-464:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(241, 241, 241, .2)
+}
+
+.action--jss-0-457:hover {
+    background-color: #181a1b
+}
+
+.inputImageWrap--jss-0-459 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+.dropZonePreview--jss-0-464 {
+    color: #d6d3cd
+}
+
+.dropZonePreview--jss-0-464::before {
+    background-color: rgba(28, 30, 31, .2)
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-515 {
+    flex: 1 auto;
+    max-width: 800px;
+    min-width: 230px;
+    min-height: 300px;
+    overflow-y: auto;
+    background-color: #f0f0f0
+}
+
+.modalContent--jss-0-515 {
+    background-color: #1c1e1f
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputPlainText--jss-0-858 {
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-appearance: none;
+    height: 2.25rem;
+    padding: .5rem;
+    vertical-align: middle;
+    border: 0;
+    border-style: solid;
+    border-color: #f0f0f0;
+    width: 100%
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline: 0;
+    border: 1px solid #bdbdbd
+}
+
+.inputPlainText--jss-0-858 {
+    border-color: #363636
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline-color: initial;
+    border-color: #404040
+}
+
+
+/*! CSS Used from: Embedded */
+
+.FormInput--jss-0-896 {
+    margin-bottom: 20px
+}
+
+.fieldTopBar--jss-0-898 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px
+}
+
+.fieldLabel--jss-0-901 {
+    flex: 1;
+    font-size: 14px;
+    color: var(--main-color)
+}
+
+.fieldLang--jss-0-902 {
+    border: 1px solid #bdbdbd;
+    flex: 0 0 30px;
+    text-align: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #828282;
+    padding: 1px 2px
+}
+
+.fieldRequired--jss-0-903 {
+    border: 1px solid #bdbdbd;
+    flex: 0 0 80px;
+    text-align: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #828282;
+    padding: 1px 2px;
+    margin-right: 4px
+}
+
+.microCopy--jss-0-905 {
+    flex: 1;
+    color: #828282;
+    font-size: 10px;
+    margin-bottom: 5px
+}
+
+.fieldLabel--jss-0-901 {
+    color: #c0bcb3
+}
+
+.fieldLang--jss-0-902 {
+    border-color: #404040;
+    color: #bab5ab
+}
+
+.fieldRequired--jss-0-903 {
+    border-color: #404040;
+    color: #bab5ab
+}
+
+.microCopy--jss-0-905 {
+    color: #bab5ab
+}
+
+
+/*! CSS Used from: Embedded */
+
+.wrapper--jss-0-1623 {
+    position: relative;
+    overflow-x: hidden;
+    min-height: 200px;
+    min-width: 200px;
+    flex: 1
+}
+
+.slideview--jss-0-1624 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0)
+}
+
+.slideview--jss-0-1624.center {
+    transform: translate3d(0, 0, 0)
+}
+
+.slideview--jss-0-1624.right {
+    transform: translate3d(100%, 0, 0)
+}
+
+.slideview--jss-0-1624.transition {
+    transition-duration: .25s
+}
+
+
+/*! CSS Used from: Embedded */
+
+.colTitle--jss-0-1795 {
+    background-color: #fff;
+    border-bottom: 1px solid #bdbdbd;
+    color: #00f
+}
+
+.contentEditorFooter--jss-0-1807 {
+    background: #fff;
+    border-top: 1px solid #fff;
+    z-index: 10;
+    box-shadow: 0 -2px 1px -1px #bdbdbd;
+    color: #fff
+}
+
+.colTitle--jss-0-1795 {
+    background-color: #181a1b;
+    border-bottom-color: #404040;
+    color: #337dff;
+    box-shadow: #181a1b 0 1px 0 0
+}
+
+.contentEditorFooter--jss-0-1807 {
+    background-image: initial;
+    background-color: #181a1b;
+    border-top-color: #333;
+    box-shadow: #2b2e30 0 -2px 1px -1px;
+    color: #fff
+}
+
+.button--jss-0-16 {
+    outline-color: initial;
+    color: #fff;
+    background-image: initial;
+    background-color: #3d4043;
+    border-color: transparent
+}
+
+.button--jss-0-16:hover {
+    background-color: #0c0;
+    border-color: #0c0
+}
+
+.button--jss-0-16:focus {
+    outline-color: initial;
+    border-color: #0c0;
+    background-color: #0c0
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-54 {
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #323232;
+    padding: 40px 40px;
+    flex: 1 auto;
+    overflow-y: auto
+}
+
+.modalContent--jss-0-54 {
+    background-color: #1c1e1f;
+    color: #d6d3cd
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalHeadbar--jss-0-65 {
+    display: flex;
+    flex: 0 0 40px;
+    background-color: #323232;
+    color: #f0f0f0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px
+}
+
+.modalTitle--jss-0-66 {
+    font-size: 20px;
+    flex: 0 1 auto;
+    text-align: center
+}
+
+.modalActions--jss-0-67 {
+    flex: 0 0 20px
+}
+
+.modalActions--jss-0-67:hover {
+    cursor: pointer;
+    color: #0f0
+}
+
+.modalHeadbar--jss-0-65 {
+    background-color: #303235;
+    color: #f2f1ef
+}
+
+.modalActions--jss-0-67:hover {
+    color: #3f3
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalFooter--jss-0-79 {
+    font-size: 12px;
+    width: 100%;
+    flex: 1 0 auto;
+    padding: 20px;
+    background: #bdbdbd;
+    z-index: 10;
+    color: #fff
+}
+
+.modalFooter--jss-0-79 {
+    background-image: initial;
+    background-color: #2b2e30;
+    color: #fff
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalInner--jss-0-82 {
+    width: 50%;
+    margin: 0 auto;
+    box-shadow: 0 4px 30px #323232
+}
+
+.modalInner--jss-0-82 {
+    box-shadow: #303235 0 4px 30px
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: #f8f8f8;
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 #d6d6d6;
+    transition: box-shadow .2s linear;
+    position: relative
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px #d6d6d6;
+    transition: box-shadow .1s linear
+}
+
+.inputSelect--jss-0-212 {
+    position: relative
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none
+}
+
+.inputWrap--jss-0-208 {
+    border-color: transparent
+}
+
+.inputSelectWrap--jss-0-209 {
+    border-color: transparent;
+    background-color: #1a1c1d;
+    box-shadow: #242628 0 1px 0 0
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: #242628 0 0 0 2px
+}
+
+
+/*! CSS Used from: Embedded */
+
+.gridItem--jss-0-237 {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-flow: column nowrap
+}
+
+
+/*! CSS Used from: Embedded */
+
+.grid--jss-0-239 {
+    display: flex;
+    flex: 1 1 auto;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputCheckboxLabel--jss-0-242 {
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: var(--main-color)
+}
+
+.inputCheckboxToggle--jss-0-243 {
+    cursor: pointer;
+    color: var(--main-color)
+}
+
+.inputCheckboxLabel--jss-0-242 {
+    color: #c0bcb3
+}
+
+.inputCheckboxToggle--jss-0-243 {
+    color: #c0bcb3
+}
+
+
+/*! CSS Used from: Embedded */
+
+.gridItem--jss-0-237 {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-flow: column nowrap
+}
+
+
+/*! CSS Used from: Embedded */
+
+.grid--jss-0-239 {
+    display: flex;
+    flex: 1 1 auto;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start
+}
+
+
+/*! CSS Used from: Embedded */
+
+.wrap--jss-0-667 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    letter-spacing: 1px
+}
+
+.wrapLeft--jss-0-668 {
+    color: #666;
+    flex: 1;
+    display: flex;
+    align-items: stretch
+}
+
+.wrapRight--jss-0-670 {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    margin-right: 10px
+}
+
+.sideButtonSettings--jss-0-671 {
+    cursor: pointer;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #2a2a2a
+}
+
+.sideButtonSettings--jss-0-671:hover {
+    color: #f0f0f0;
+    background-color: #2a2a2a
+}
+
+.screenPreview--jss-0-679 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px 10px;
+    text-transform: lowercase
+}
+
+.screenPreview--jss-0-679:hover {
+    opacity: 1;
+    color: #323232;
+    background-color: #fff;
+    border-color: #fff
+}
+
+.wrap--jss-0-667 {
+    color: #fff
+}
+
+.wrapLeft--jss-0-668 {
+    color: #c3bfb6
+}
+
+.sideButtonSettings--jss-0-671 {
+    border-right-color: #5e5e5e
+}
+
+.sideButtonSettings--jss-0-671:hover {
+    color: #f2f1ef;
+    background-color: #282a2c
+}
+
+.screenPreview--jss-0-679:hover {
+    color: #d6d3cd;
+    background-color: #181a1b;
+    border-color: #333
+}
+
+
+/*! CSS Used from: Embedded */
+
+.collectionLabel--jss-0-951 {
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.collectionItem--jss-0-952 {
+    margin: 0 auto;
+    padding: 10px;
+    border-bottom: 1px solid #bdbdbd
+}
+
+.collectionItem--jss-0-952:hover {
+    cursor: pointer;
+    background-color: #f5f5f5
+}
+
+.collectionItem--jss-0-952 {
+    border-bottom-color: #404040
+}
+
+.collectionItem--jss-0-952:hover {
+    background-color: #1b1d1e
+}
+
+
+/*! CSS Used from: Embedded */
+
+.contentCollectionsWrap--jss-0-1008 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1
+}
+
+.contentCollectionsFooter--jss-0-1010 {
+    font-size: 12px;
+    width: 100%;
+    flex: 0 0 60px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+    background: #fff;
+    border-top: 1px solid #fff;
+    z-index: 10;
+    box-shadow: 0 -2px 1px -1px #bdbdbd;
+    color: #fff
+}
+
+.contentCollectionsMain--jss-0-1011 {
+    flex: 1;
+    overflow: auto
+}
+
+.contentCollectionsFooter--jss-0-1010 {
+    background-image: initial;
+    background-color: #181a1b;
+    border-top-color: #333;
+    box-shadow: #2b2e30 0 -2px 1px -1px;
+    color: #fff
+}
+
+
+/*! CSS Used from: Embedded */
+
+.appWrap--jss-0-3325 {
+    flex: 1;
+    display: flex;
+    user-select: none;
+    overflow: hidden;
+    height: 100vh;
+    position: relative
+}
+
+.workspace--jss-0-3326 {
+    flex: 1 1 auto;
+    flex-flow: column;
+    background-color: #fff;
+    overflow: hidden;
+    align-items: stretch
+}
+
+.wksTopBar--jss-0-3329 {
+    flex: 0 0 40px;
+    text-align: center;
+    position: relative;
+    background-color: #2d2d2d;
+    width: 100%;
+    border-bottom: 1px solid #000
+}
+
+.wksPlayground--jss-0-3331 {
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: stretch;
+    background-color: #f0f0f0
+}
+
+.wksPlaygroundWrapper--jss-0-3334 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden
+}
+
+.stage--jss-0-3367 {
+    flex: 1;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column
+}
+
+.stage--jss-0-3367:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f0f0f0
+}
+
+.canvas--jss-0-3371 {
+    position: relative;
+    box-sizing: content-box;
+    display: block;
+    margin: 0 auto;
+    transition: all .4s cubic-bezier(.19, 1, .22, 1);
+    transform: translateY(0);
+    opacity: 1;
+    flex: 1;
+    align-self: center;
+    flex-direction: column;
+    width: 100%!important;
+    text-align: center
+}
+
+.contentWorkspace--jss-0-3391 {
+    position: absolute;
+    width: 100%;
+    padding-top: 40px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+}
+
+.contentWorkspace__cols--jss-0-3393 {
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    background-color: #f1f1f1;
+    overflow: hidden
+}
+
+.contentWorkspace__col1--jss-0-3394 {
+    flex: 0 1 250px;
+    border-right: 1px solid #bdbdbd;
+    display: flex;
+    flex-direction: column
+}
+
+.contentWorkspace__colTitle--jss-0-3397 {
+    background-color: #fff;
+    border-bottom: 1px solid #bdbdbd;
+    font-size: 16px;
+    font-weight: 500;
+    color: #00f;
+    padding: 20px;
+    box-shadow: 0 1px 0 0 #fff;
+    flex: 0 0 60px
+}
+
+.gridColumnsWrap--jss-0-3398 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    text-align: center;
+    max-width: 1280px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    overflow: hidden;
+    display: none
+}
+
+.gridColumns--jss-0-3400 {
+    margin-left: -20px;
+    height: 102%;
+    margin-top: -4px;
+    overflow: hidden
+}
+
+.gridColumn--jss-0-3401 {
+    width: 8.333%;
+    height: 100%;
+    float: left;
+    padding-left: 20px
+}
+
+.gridBox--jss-0-3402 {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, .2)
+}
+
+.workspace--jss-0-3326 {
+    background-color: #181a1b
+}
+
+.wksTopBar--jss-0-3329 {
+    background-color: #2b2d2f;
+    border-bottom-color: #666
+}
+
+.wksPlayground--jss-0-3331 {
+    background-color: #1c1e1f
+}
+
+.stage--jss-0-3367 {
+    background-color: #181a1b
+}
+
+.stage--jss-0-3367::before {
+    background-color: #1c1e1f
+}
+
+.contentWorkspace__cols--jss-0-3393 {
+    background-color: #1c1e1f
+}
+
+.contentWorkspace__col1--jss-0-3394 {
+    border-right-color: #404040
+}
+
+.contentWorkspace__colTitle--jss-0-3397 {
+    background-color: #181a1b;
+    border-bottom-color: #404040;
+    color: #337dff;
+    box-shadow: #181a1b 0 1px 0 0
+}
+
+.gridBox--jss-0-3402 {
+    box-shadow: rgba(204, 0, 0, .2) 0 0 0 1px inset
+}
+
+
+/*! CSS Used from: Embedded */
+
+.selectElement--jss-0-203 {
+    -webkit-appearance: none;
+    outline: 0;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.selectElement--jss-0-203:focus {
+    outline: 0
+}
+
+.selectElement--jss-0-203:hover {
+    cursor: pointer
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .selectElement--jss-0-203 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: #bab5ab
+    }
+    .selectElement--jss-0-203:focus {
+        outline-color: initial
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.itemTitle--jss-0-218 {
+    background-color: #323232;
+    color: #f0f0f0;
+    border-radius: 1px;
+    padding: 5px;
+    position: absolute;
+    transform: translateY(-110%);
+    z-index: 0;
+    visibility: hidden;
+    transition: all .1s linear 0s;
+    pointer-events: none;
+    opacity: .5
+}
+
+.itemTitle--jss-0-218:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-color: #323232;
+    border-width: 10px;
+    border-style: solid;
+    white-space: nowrap
+}
+
+.itemTitle--jss-0-218.tl {
+    top: -10px;
+    left: 0
+}
+
+.itemTitle--jss-0-218.tl:after {
+    left: 5px;
+    top: 100%;
+    border-width: 5px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+.itemTitle--jss-0-218 {
+    background-color: #303235;
+    color: #f2f1ef
+}
+
+.itemTitle--jss-0-218::after {
+    border-color: #5c5c5c
+}
+
+.itemTitle--jss-0-218.tl::after {
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent
+}
+
+
+/*! CSS Used from: Embedded */
+
+.row--jss-0-727 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+    margin-left: -10px
+}
+
+.rowItemAuto--jss-0-728 {
+    flex: 1 1;
+    margin-left: 10px
+}
+
+.rowItemFixed--jss-0-729 {
+    flex: none;
+    margin-left: 10px
+}
+
+
+/*! CSS Used from: Embedded */
+
+.default--jss-0-0 {
+    width: 24px;
+    height: 24px
+}
+
+.default--jss-0-0 svg {
+    display: block;
+    fill: currentColor;
+    width: 24px;
+    height: 24px
+}
+
+.tiny--jss-0-14 {
+    width: 8px;
+    height: 8px
+}
+
+.tiny--jss-0-14 svg {
+    display: block;
+    fill: currentColor;
+    width: 8px;
+    height: 8px
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inspectorChangeIndicator--jss-0-116 {
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    background-color: #0f0;
+    flex-basis: 8px;
+    margin-right: 8px
+}
+
+.inspectorChangeIndicator--jss-0-116 {
+    border-color: #333;
+    background-color: #0c0
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inspector--jss-0-120 {
+    padding: 0 10px;
+    border-bottom: 1px solid #bdbdbd;
+    font-family: Nitti, 'Lucida Console', sans-serif
+}
+
+.inspector--jss-0-120:hover {
+    background-color: #f9f9f9
+}
+
+.inspector--jss-0-120.open {
+    padding-bottom: 10px
+}
+
+.inspector--jss-0-120.open:hover {
+    background-color: #f1f1f1
+}
+
+.inspectorToggleBar--jss-0-124 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0
+}
+
+.inspectorTitle--jss-0-125 {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: EuclidFlex, 'Open Sans', sans-serif;
+    color: #828282;
+    padding-left: 5px;
+    flex: 1
+}
+
+.inspectorToggleIndicator--jss-0-127 {
+    flex-basis: 8px;
+    opacity: .2
+}
+
+.inspectorToggleIndicator--jss-0-127:hover {
+    opacity: .5
+}
+
+.inspectorBoard--jss-0-129 {
+    padding-top: 10px
+}
+
+.inspector--jss-0-120 {
+    border-bottom-color: #404040
+}
+
+.inspector--jss-0-120:hover {
+    background-color: #1a1c1d
+}
+
+.inspector--jss-0-120.open:hover {
+    background-color: #1c1e1f
+}
+
+.inspectorTitle--jss-0-125 {
+    color: #bab5ab
+}
+
+
+/*! CSS Used from: Embedded */
+
+.propGroup--jss-0-130 {
+    border-radius: 1px
+}
+
+.propGroupTitle--jss-0-132 {
+    font-size: 10px;
+    position: relative;
+    font-family: EuclidFlex, 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: #bdbdbd;
+    padding: 5px 0;
+    height: 33px;
+    margin: 0 0 5px;
+    display: flex;
+    align-items: center
+}
+
+.grouptTitleSeam--jss-0-133 {
+    height: 1px;
+    border-bottom: 1px dotted #bdbdbd;
+    flex: 1 1 auto
+}
+
+.propGroupTitle__label--jss-0-135 {
+    padding: 5px;
+    flex: 0 0 auto;
+    width: auto
+}
+
+.propGroupTitle--jss-0-132 {
+    color: #c4bfb6
+}
+
+.grouptTitleSeam--jss-0-133 {
+    border-bottom-color: #404040
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputElement--jss-0-140 {
+    -webkit-appearance: none;
+    outline: 0;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.inputElement--jss-0-140:focus {
+    outline: 0
+}
+
+.inputElement--jss-0-140:hover {
+    cursor: text
+}
+
+.inputElement--jss-0-140:disabled {
+    background-color: #d6d6d6
+}
+
+.inputElement--jss-0-140 {
+    outline-color: initial;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    color: #bab5ab
+}
+
+.inputElement--jss-0-140:focus {
+    outline-color: initial
+}
+
+.inputElement--jss-0-140:disabled {
+    background-color: #242628
+}
+
+
+/*! CSS Used from: Embedded */
+
+.selectElement--jss-0-203 {
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: 0 0;
+    background-color: transparent;
+    color: #828282
+}
+
+.selectElement--jss-0-203:focus {
+    outline: 0
+}
+
+.selectElement--jss-0-203:hover {
+    cursor: pointer
+}
+
+.selectElement--jss-0-203 {
+    outline-color: initial;
+    border-color: transparent;
+    background-image: none;
+    background-color: transparent;
+    color: #bab5ab
+}
+
+.selectElement--jss-0-203:focus {
+    outline-color: initial
+}
+
+
+/*! CSS Used from: Embedded */
+
+.itemTitle--jss-0-218 {
+    background-color: #323232;
+    color: #f0f0f0;
+    border-radius: 1px;
+    padding: 5px;
+    position: absolute;
+    transform: translateY(-110%);
+    z-index: 0;
+    visibility: hidden;
+    transition: all .1s linear 0s;
+    pointer-events: none;
+    opacity: .5
+}
+
+.itemTitle--jss-0-218:after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    border-color: #323232;
+    border-width: 10px;
+    border-style: solid;
+    white-space: nowrap
+}
+
+.itemTitle--jss-0-218.tl {
+    top: -10px;
+    left: 0
+}
+
+.itemTitle--jss-0-218.tl:after {
+    left: 5px;
+    top: 100%;
+    border-width: 5px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent
+}
+
+.itemTitle--jss-0-218 {
+    background-color: #303235;
+    color: #f2f1ef
+}
+
+.itemTitle--jss-0-218::after {
+    border-color: #5c5c5c
+}
+
+.itemTitle--jss-0-218.tl::after {
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-228 {
+    position: relative;
+    border: 3px solid transparent
+}
+
+.inputUnitsLabel--jss-0-235 {
+    font-size: 10px;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: #bdbdbd;
+    padding: 3px;
+    text-transform: uppercase
+}
+
+.inputWrap--jss-0-228 {
+    border-color: transparent
+}
+
+.inputUnitsLabel--jss-0-235 {
+    color: #c4bfb6
+}
+
+
+/*! CSS Used from: Embedded */
+
+.gridItem--jss-0-237 {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-flow: column nowrap
+}
+
+.gridLabel--jss-0-238 {
+    font-size: 10px;
+    font-family: Nitti, 'Lucida Console', sans-serif;
+    color: #bdbdbd;
+    padding: 3px;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    width: 100%
+}
+
+.gridLabel--jss-0-238 {
+    color: #c4bfb6
+}
+
+
+/*! CSS Used from: Embedded */
+
+.grid--jss-0-239 {
+    display: flex;
+    flex: 1 1 auto;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start
+}
+
+
+/*! CSS Used from: Embedded */
+
+.valuesList--jss-0-323 {
+    background-color: #e3e3e3;
+    border-radius: 1px;
+    margin: 5px 0
+}
+
+.addValue--jss-0-336 {
+    font-size: 10px;
+    text-align: right;
+    color: #fff;
+    padding: 5px
+}
+
+.valuesList--jss-0-323 {
+    background-color: #202224
+}
+
+.addValue--jss-0-336 {
+    color: #fff
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inspectorPop--jss-0-354 {
+    position: absolute;
+    background: #eee;
+    box-shadow: 2px 2px 10px 2px rgba(110, 110, 110, .5);
+    padding: 10px 10px 0;
+    z-index: 100;
+    width: 100%
+}
+
+.inspectorPop--jss-0-354 {
+    background-image: initial;
+    background-color: #1d1f20;
+    box-shadow: rgba(61, 64, 67, .5) 2px 2px 10px 2px
+}
+
+
+/* backups */
+
+
+/*! CSS Used from: Embedded */
+
+.button--jss-0-16 {
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(110, 110, 110);
+    border: 1px solid transparent;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.button--jss-0-16:hover {
+    background-color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:focus {
+    outline: none;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:active {
+    transform: translateY(1px);
+}
+
+.button--jss-0-16:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button--jss-0-16.small {
+    padding: 0.5em 0.5em;
+}
+
+.buttonLabel--jss-0-31 {
+    flex: 1 1 auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .button--jss-0-16 {
+        outline-color: initial;
+        color: rgb(255, 255, 255);
+        background-image: initial;
+        background-color: rgb(61, 64, 67);
+        border-color: transparent;
+    }
+    .button--jss-0-16:hover {
+        background-color: rgb(0, 204, 0);
+        border-color: rgb(0, 204, 0);
+    }
+    .button--jss-0-16:focus {
+        outline-color: initial;
+        border-color: rgb(0, 204, 0);
+        background-color: rgb(0, 204, 0);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.selectElement--jss-0-203 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+}
+
+.selectElement--jss-0-203:focus {
+    outline: none;
+}
+
+.selectElement--jss-0-203:hover {
+    cursor: pointer;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .selectElement--jss-0-203 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .selectElement--jss-0-203:focus {
+        outline-color: initial;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
 
 .buttonGroup__itemLabel--jss-0-250 {
     padding: 8px 5px;
@@ -455,11 +4391,6 @@ body {
     background-color: rgb(128, 255, 128);
     color: rgb(50, 50, 50);
     box-shadow: none;
-}
-
-.buttonGroup__itemLabel--jss-0-250.inherited {
-    background-color: rgb(215, 205, 238);
-    color: rgb(50, 50, 50);
 }
 
 .buttonGroup__itemFirst--jss-0-255 {
@@ -491,20 +4422,22 @@ body {
     border-bottom-right-radius: 1px;
 }
 
-.buttonGroup__itemLabel--jss-0-250 {
-    background-color: rgb(28, 30, 31);
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup__itemLabel--jss-0-250 {
+        background-color: rgb(28, 30, 31);
+    }
+    .buttonGroup__itemLabel--jss-0-250.active {
+        background-color: rgb(0, 127, 0);
+        color: rgb(214, 211, 205);
+        box-shadow: none;
+    }
 }
 
-.buttonGroup__itemLabel--jss-0-250.active {
-    background-color: rgb(0, 127, 0);
-    color: rgb(214, 211, 205);
-    box-shadow: none;
-}
 
-.buttonGroup__itemLabel--jss-0-250.inherited {
-    background-color: rgb(38, 41, 43);
-    color: rgb(214, 211, 205);
-}
+/*! CSS Used from: Embedded */
 
 .buttonGroup--jss-0-270 {
     display: inline-flex;
@@ -518,827 +4451,216 @@ body {
     padding: 2px;
 }
 
-.buttonGroup--jss-0-270 {
-    border-top-color: rgb(57, 57, 57);
-    border-right-color: rgb(57, 57, 57);
-    border-left-color: rgb(57, 57, 57);
-    border-bottom-color: initial;
-    background-color: rgb(27, 29, 30);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup--jss-0-270 {
+        border-top-color: rgb(57, 57, 57);
+        border-right-color: rgb(57, 57, 57);
+        border-left-color: rgb(57, 57, 57);
+        border-bottom-color: initial;
+        background-color: rgb(27, 29, 30);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
 }
 
-.inputWrap--jss-0-344 {
-    position: relative;
-    border: 3px solid transparent;
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-3058 {
+    background-color: rgb(240, 240, 240);
+    flex: 1 auto;
+    max-height: 500px;
+    overflow-y: auto;
 }
 
-.inputNumberWrap--jss-0-345 {
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .modalContent--jss-0-3058 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.InputEditable--jss-0-3200 {
+    margin-bottom: 2px;
     border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
 }
 
-.inputNumberWrap--jss-0-345:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputElement--jss-0-349 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 24px;
-    line-height: 24px;
-    width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.inputElement--jss-0-349:focus {
-    outline: none;
-}
-
-.inputElement--jss-0-349:hover {
-    cursor: text;
-}
-
-.inputElement--jss-0-349:disabled {
-    background-color: rgb(214, 214, 214);
-}
-
-.textLabel--jss-0-353 {
-    font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: rgb(189, 189, 189);
-    padding: 3px;
-    text-transform: uppercase;
-}
-
-.inputWrap--jss-0-344 {
-    border-color: transparent;
-}
-
-.inputNumberWrap--jss-0-345 {
-    border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-}
-
-.inputNumberWrap--jss-0-345:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-}
-
-.inputElement--jss-0-349 {
-    outline-color: initial;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
-    color: rgb(186, 181, 171);
-}
-
-.inputElement--jss-0-349:focus {
-    outline-color: initial;
-}
-
-.inputElement--jss-0-349:disabled {
-    background-color: rgb(36, 38, 40);
-}
-
-.textLabel--jss-0-353 {
-    color: rgb(196, 191, 182);
-}
-
-.trblSet--jss-0-369 {
-    border: 1px dashed rgb(189, 189, 189);
-    position: relative;
-    height: 80px;
-    width: 60%;
-    margin: 20px auto;
-}
-
-.trblSet__ItemTop--jss-0-372 {
-    display: flex;
-    position: absolute;
-    width: 60%;
-    top: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.trblSet__ItemRight--jss-0-373 {
-    display: flex;
-    position: absolute;
-    width: 60%;
-    right: -30%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.trblSet__ItemBottom--jss-0-374 {
-    display: flex;
-    position: absolute;
-    width: 60%;
-    bottom: -20%;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.trblSet__ItemLeft--jss-0-375 {
-    display: flex;
-    position: absolute;
-    width: 60%;
-    left: -30%;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.trblSet--jss-0-369 {
-    border-color: rgb(64, 64, 64);
-}
-
-.seam--jss-0-376 {
-    height: 0px;
-    width: 100%;
-    margin: 10px 0;
-    border-top: 1px solid rgba(0, 0, 0, 0.12);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-.seam--jss-0-376 {
-    border-top-color: rgba(102, 102, 102, 0.12);
-    border-bottom-color: rgba(51, 51, 51, 0.15);
-}
-
-.swatchesColor--jss-0-395 {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
+.InputEditable--jss-0-3200:hover {
     border: 1px solid #ddd;
-    border-radius: 4px;
+    background-color: #fff;
 }
 
-.swatchesColor--jss-0-395:hover {
-    opacity: 0.8;
-}
-
-.swatchesWrapper--jss-0-398 {
-    display: flex;
-    border-top: 1px solid #f1f1f1;
-    width: 100%;
-    justify-content: space-around;
-    padding: 4px;
-    align-items: center;
-    height: 40px;
-    background: var(--secondary-color);
-}
-
-.inputWrap--jss-0-399 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputColorWrap--jss-0-400 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputColorWrap--jss-0-400:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.colorLabel--jss-0-404 {
-    font-size: 10px;
+.libItem--jss-0-3203 {
+    height: 70px;
     font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: rgb(189, 189, 189);
-    padding: 3px;
-    text-transform: uppercase;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
 }
 
-.swatchesColor--jss-0-395 {
-    border-color: rgb(58, 58, 58);
-}
-
-.swatchesWrapper--jss-0-398 {
-    border-top-color: rgb(54, 54, 54);
-    background-image: initial;
-    background-color: var(--main-bg);
-}
-
-.inputWrap--jss-0-399 {
-    border-color: transparent;
-}
-
-.inputColorWrap--jss-0-400 {
-    border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-}
-
-.inputColorWrap--jss-0-400:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-}
-
-.colorLabel--jss-0-404 {
-    color: rgb(196, 191, 182);
-}
-
-.positionPreset__item--jss-0-440 {
+.libItemActive--jss-0-3204:hover {
     cursor: pointer;
-    flex: none;
+    box-shadow: inset 0px 0px 0px 2px rgb(0, 255, 0);
+}
+
+.libItemDetail--jss-0-3206 {
+    margin-bottom: 20px;
     padding: 10px;
+    width: 70%;
 }
 
-.positionPreset--jss-0-442 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-}
-
-.actions--jss-0-456 {
-    display: flex;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.action--jss-0-457 {
-    padding: 4px;
-    display: inline-block;
-}
-
-.action--jss-0-457:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-.inputImageWrap--jss-0-459 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.dropZonePreview--jss-0-464 {
-    position: relative;
-    width: 100%;
-    min-height: 100px;
-    border-radius: 1px;
-    color: rgb(50, 50, 50);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.dropZonePreview--jss-0-464:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background-color: rgba(241, 241, 241, 0.2);
-}
-
-.action--jss-0-457:hover {
-    background-color: var(--main-bg);
-}
-
-.inputImageWrap--jss-0-459 {
-    border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-}
-
-.dropZonePreview--jss-0-464 {
-    color: rgb(214, 211, 205);
-}
-
-.dropZonePreview--jss-0-464::before {
-    background-color: rgba(28, 30, 31, 0.2);
-}
-
-.InputSwitch--jss-0-476 {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.Inputlabel--jss-0-477 {
-    flex: 1 0 auto;
-    margin-left: 10px;
-}
-
-.InputSwitchTrack--jss-0-479 {
-    box-shadow: inset 0 0 0 0px rgb(189, 189, 189);
-}
-
-.InputSwitchKnob--jss-0-481 {
-    float: left;
-    width: 18px;
-    height: 18px;
-    border-radius: inherit;
-    background-color: rgb(255, 255, 255);
-    transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
-    transition-duration: 0.4s;
-    transition-property: transform;
-    box-shadow: 0px 0px 3px rgb(189, 189, 189), 0px 0px 0 1px rgb(189, 189, 189);
-    pointer-events: none;
-}
-
-.InputSwitchTrack--jss-0-479 {
-    border-color: rgb(64, 64, 64);
-    background-color: rgb(27, 29, 30);
-    box-shadow: rgb(43, 46, 48) 0px 0px 0px 0px inset;
-}
-
-.InputSwitchKnob--jss-0-481 {
-    background-color: var(--main-bg);
-    box-shadow: rgb(43, 46, 48) 0px 0px 3px, rgb(43, 46, 48) 0px 0px 0px 1px;
-}
-
-.inspectors--jss-0-511 {
+.libItemDetailUnits--jss-0-3207 {
     flex: 1;
 }
 
-.wrap--jss-0-667 {
-    color: white;
-}
-
-.wrapLeft--jss-0-668 {
-    color: #666;
-}
-
-.sideButtonSettings--jss-0-671 {
-    border-right: 1px solid rgb(42, 42, 42);
-}
-
-.sideButtonSettings--jss-0-671:hover {
-    color: rgb(240, 240, 240);
-    background-color: rgb(42, 42, 42);
-}
-
-.controlIcon--jss-0-677:hover {
-    opacity: 0.3;
-    color: rgb(240, 240, 240);
-}
-
-.screenPreview--jss-0-679:hover {
-    opacity: 1;
-    color: rgb(50, 50, 50);
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(255, 255, 255);
-}
-
-.wrap--jss-0-667 {
-    color: rgb(255, 255, 255);
-}
-
-.wrapLeft--jss-0-668 {
-    color: rgb(195, 191, 182);
-}
-
-.sideButtonSettings--jss-0-671 {
-    border-right-color: rgb(94, 94, 94);
-}
-
-.sideButtonSettings--jss-0-671:hover {
-    color: rgb(242, 241, 239);
-    background-color: rgb(40, 42, 44);
-}
-
-.controlIcon--jss-0-677:hover {
-    color: rgb(242, 241, 239);
-}
-
-.screenPreview--jss-0-679:hover {
-    color: rgb(214, 211, 205);
-    background-color: var(--main-bg);
-    border-color: rgb(51, 51, 51);
-}
-
-.inputTextArea--jss-0-877 {
-    background-color: white;
-}
-
-.inputTextArea--jss-0-877 textarea {
-    border: 1px solid transparent;
-    background: none;
-    background-color: transparent;
+.libItemDetailUnits_dimensions--jss-0-3209 {
     color: rgb(130, 130, 130);
 }
 
-.inputTextArea--jss-0-877 textarea:focus {
-    outline: none;
-}
-
-.inputTextArea--jss-0-877 textarea:hover {
-    cursor: text;
-}
-
-.inputTextAreaLabel--jss-0-882 {
-    font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
+.libItemDetailUnits_date--jss-0-3210 {
     color: rgb(110, 110, 110);
-}
-
-.inputTextArea--jss-0-877 {
-    background-color: var(--main-bg);
-}
-
-.inputTextArea--jss-0-877 textarea {
-    outline-color: initial;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
-    color: rgb(186, 181, 171);
-}
-
-.inputTextArea--jss-0-877 textarea:focus {
-    outline-color: initial;
-}
-
-.inputTextAreaLabel--jss-0-882 {
-    color: rgb(192, 188, 179);
-}
-
-.inspectors--jss-0-941 {
-    flex: 1;
-}
-
-.elementPathNode--jss-0-1106 {
-    color: rgb(163, 163, 163);
-}
-
-.elementPathNode--jss-0-1106.isActive {
-    color: rgb(50, 50, 50);
-}
-
-.elementPathNode--jss-0-1106:hover {
-    color: rgb(50, 50, 50);
-}
-
-.elementPathNode--jss-0-1106 {
-    color: rgb(186, 181, 171);
-}
-
-.elementPathNode--jss-0-1106.isActive {
-    color: rgb(214, 211, 205);
-}
-
-.elementPathNode--jss-0-1106:hover {
-    color: rgb(214, 211, 205);
-}
-
-.tree--jss-0-1262 {
-    color: rgb(110, 110, 110);
-}
-
-.treeActionsRight--jss-0-1271 {
-    color: rgb(189, 189, 189);
-    display: flex;
-}
-
-.treeActionsRight--jss-0-1271:hover {
-    color: rgb(23, 21, 28);
-}
-
-.treeDropIndicator--jss-0-1273 {
-    height: 2px;
-    position: relative;
-    background-color: transparent;
-    z-index: 100;
-}
-
-.treeItem--jss-0-1278 {
-    flex: 1;
-    z-index: 100;
-    border-bottom: 1px solid rgb(222, 222, 222);
-    position: relative;
-}
-
-.treeItem--jss-0-1278.active {
-    background: rgb(255, 255, 255);
-}
-
-.treeFold--jss-0-1282 {
-    padding: 0;
-    height: 12px;
-    width: 12px;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(50, 50, 50);
-    position: absolute;
-    top: 10px;
-    left: 0px;
-    transform: rotate(-90deg);
-    transition: transform 0.2s ease-in-out;
-}
-
-.treeFold--jss-0-1282:hover {
-    background-color: rgb(50, 50, 50);
-    color: rgb(255, 255, 255);
-}
-
-.treeIcon--jss-0-1285 {
-    flex: 0 0 16px;
-    margin: 0 5px;
-    padding: 0;
-    height: 16px;
-    width: 16px;
-    position: relative;
-    color: rgb(130, 130, 130);
-}
-
-.treeIcon--jss-0-1285.isActive {
-    color: rgb(0, 255, 0);
-}
-
-.tree--jss-0-1262 {
-    color: rgb(192, 188, 179);
-}
-
-.treeActionsRight--jss-0-1271 {
-    color: rgb(196, 191, 182);
-}
-
-.treeActionsRight--jss-0-1271:hover {
-    color: rgb(223, 220, 215);
-}
-
-.treeDropIndicator--jss-0-1273 {
-    background-color: transparent;
-}
-
-.treeItem--jss-0-1278 {
-    border-bottom-color: rgb(58, 58, 58);
-}
-
-.treeItem--jss-0-1278.active {
-    background-image: initial;
-    background-color: var(--main-bg);
-}
-
-.treeFold--jss-0-1282 {
-    background-color: var(--main-bg);
-    color: rgb(214, 211, 205);
-}
-
-.treeFold--jss-0-1282:hover {
-    background-color: rgb(48, 50, 53);
-    color: rgb(255, 255, 255);
-}
-
-.treeIcon--jss-0-1285 {
-    color: rgb(186, 181, 171);
-}
-
-.treeIcon--jss-0-1285.isActive {
-    color: rgb(51, 255, 51);
-}
-
-.treeWrap--jss-0-1366 {
     font-size: 12px;
+    margin-top: 5px;
+}
+
+.libItemDetailInfo--jss-0-3211 {
+    display: flex;
+}
+
+.libItemDetailText--jss-0-3212 {
+    max-width: 300px;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.libItemThumb--jss-0-3216 {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 1px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-right: 1px solid #ddd;
+    display: flex;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .InputEditable--jss-0-3200 {
+        border-color: transparent;
+    }
+    .InputEditable--jss-0-3200:hover {
+        border-color: rgb(58, 58, 58);
+        background-color: rgb(24, 26, 27);
+    }
+    .libItem--jss-0-3203 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libItemActive--jss-0-3204:hover {
+        box-shadow: rgb(0, 204, 0) 0px 0px 0px 2px inset;
+    }
+    .libItemDetailUnits_dimensions--jss-0-3209 {
+        color: rgb(186, 181, 171);
+    }
+    .libItemDetailUnits_date--jss-0-3210 {
+        color: rgb(192, 188, 179);
+    }
+    .libItemThumb--jss-0-3216 {
+        border-right-color: rgb(58, 58, 58);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.lib--jss-0-3232 {
     flex: 1;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: rgb(23, 21, 28);
-    padding-bottom: 100px;
-    position: absolute;
-    min-width: 100%;
-}
-
-.treeWrap--jss-0-1366 {
-    color: rgb(223, 220, 215);
-}
-
-.screenPreviewWrap--jss-0-3319 {
-    z-index: 20000;
+    position: relative;
     display: flex;
-    position: fixed;
-    width: 120px;
-    top: 10px;
-    right: 20px;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.screenPreviewLanguage--jss-0-3320 {
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 5px;
-    cursor: pointer;
-    height: 40px;
+.libHeadbar--jss-0-3233 {
+    flex: 0 0 50px;
     display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.screenPreviewBreakpoint--jss-0-3321 {
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 5px;
-    cursor: pointer;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
-}
-
-.screenPreview--jss-0-3322 {
-    color: var(--secondary-color);
-}
-
-.workspace--jss-0-3326 {
-    background-color: rgb(255, 255, 255);
-}
-
-.rightEdge--jss-0-3327 {
-    background-color: rgb(241, 241, 241);
-    border-left: 1px solid rgb(214, 214, 214);
-}
-
-.wksTopBar--jss-0-3329 {
-    background-color: #2D2D2D;
-    border-bottom: 1px solid #000;
-}
-
-.wksBottomBar--jss-0-3335 {
-    background-color: rgb(241, 241, 241);
-    border-top: 1px solid rgb(214, 214, 214);
-}
-
-.loadingOverlay--jss-0-3336 {
-    background: rgba(32, 33, 35, 0.7);
-}
-
-.docmap--jss-0-3342 {
-    background-color: rgb(232, 232, 232);
-}
-
-.docmapExpand--jss-0-3345 {
-    background-color: #ccc;
-}
-
-.stage--jss-0-3367 {
-    background-color: rgb(255, 255, 255);
-}
-
-.stage--jss-0-3367:before {
+    justify-content: space-between;
+    padding: 10px;
     background-color: rgb(240, 240, 240);
 }
 
-.docmapTrigger--jss-0-3375 {
-    border-right: 1px solid rgb(214, 214, 214);
+.libHeadbarSep--jss-0-3234 {
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-right: 10px;
+    color: rgb(189, 189, 189);
+    display: flex;
 }
 
-.docmapToggle--jss-0-3376:hover {
-    color: rgb(50, 50, 50);
+.libMain--jss-0-3235 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
 }
 
-.canvasOperations--jss-0-3380 {
-    border-left: 1px solid rgb(214, 214, 214);
+.libHeadbarLeft--jss-0-3238 {
+    flex: 1;
+    display: flex;
 }
 
-.canvasOperationsButton--jss-0-3381:hover {
-    color: rgb(50, 50, 50);
+.libHeadbarRight--jss-0-3239 {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.panelHeader__Element--jss-0-3386 {
-    border: 1px solid #ddd;
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .libHeadbar--jss-0-3233 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libHeadbarSep--jss-0-3234 {
+        color: rgb(196, 191, 182);
+    }
+    .libMain--jss-0-3235 {
+        background-color: rgb(24, 26, 27);
+    }
 }
 
-.panelHeader__Operations--jss-0-3388 {
-    border-bottom: 1px solid rgb(255, 255, 255);
-}
 
-.gridBox--jss-0-3402 {
-    width: 100%;
-    height: 100%;
-    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.2);
-}
-
-.screenPreviewWrap--jss-0-3319 {
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.screenPreviewLanguage--jss-0-3320 {
-    color: rgb(255, 255, 255);
-}
-
-.screenPreviewBreakpoint--jss-0-3321 {
-    color: rgb(255, 255, 255);
-}
-
-.screenPreview--jss-0-3322 {
-    color: rgb(255, 255, 255);
-}
-
-.workspace--jss-0-3326 {
-    background-color: var(--main-bg);
-}
-
-.rightEdge--jss-0-3327 {
-    background-color: rgb(28, 30, 31);
-    border-left-color: rgb(59, 59, 59);
-}
-
-.wksTopBar--jss-0-3329 {
-    background-color: rgb(43, 45, 47);
-    border-bottom-color: rgb(102, 102, 102);
-}
-
-.wksBottomBar--jss-0-3335 {
-    background-color: rgb(28, 30, 31);
-    border-top-color: rgb(59, 59, 59);
-}
-
-.loadingOverlay--jss-0-3336 {
-    background-image: initial;
-    background-color: rgba(32, 34, 35, 0.7);
-}
-
-.docmap--jss-0-3342 {
-    background-color: rgb(31, 33, 34);
-}
-
-.docmapExpand--jss-0-3345 {
-    background-color: rgb(39, 41, 43);
-}
-
-.stage--jss-0-3367 {
-    background-color: var(--main-bg);
-}
-
-.stage--jss-0-3367::before {
-    background-color: rgb(28, 30, 31);
-}
-
-.docmapTrigger--jss-0-3375 {
-    border-right-color: rgb(59, 59, 59);
-}
-
-.docmapToggle--jss-0-3376:hover {
-    color: rgb(214, 211, 205);
-}
-
-.canvasOperations--jss-0-3380 {
-    border-left-color: rgb(59, 59, 59);
-}
-
-.canvasOperationsButton--jss-0-3381:hover {
-    color: rgb(214, 211, 205);
-}
-
-.panelHeader__Element--jss-0-3386 {
-    border-color: rgb(58, 58, 58);
-}
-
-.panelHeader__Operations--jss-0-3388 {
-    border-bottom-color: rgb(51, 51, 51);
-}
-
-.gridBox--jss-0-3402 {
-    box-shadow: rgba(204, 0, 0, 0.2) 0px 0px 0px 1px inset;
-}
+/*! CSS Used from: Embedded */
 
 .treeItem--jss-0-1907 {
     flex: 1;
     z-index: 1;
     display: flex;
     border-bottom: 1px solid #ddd;
+}
+
+.treeItem--jss-0-1907.ishover {
+    background: rgb(230, 230, 230);
 }
 
 .treeItem--jss-0-1907.active {
@@ -1354,2551 +4676,25 @@ body {
     color: rgb(189, 189, 189);
 }
 
-.treeItem--jss-0-1907 {
-    border-bottom-color: rgb(58, 58, 58);
-}
-
-.treeItem--jss-0-1907.isHome {
-    border-bottom-color: initial;
-}
-
-.treeItem--jss-0-1907.active {
-    background-image: initial;
-    background-color: rgb(0, 127, 0);
-}
-
-.treeLabel--jss-0-1916:focus {
-    background-color: rgb(24, 26, 27);
-}
-
-.treeActionsRight--jss-0-1918 {
-    color: rgb(196, 191, 182);
-}
-
-
-/* css for editor projects */
-
-.listItem--jss-0-2422:hover {
-    background-color: var(--secondary-bg);
-}
-
-.project--jss-0-3595 {
-    border-color: rgb(189, 189, 189);
-    background-color: rgb(255, 255, 255);
-}
-
-.projectRoles--jss-0-3599 {
-    color: #666;
-}
-
-.projectInfo--jss-0-3600 {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(189, 189, 189);
-}
-
-.projectName--jss-0-3606 {
-    color: rgb(50, 50, 50);
-}
-
-.projectMgmt--jss-0-3608 {
-    background-color: rgb(240, 240, 240);
-}
-
-.projectMgmtAction--jss-0-3610 {
-    border: 1px solid rgb(189, 189, 189);
-    color: rgb(130, 130, 130);
-}
-
-.projectMgmtAction--jss-0-3610:hover {
-    cursor: pointer;
-    border: 1px solid rgb(110, 110, 110);
-    background-color: rgb(130, 130, 130);
-    color: var(--secondary-color);
-}
-
-.projectsItem--jss-0-3594 {
-    text-decoration-color: initial;
-}
-
-.project--jss-0-3595 {
-    text-decoration-color: initial;
-    border-color: rgb(64, 64, 64);
-    background-color: rgb(24, 26, 27);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
-}
-
-.projectRoles--jss-0-3599 {
-    color: rgb(195, 191, 182);
-}
-
-.projectInfo--jss-0-3600 {
-    background-color: rgb(24, 26, 27);
-    border-bottom-color: rgb(64, 64, 64);
-}
-
-.projectName--jss-0-3606 {
-    color: rgb(214, 211, 205);
-}
-
-.projectMgmt--jss-0-3608 {
-    background-color: rgb(28, 30, 31);
-}
-
-.projectMgmtAction--jss-0-3610 {
-    border-color: rgb(64, 64, 64);
-    color: rgb(186, 181, 171);
-}
-
-.projectMgmtAction--jss-0-3610:hover {
-    border-color: rgb(80, 80, 80);
-    background-color: rgb(60, 64, 66);
-    color: rgb(255, 255, 255);
-}
-
-.projectsList--jss-0-3646 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    margin-left: -40px;
-    margin: 0 auto;
-}
-
-
-/* css for project settings */
-
-a {
-    background-color: transparent;
-}
-
-input,
-select,
-textarea {
-    color: inherit;
-}
-
-:focus {
-    outline-color: initial;
-}
-
-a,
-a:visited {
-    color: rgb(195, 191, 182);
-}
-
-a:hover {
-    color: rgb(232, 230, 227);
-}
-
-a:focus {
-    outline-color: initial;
-}
-
-a:active,
-a:hover {
-    outline-color: initial;
-}
-
-::placeholder {
-    color: rgb(209, 206, 199);
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: none;
-    background-image: initial;
-    background-color: rgb(28, 30, 31);
-}
-
-::-webkit-scrollbar-thumb {
-    border-color: initial;
-    background-image: initial;
-    background-color: rgb(43, 45, 47);
-    box-shadow: none;
-}
-
-.small--jss-0-10 {
-    width: 16px;
-    height: 16px;
-}
-
-.small--jss-0-10 svg {
-    display: block;
-    fill: currentColor;
-    width: 16px;
-    height: 16px;
-}
-
-.tiny--jss-0-14 {
-    width: 8px;
-    height: 8px;
-}
-
-.tiny--jss-0-14 svg {
-    display: block;
-    fill: currentColor;
-    width: 8px;
-    height: 8px;
-}
-
-.small--jss-0-10 svg {
-    fill: currentcolor;
-}
-
-.tiny--jss-0-14 svg {
-    fill: currentcolor;
-}
-
-.selectElement--jss-0-203 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 24px;
-    line-height: 24px;
-    width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.selectElement--jss-0-203:focus {
-    outline: none;
-}
-
-.selectElement--jss-0-203:hover {
-    cursor: pointer;
-}
-
-.selectElement--jss-0-203 {
-    outline-color: initial;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
-    color: rgb(186, 181, 171);
-}
-
-.selectElement--jss-0-203:focus {
-    outline-color: initial;
-}
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-.inputWrap--jss-0-208 {
-    border-color: transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-}
-
-.gridItem--jss-0-237 {
-    display: flex;
-    flex: 1;
-    height: auto;
-    flex-flow: column nowrap;
-}
-
-.grid--jss-0-239 {
-    display: flex;
-    flex: 1 1 auto;
-    height: auto;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-}
-
-.inputCheckboxLabel--jss-0-242 {
-    cursor: pointer;
-    margin-left: 5px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: rgb(110, 110, 110);
-}
-
-.inputCheckboxToggle--jss-0-243 {
-    cursor: pointer;
-    color: rgb(110, 110, 110);
-}
-
-.inputCheckboxLabel--jss-0-242 {
-    color: rgb(192, 188, 179);
-}
-
-.inputCheckboxToggle--jss-0-243 {
-    color: rgb(192, 188, 179);
-}
-
-.row--jss-0-296 {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 0;
-    align-items: center;
-    min-height: 26px;
-    margin-left: -10px;
-}
-
-.rowItemAuto--jss-0-297 {
-    flex: 1 1;
-    margin-left: 10px;
-}
-
-.rowItemFixed--jss-0-298 {
-    flex: none;
-    margin-left: 10px;
-}
-
-.valuesListItem--jss-0-303 {
-    background-color: rgb(255, 255, 255);
-    border-radius: 1px;
-    margin-top: 2px;
-    display: flex;
-}
-
-.valuesListItem__drag--jss-0-307 {
-    padding: 3px;
-    opacity: 0.5;
-    cursor: -webkit-grab;
-}
-
-.valuesListItem__delete--jss-0-309 {
-    padding: 3px;
-    opacity: 0.5;
-    cursor: pointer;
-}
-
-.valuesListItem__label--jss-0-311 {
-    font-size: 10px;
-}
-
-.valuesListItem--jss-0-303 {
-    background-color: rgb(24, 26, 27);
-}
-
-.valuesList--jss-0-323 {
-    background-color: rgb(227, 227, 227);
-    border-radius: 1px;
-    margin: 5px 0;
-}
-
-.valuesList--jss-0-323 {
-    background-color: rgb(32, 34, 36);
-}
-
-.actions--jss-0-456 {
-    display: flex;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.action--jss-0-457 {
-    padding: 4px;
-    display: inline-block;
-}
-
-.action--jss-0-457:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-.inputImageWrap--jss-0-459 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.dropZonePreview--jss-0-464 {
-    position: relative;
-    width: 100%;
-    min-height: 100px;
-    border-radius: 1px;
-    color: rgb(50, 50, 50);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.dropZonePreview--jss-0-464:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background-color: rgba(241, 241, 241, 0.2);
-}
-
-.action--jss-0-457:hover {
-    background-color: rgb(24, 26, 27);
-}
-
-.inputImageWrap--jss-0-459 {
-    border-color: transparent;
-    background-color: rgb(26, 28, 29);
-    box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-}
-
-.dropZonePreview--jss-0-464 {
-    color: rgb(214, 211, 205);
-}
-
-.dropZonePreview--jss-0-464::before {
-    background-color: rgba(28, 30, 31, 0.2);
-}
-
-.modalStyle--jss-0-512 {
-    position: absolute;
-    z-index: 1001;
-    box-shadow: 4px 20px 30px rgb(50, 50, 50);
-    display: flex;
-    flex-direction: column;
-}
-
-.modalTitle--jss-0-513 {
-    flex: 1 0;
-    flex-basis: 30px;
-    font-size: 10px;
-    color: rgb(130, 130, 130);
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    background-color: rgb(50, 50, 50);
-    justify-content: space-between;
-}
-
-.modalContent--jss-0-515 {
-    flex: 1 auto;
-    max-width: 800px;
-    min-width: 230px;
-    min-height: 300px;
-    overflow-y: auto;
-    background-color: rgb(240, 240, 240);
-}
-
-.modalTitleLabel--jss-0-517 {
-    flex: 0 0 auto;
-    color: rgb(255, 255, 255);
-    margin: 5px 0;
-    padding: 3px 10px;
-    letter-spacing: 0.05em;
-}
-
-.modalTitleClose--jss-0-518 {
-    flex: 0 0 auto;
-    cursor: pointer;
-    align-self: center;
-    width: 20px;
-    height: 20px;
-    color: rgb(255, 255, 255);
-    margin: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modalTitleClose--jss-0-518:hover {
-    color: rgb(23, 21, 28);
-    background-color: rgb(0, 255, 0);
-}
-
-.modalStyle--jss-0-512 {
-    box-shadow: rgb(48, 50, 53) 4px 20px 30px;
-}
-
-.modalTitle--jss-0-513 {
-    color: rgb(186, 181, 171);
-    background-color: rgb(48, 50, 53);
-}
-
-.modalContent--jss-0-515 {
-    background-color: rgb(28, 30, 31);
-}
-
-.modalTitleLabel--jss-0-517 {
-    color: rgb(255, 255, 255);
-}
-
-.modalTitleClose--jss-0-518 {
-    color: rgb(255, 255, 255);
-}
-
-.modalTitleClose--jss-0-518:hover {
-    color: rgb(223, 220, 215);
-    background-color: rgb(0, 204, 0);
-}
-
-.inputPlainText--jss-0-858 {
-    border-color: rgb(240, 240, 240);
-}
-
-.inputPlainText--jss-0-858:focus {
-    outline: none;
-    border: 1px solid rgb(189, 189, 189);
-}
-
-.inputPlainText--jss-0-858 {
-    border-color: rgb(54, 54, 54);
-}
-
-.inputPlainText--jss-0-858:focus {
-    outline-color: initial;
-    border-color: rgb(64, 64, 64);
-}
-
-.inputTextArea--jss-0-877 {
-    background-color: white;
-}
-
-.inputTextArea--jss-0-877 textarea {
-    border: 1px solid transparent;
-    border-radius: 1px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.inputTextArea--jss-0-877 textarea:focus {
-    outline: none;
-}
-
-.inputTextArea--jss-0-877 textarea:hover {
-    cursor: text;
-}
-
-.inputTextAreaLabel--jss-0-882 {
-    color: rgb(110, 110, 110);
-}
-
-.inputTextArea--jss-0-877 {
-    background-color: rgb(24, 26, 27);
-}
-
-.inputTextArea--jss-0-877 textarea {
-    outline-color: initial;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
-    color: rgb(186, 181, 171);
-}
-
-.inputTextArea--jss-0-877 textarea:focus {
-    outline-color: initial;
-}
-
-.inputTextAreaLabel--jss-0-882 {
-    color: rgb(192, 188, 179);
-}
-
-.fieldLabel--jss-0-901 {
-    color: rgb(110, 110, 110);
-}
-
-.microCopy--jss-0-905 {
-    color: rgb(130, 130, 130);
-}
-
-.fieldLabel--jss-0-901 {
-    color: rgb(192, 188, 179);
-}
-
-.microCopy--jss-0-905 {
-    color: rgb(186, 181, 171);
-}
-
-.noResults--jss-0-910 {
-    color: rgb(240, 240, 240);
-}
-
-.results_wrapper--jss-0-920 {
-    background: rgb(130, 130, 130);
-    border: 1px solid #444;
-    box-shadow: 0px 0px 5px #999;
-}
-
-.noResults--jss-0-910 {
-    color: rgb(242, 241, 239);
-}
-
-.results_wrapper--jss-0-920 {
-    background-image: initial;
-    background-color: rgb(60, 64, 66);
-    border-color: rgb(88, 88, 88);
-    box-shadow: rgb(53, 57, 59) 0px 0px 5px;
-}
-
-.newMain--jss-0-2550 {
-    background-color: rgb(245, 245, 245);
-}
-
-.newMain--jss-0-2550 {
-    background-color: rgb(27, 29, 30);
-}
-
-
-/* custom css push notifications */
-
-.button--jss-0-16 {
-    color: rgb(255, 255, 255);
-    background: rgb(110, 110, 110);
-    border: 1px solid transparent;
-}
-
-.button--jss-0-16:hover {
-    background-color: rgb(0, 255, 0);
-    border-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    border-color: rgb(0, 255, 0);
-    background-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.buttonLabel--jss-0-31 {
-    flex: 1 1 auto;
-}
-
-.button--jss-0-16 {
-    outline-color: initial;
-    color: rgb(255, 255, 255);
-    background-image: initial;
-    background-color: rgb(61, 64, 67);
-    border-color: transparent;
-}
-
-.button--jss-0-16:hover {
-    background-color: rgb(0, 204, 0);
-    border-color: rgb(0, 204, 0);
-}
-
-.button--jss-0-16:focus {
-    outline-color: initial;
-    border-color: rgb(0, 204, 0);
-    background-color: rgb(0, 204, 0);
-}
-
-.inputCheckboxLabel--jss-0-242 {
-    color: rgb(110, 110, 110);
-}
-
-.inputCheckboxToggle--jss-0-243 {
-    cursor: pointer;
-    color: rgb(110, 110, 110);
-}
-
-.inputCheckboxLabel--jss-0-242 {
-    color: rgb(192, 188, 179);
-}
-
-.inputCheckboxToggle--jss-0-243 {
-    color: rgb(192, 188, 179);
-}
-
-.inputPlainText--jss-0-858 {
-    border: 0px;
-    border-style: solid;
-    border-color: rgb(240, 240, 240);
-}
-
-.inputPlainText--jss-0-858:focus {
-    outline: none;
-    border: 1px solid rgb(189, 189, 189);
-}
-
-.inputPlainText--jss-0-858 {
-    border-color: rgb(54, 54, 54);
-}
-
-.inputPlainText--jss-0-858:focus {
-    outline-color: initial;
-    border-color: rgb(64, 64, 64);
-}
-
-.inputTextArea--jss-0-877 {
-    align-items: center;
-    background-color: white;
-    border-radius: 1px;
-}
-
-.inputTextArea--jss-0-877 textarea {
-    -webkit-appearance: none;
-    outline: none;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.inputTextArea--jss-0-877 textarea:focus {
-    outline: none;
-}
-
-.inputTextArea--jss-0-877 textarea:hover {
-    cursor: text;
-}
-
-.inputTextAreaLabel--jss-0-882 {
-    color: rgb(110, 110, 110);
-}
-
-.inputTextArea--jss-0-877 {
-    background-color: rgb(24, 26, 27);
-}
-
-.inputTextArea--jss-0-877 textarea {
-    outline-color: initial;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
-    color: rgb(186, 181, 171);
-}
-
-.inputTextArea--jss-0-877 textarea:focus {
-    outline-color: initial;
-}
-
-.inputTextAreaLabel--jss-0-882 {
-    color: rgb(192, 188, 179);
-}
-
-.fieldLabel--jss-0-901 {
-    color: rgb(110, 110, 110);
-}
-
-.microCopy--jss-0-905 {
-    color: rgb(130, 130, 130);
-}
-
-.fieldLabel--jss-0-901 {
-    color: rgb(192, 188, 179);
-}
-
-.microCopy--jss-0-905 {
-    color: rgb(186, 181, 171);
-}
-
-.tip--jss-0-1104 {
-    color: #999;
-}
-
-.tip--jss-0-1104 {
-    color: rgb(186, 181, 171);
-}
-
-.modalContent--jss-0-3058 {
-    background-color: rgb(240, 240, 240);
-}
-
-.modalContent--jss-0-3058 {
-    background-color: rgb(28, 30, 31);
-}
-
-.modalHeadbar--jss-0-3079 {
-    background-color: rgb(50, 50, 50);
-    color: rgb(255, 255, 255);
-}
-
-.modalActions--jss-0-3081:hover {
-    color: rgb(0, 255, 0);
-}
-
-.modalHeadbar--jss-0-3079 {
-    background-color: rgb(48, 50, 53);
-    color: rgb(255, 255, 255);
-}
-
-.modalActions--jss-0-3081:hover {
-    color: rgb(51, 255, 51);
-}
-
-.returnDashboard--jss-0-2026 {
-    background-image: initial;
-    background-color: rgb(34, 36, 37);
-}
-
-.listsSep--jss-0-1950 {
-    color: rgba(232, 230, 227, 0.4);
-}
-
-.treeWrap--jss-0-1990 {
-    color: rgb(223, 220, 215);
-}
-
-
-/* color picker  */
-
-div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1),
-div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-child(2),
-.chrome-picker {
-    box-shadow: none!important;
-    background: var(--main-bg) !important;
-}
-
-div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-child(2)>div:nth-child(2)>div:nth-child(1) {
-    border: var(--main-border) !important;
-}
-
 
 /*! CSS Used from: Embedded ; media=screen */
 
 @media screen {
-    .swatchesColor--jss-0-395 {
-        border-color: rgb(58, 58, 58);
+    .treeItem--jss-0-1907 {
+        border-bottom-color: rgb(58, 58, 58);
     }
-    .swatchesColorActive--jss-0-397 {
+    .treeItem--jss-0-1907.ishover {
         background-image: initial;
-        background-color: rgb(0, 204, 0);
+        background-color: rgb(31, 33, 35);
     }
-    .swatchesWrapper--jss-0-398 {
-        border-top-color: rgb(54, 54, 54);
+    .treeItem--jss-0-1907.active {
         background-image: initial;
+        background-color: rgb(0, 127, 0);
+    }
+    .treeLabel--jss-0-1916:focus {
         background-color: rgb(24, 26, 27);
     }
-}
-
-
-/* novo hover */
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-     :focus {
-        outline-color: initial;
-    }
-     ::placeholder {
-        color: rgb(209, 206, 199);
-    }
-     ::-webkit-scrollbar-track {
-        box-shadow: none;
-        background-image: initial;
-        background-color: rgb(28, 30, 31);
-    }
-     ::-webkit-scrollbar-thumb {
-        border-color: initial;
-        background-image: initial;
-        background-color: rgb(43, 45, 47);
-        box-shadow: none;
-    }
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .small--jss-0-10 svg {
-        fill: currentcolor;
-    }
-    .tiny--jss-0-14 svg {
-        fill: currentcolor;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.treeNodeChildren--jss-0-1259.isActive {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-.tree--jss-0-1262 {
-    display: flex;
-    flex-flow: column;
-    color: rgb(110, 110, 110);
-    z-index: 1;
-    font-size: 11px;
-}
-
-.tree--jss-0-1262.disabled {
-    opacity: 0.6;
-}
-
-.treeInner--jss-0-1267 {
-    display: flex;
-    align-items: center;
-    padding-left: 8px;
-}
-
-.treeDetails--jss-0-1270 {
-    position: relative;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.treeActionsRight--jss-0-1271 {
-    color: rgb(189, 189, 189);
-    display: flex;
-}
-
-.treeActionsRight--jss-0-1271:hover {
-    color: rgb(23, 21, 28);
-}
-
-.treeDropIndicator--jss-0-1273 {
-    height: 2px;
-    position: relative;
-    background-color: transparent;
-    z-index: 100;
-}
-
-.treeItem--jss-0-1278 {
-    flex: 1;
-    z-index: 100;
-    border-bottom: 1px solid rgb(222, 222, 222);
-    position: relative;
-}
-
-.treeItem--jss-0-1278.active {
-    background: rgb(255, 255, 255);
-}
-
-.treeFold--jss-0-1282 {
-    padding: 0;
-    height: 12px;
-    width: 12px;
-    cursor: pointer;
-    background-color: rgb(255, 255, 255);
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgb(50, 50, 50);
-    position: absolute;
-    top: 10px;
-    left: 0px;
-    transform: rotate(-90deg);
-    transition: transform 0.2s ease-in-out;
-}
-
-.treeFold--jss-0-1282:hover {
-    background-color: rgb(50, 50, 50);
-    color: rgb(255, 255, 255);
-}
-
-.treeFold--jss-0-1282.isActive {
-    transform: rotate(0);
-}
-
-.treeIcon--jss-0-1285 {
-    flex: 0 0 16px;
-    margin: 0 5px;
-    padding: 0;
-    height: 16px;
-    width: 16px;
-    position: relative;
-    color: rgb(130, 130, 130);
-}
-
-.treeIcon--jss-0-1285.isActive {
-    color: rgb(0, 255, 0);
-}
-
-.treeLabel--jss-0-1288 {
-    flex: 1 1 auto;
-    border-radius: 1px;
-    width: 100%;
-    line-height: 18px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    padding-right: 4px;
-    padding-left: 4px;
-    paddign-top: 4px;
-}
-
-.treeNodeChildren--jss-0-1259.isActive {
-    background-image: initial;
-    background-color: rgba(24, 26, 27, 0.3);
-}
-
-.tree--jss-0-1262 {
-    color: rgb(192, 188, 179);
-}
-
-.treeActionsRight--jss-0-1271 {
-    color: rgb(196, 191, 182);
-}
-
-.treeActionsRight--jss-0-1271:hover {
-    color: rgb(223, 220, 215);
-}
-
-.treeDropIndicator--jss-0-1273 {
-    background-color: transparent;
-}
-
-.treeItem--jss-0-1278 {
-    border-bottom-color: rgb(58, 58, 58);
-}
-
-.treeItem--jss-0-1278.active {
-    background-image: initial;
-    background-color: rgb(24, 26, 27);
-}
-
-.treeFold--jss-0-1282 {
-    background-color: rgb(24, 26, 27);
-    color: rgb(214, 211, 205);
-}
-
-.treeFold--jss-0-1282:hover {
-    background-color: rgb(48, 50, 53);
-    color: rgb(255, 255, 255);
-}
-
-.treeIcon--jss-0-1285 {
-    color: rgb(186, 181, 171);
-}
-
-.treeIcon--jss-0-1285.isActive {
-    color: rgb(51, 255, 51);
-}
-
-
-/* collections */
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    li,
-    ul {
-        padding: 0;
-        margin: 0;
-    }
-    a {
-        background-color: transparent;
-    }
-    b {
-        font-weight: 700;
-    }
-    svg:not(:root) {
-        overflow: hidden;
-    }
-    input,
-    select {
-        color: inherit;
-        font: inherit;
-        margin: 0;
-    }
-    select {
-        text-transform: none;
-    }
-    input::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
-    input {
-        line-height: normal;
-    }
-    *,
-     :after,
-     :before {
-        box-sizing: inherit;
-    }
-     :focus {
-        outline: 0;
-    }
-    a,
-    div,
-    input,
-    select {
-        box-sizing: border-box;
-    }
-    ul {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-    }
-    select:disabled {
-        opacity: .2;
-    }
-    input {
-        -webkit-user-select: text;
-        -moz-user-select: text;
-        -ms-user-select: text;
-        user-select: text;
-    }
-    a {
-        cursor: pointer;
-    }
-    a,
-    a:visited {
-        color: #666;
-    }
-    a:hover {
-        color: #000;
-    }
-    a:focus {
-        outline: thin dotted;
-    }
-    a:active,
-    a:hover {
-        outline: 0;
-    }
-     :-ms-input-placeholder {
-        color: #ccc;
-    }
-     ::placeholder {
-        color: #ccc;
-    }
-     ::-webkit-scrollbar {
-        width: 8px;
-    }
-     ::-webkit-scrollbar-track {
-        -webkit-box-shadow: none;
-        border-radius: 0;
-        padding: 3px;
-        background: #f0f0f0;
-    }
-     ::-webkit-scrollbar-thumb {
-        border-radius: 0;
-        width: 10px;
-        border: 0;
-        background: #bebebe;
-        -webkit-box-shadow: none;
-    }
-    .fromLeftFlyout {
-        animation-name: slideinLeft;
-    }
-    .fromLeftFlyout {
-        animation-duration: .2s;
-        animation-delay: 0s;
-        animation-timing-function: ease-in-out;
-    }
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    a {
-        background-color: transparent;
-    }
-    input,
-    select {
-        color: inherit;
-    }
-     :focus {
-        outline-color: initial;
-    }
-    a,
-    a:visited {
-        color: rgb(195, 191, 182);
-    }
-    a:hover {
-        color: rgb(232, 230, 227);
-    }
-    a:focus {
-        outline-color: initial;
-    }
-    a:active,
-    a:hover {
-        outline-color: initial;
-    }
-     ::placeholder {
-        color: rgb(209, 206, 199);
-    }
-     ::-webkit-scrollbar-track {
-        box-shadow: none;
-        background-image: initial;
-        background-color: rgb(28, 30, 31);
-    }
-     ::-webkit-scrollbar-thumb {
-        border-color: initial;
-        background-image: initial;
-        background-color: rgb(43, 45, 47);
-        box-shadow: none;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.small--jss-0-10 {
-    width: 16px;
-    height: 16px;
-}
-
-.small--jss-0-10 svg {
-    display: block;
-    fill: currentColor;
-    width: 16px;
-    height: 16px;
-}
-
-.tiny--jss-0-14 {
-    width: 8px;
-    height: 8px;
-}
-
-.tiny--jss-0-14 svg {
-    display: block;
-    fill: currentColor;
-    width: 8px;
-    height: 8px;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .small--jss-0-10 svg {
-        fill: currentcolor;
-    }
-    .tiny--jss-0-14 svg {
-        fill: currentcolor;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    background: rgb(110, 110, 110);
-    border: 1px solid transparent;
-    border-radius: 1px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle;
-}
-
-.button--jss-0-16:hover {
-    background-color: rgb(0, 255, 0);
-    border-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    border-color: rgb(0, 255, 0);
-    background-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.button--jss-0-16.dynamic {
-    color: rgb(0, 0, 255);
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 255);
-}
-
-.button--jss-0-16.dynamic:hover {
-    background-color: rgb(0, 0, 255);
-    color: rgb(255, 255, 255);
-    border-color: rgb(0, 255, 0);
-}
-
-.buttonLabel--jss-0-31 {
-    flex: 1 1 auto;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .button--jss-0-16 {
-        outline-color: initial;
-        color: rgb(255, 255, 255);
-        background-image: initial;
-        background-color: rgb(61, 64, 67);
-        border-color: transparent;
-    }
-    .button--jss-0-16:hover {
-        background-color: rgb(0, 204, 0);
-        border-color: rgb(0, 204, 0);
-    }
-    .button--jss-0-16:focus {
-        outline-color: initial;
-        border-color: rgb(0, 204, 0);
-        background-color: rgb(0, 204, 0);
-    }
-    .button--jss-0-16.dynamic {
-        color: rgb(51, 125, 255);
-        background-image: initial;
-        background-color: rgb(24, 26, 27);
-        border-color: rgb(0, 0, 204);
-    }
-    .button--jss-0-16.dynamic:hover {
-        background-color: rgb(0, 0, 204);
-        color: rgb(255, 255, 255);
-        border-color: rgb(0, 204, 0);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.selectElement--jss-0-203 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 24px;
-    line-height: 24px;
-    width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.selectElement--jss-0-203:focus {
-    outline: none;
-}
-
-.selectElement--jss-0-203:hover {
-    cursor: pointer;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .selectElement--jss-0-203 {
-        outline-color: initial;
-        border-color: transparent;
-        background-image: none;
-        background-color: transparent;
-        color: rgb(186, 181, 171);
-    }
-    .selectElement--jss-0-203:focus {
-        outline-color: initial;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.modalStyle--jss-0-512 {
-    position: absolute;
-    z-index: 1001;
-    box-shadow: 4px 20px 30px rgb(50, 50, 50);
-    display: flex;
-    flex-direction: column;
-}
-
-.modalTitle--jss-0-513 {
-    flex: 1 0;
-    flex-basis: 30px;
-    font-size: 10px;
-    color: rgb(130, 130, 130);
-    display: flex;
-    flex-direction: row;
-    text-transform: uppercase;
-    background-color: rgb(50, 50, 50);
-    justify-content: space-between;
-}
-
-.modalContent--jss-0-515 {
-    flex: 1 auto;
-    max-width: 800px;
-    min-width: 230px;
-    min-height: 300px;
-    overflow-y: auto;
-    background-color: rgb(240, 240, 240);
-}
-
-.modalTitleLabel--jss-0-517 {
-    flex: 0 0 auto;
-    color: rgb(255, 255, 255);
-    margin: 5px 0;
-    padding: 3px 10px;
-    letter-spacing: 0.05em;
-}
-
-.modalTitleClose--jss-0-518 {
-    flex: 0 0 auto;
-    cursor: pointer;
-    align-self: center;
-    width: 20px;
-    height: 20px;
-    color: rgb(255, 255, 255);
-    margin: 0 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.modalTitleClose--jss-0-518:hover {
-    color: rgb(23, 21, 28);
-    background-color: rgb(0, 255, 0);
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .modalStyle--jss-0-512 {
-        box-shadow: rgb(48, 50, 53) 4px 20px 30px;
-    }
-    .modalTitle--jss-0-513 {
-        color: rgb(186, 181, 171);
-        background-color: rgb(48, 50, 53);
-    }
-    .modalContent--jss-0-515 {
-        background-color: rgb(28, 30, 31);
-    }
-    .modalTitleLabel--jss-0-517 {
-        color: rgb(255, 255, 255);
-    }
-    .modalTitleClose--jss-0-518 {
-        color: rgb(255, 255, 255);
-    }
-    .modalTitleClose--jss-0-518:hover {
-        color: rgb(223, 220, 215);
-        background-color: rgb(0, 204, 0);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.flexTableCell--jss-0-1540 {
-    display: flex;
-    flex-flow: row nowrap;
-    flex-grow: 1;
-    flex-basis: 0;
-    align-items: center;
-    word-wrap: break-word;
-    padding: 15px;
-    word-break: break-word;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.flexTableRow--jss-0-1543 {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    flex: 1 1 auto;
-    border-top: 1px solid rgb(241, 241, 241);
-    border-bottom: 1px solid rgb(241, 241, 241);
-    background-color: rgb(245, 245, 245);
-    position: relative;
-    z-index: 1;
-    margin-top: -1px;
-}
-
-.flexTableRow--jss-0-1543:hover {
-    z-index: 10;
-    background-color: rgb(255, 255, 255);
-    border-color: rgb(189, 189, 189);
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .flexTableRow--jss-0-1543 {
-        border-top-color: rgb(54, 54, 54);
-        border-bottom-color: rgb(54, 54, 54);
-        background-color: rgb(27, 29, 30);
-    }
-    .flexTableRow--jss-0-1543:hover {
-        background-color: rgb(24, 26, 27);
-        border-color: rgb(64, 64, 64);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.flexTableHeader--jss-0-1547 {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    flex: 1 1 auto;
-    border-top: 0px;
-    border-bottom: 1px solid rgb(241, 241, 241);
-    background-color: rgb(189, 189, 189);
-    position: relative;
-    z-index: 1;
-    margin-top: 0px;
-    text-transform: uppercase;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .flexTableHeader--jss-0-1547 {
-        border-top-color: initial;
-        border-bottom-color: rgb(54, 54, 54);
-        background-color: rgb(43, 46, 48);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.flexTable--jss-0-1551 {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-betwwen;
-    border: 1px solid rgb(189, 189, 189);
-    color: rgb(50, 50, 50);
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .flexTable--jss-0-1551 {
-        border-color: rgb(64, 64, 64);
-        color: rgb(214, 211, 205);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.pagination--jss-0-1594 {
-    background: #f1f1f1;
-    border-top: 1px solid #ddd;
-    display: flex;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.contentEditorHeader--jss-0-1599 {
-    width: 100%;
-    flex: 0 0 60px;
-    background: rgb(240, 240, 240);
-    border-bottom: 1px solid rgb(255, 255, 255);
-    z-index: 10;
-    padding: 10px;
-    box-shadow: 0 2px 1px -1px rgb(189, 189, 189);
-    color: rgb(110, 110, 110);
-}
-
-.contentEditorFooter--jss-0-1600 {
-    font-size: 12px;
-    width: 100%;
-    flex: 0 0 60px;
-    display: flex;
-    justify-content: flex-center;
-    padding: 10px;
-    padding-left: 40px;
-    background: rgb(255, 255, 255);
-    border-top: 1px solid rgb(255, 255, 255);
-    z-index: 10;
-    box-shadow: 0 -2px 1px -1px rgb(189, 189, 189);
-    color: rgb(255, 255, 255);
-}
-
-.repeaterName--jss-0-1607 {
-    font-size: 14px;
-    display: inline;
-    vertical-align: middle;
-    font-weight: 500;
-    color: rgb(23, 21, 28);
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .pagination--jss-0-1594 {
-        background-image: initial;
-        background-color: rgb(28, 30, 31);
-        border-top-color: rgb(58, 58, 58);
-    }
-    .contentEditorHeader--jss-0-1599 {
-        background-image: initial;
-        background-color: rgb(28, 30, 31);
-        border-bottom-color: rgb(51, 51, 51);
-        box-shadow: rgb(43, 46, 48) 0px 2px 1px -1px;
-        color: rgb(192, 188, 179);
-    }
-    .contentEditorFooter--jss-0-1600 {
-        background-image: initial;
-        background-color: rgb(24, 26, 27);
-        border-top-color: rgb(51, 51, 51);
-        box-shadow: rgb(43, 46, 48) 0px -2px 1px -1px;
-        color: rgb(255, 255, 255);
-    }
-    .repeaterName--jss-0-1607 {
-        color: rgb(223, 220, 215);
-    }
-}
-
-@media screen {
-    a {
-        background-color: transparent;
-    }
-    svg:not(:root) {
-        overflow: hidden;
-    }
-    input,
-    select {
-        color: inherit;
-        font: inherit;
-        margin: 0;
-    }
-    select {
-        text-transform: none;
-    }
-    input::-moz-focus-inner {
-        border: 0;
-        padding: 0;
-    }
-    input {
-        line-height: normal;
-    }
-    *,
-     :after,
-     :before {
-        box-sizing: inherit;
-    }
-     :focus {
-        outline: 0;
-    }
-    a,
-    div,
-    input,
-    select {
-        box-sizing: border-box;
-    }
-    select:disabled {
-        opacity: .2;
-    }
-    input {
-        -webkit-user-select: text;
-        -moz-user-select: text;
-        -ms-user-select: text;
-        user-select: text;
-    }
-    a {
-        cursor: pointer;
-    }
-    a,
-    a:visited {
-        color: #666;
-    }
-    a:hover {
-        color: #000;
-    }
-    a:focus {
-        outline: thin dotted;
-    }
-    a:active,
-    a:hover {
-        outline: 0;
-    }
-     :-ms-input-placeholder {
-        color: #ccc;
-    }
-     ::placeholder {
-        color: #ccc;
-    }
-     ::-webkit-scrollbar {
-        width: 8px;
-    }
-     ::-webkit-scrollbar-track {
-        -webkit-box-shadow: none;
-        border-radius: 0;
-        padding: 3px;
-        background: #f0f0f0;
-    }
-     ::-webkit-scrollbar-thumb {
-        border-radius: 0;
-        width: 10px;
-        border: 0;
-        background: #bebebe;
-        -webkit-box-shadow: none;
-    }
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    a {
-        background-color: transparent;
-    }
-    input,
-    select {
-        color: inherit;
-    }
-     :focus {
-        outline-color: initial;
-    }
-    a,
-    a:visited {
-        color: rgb(195, 191, 182);
-    }
-    a:hover {
-        color: rgb(232, 230, 227);
-    }
-    a:focus {
-        outline-color: initial;
-    }
-    a:active,
-    a:hover {
-        outline-color: initial;
-    }
-     ::placeholder {
-        color: rgb(209, 206, 199);
-    }
-     ::-webkit-scrollbar-track {
-        box-shadow: none;
-        background-image: initial;
-        background-color: rgb(28, 30, 31);
-    }
-     ::-webkit-scrollbar-thumb {
-        border-color: initial;
-        background-image: initial;
-        background-color: rgb(43, 45, 47);
-        box-shadow: none;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.tiny--jss-0-14 {
-    width: 8px;
-    height: 8px;
-}
-
-.tiny--jss-0-14 svg {
-    display: block;
-    fill: currentColor;
-    width: 8px;
-    height: 8px;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .tiny--jss-0-14 svg {
-        fill: currentcolor;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    background: rgb(110, 110, 110);
-    border: 1px solid transparent;
-    border-radius: 1px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle;
-}
-
-.button--jss-0-16:hover {
-    background-color: rgb(0, 255, 0);
-    border-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    border-color: rgb(0, 255, 0);
-    background-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.button--jss-0-16.dynamic {
-    color: rgb(0, 0, 255);
-    background: rgb(255, 255, 255);
-    border: 1px solid rgb(0, 0, 255);
-}
-
-.button--jss-0-16.dynamic:hover {
-    background-color: rgb(0, 0, 255);
-    color: rgb(255, 255, 255);
-    border-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16.ghost {
-    color: rgb(110, 110, 110);
-    background: transparent;
-    text-decoration: underline;
-}
-
-.button--jss-0-16.ghost:hover {
-    background: transparent;
-    color: rgb(23, 21, 28);
-    border-color: rgb(189, 189, 189);
-}
-
-.buttonLabel--jss-0-31 {
-    flex: 1 1 auto;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .button--jss-0-16 {
-        outline-color: initial;
-        color: rgb(255, 255, 255);
-        background-image: initial;
-        background-color: rgb(61, 64, 67);
-        border-color: transparent;
-    }
-    .button--jss-0-16:hover {
-        background-color: rgb(0, 204, 0);
-        border-color: rgb(0, 204, 0);
-    }
-    .button--jss-0-16:focus {
-        outline-color: initial;
-        border-color: rgb(0, 204, 0);
-        background-color: rgb(0, 204, 0);
-    }
-    .button--jss-0-16.dynamic {
-        color: rgb(51, 125, 255);
-        background-image: initial;
-        background-color: rgb(24, 26, 27);
-        border-color: rgb(0, 0, 204);
-    }
-    .button--jss-0-16.dynamic:hover {
-        background-color: rgb(0, 0, 204);
-        color: rgb(255, 255, 255);
-        border-color: rgb(0, 204, 0);
-    }
-    .button--jss-0-16.ghost {
-        color: rgb(192, 188, 179);
-        background-image: initial;
-        background-color: transparent;
-        text-decoration-color: initial;
-    }
-    .button--jss-0-16.ghost:hover {
-        background-image: initial;
-        background-color: transparent;
-        color: rgb(223, 220, 215);
-        border-color: rgb(64, 64, 64);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.selectElement--jss-0-203 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 24px;
-    line-height: 24px;
-    width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.selectElement--jss-0-203:focus {
-    outline: none;
-}
-
-.selectElement--jss-0-203:hover {
-    cursor: pointer;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .selectElement--jss-0-203 {
-        outline-color: initial;
-        border-color: transparent;
-        background-image: none;
-        background-color: transparent;
-        color: rgb(186, 181, 171);
-    }
-    .selectElement--jss-0-203:focus {
-        outline-color: initial;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-344 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputNumberWrap--jss-0-345 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputNumberWrap--jss-0-345:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputElement--jss-0-349 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 24px;
-    line-height: 24px;
-    width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.inputElement--jss-0-349:focus {
-    outline: none;
-}
-
-.inputElement--jss-0-349:hover {
-    cursor: text;
-}
-
-.inputElement--jss-0-349:disabled {
-    background-color: rgb(214, 214, 214);
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-344 {
-        border-color: transparent;
-    }
-    .inputNumberWrap--jss-0-345 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputNumberWrap--jss-0-345:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-    .inputElement--jss-0-349 {
-        outline-color: initial;
-        border-color: transparent;
-        background-image: none;
-        background-color: transparent;
-        color: rgb(186, 181, 171);
-    }
-    .inputElement--jss-0-349:focus {
-        outline-color: initial;
-    }
-    .inputElement--jss-0-349:disabled {
-        background-color: rgb(36, 38, 40);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.actions--jss-0-456 {
-    display: flex;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.action--jss-0-457 {
-    padding: 4px;
-    display: inline-block;
-}
-
-.action--jss-0-457:hover {
-    background-color: rgb(255, 255, 255);
-}
-
-.inputImageWrap--jss-0-459 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.dropZonePreview--jss-0-464 {
-    position: relative;
-    width: 100%;
-    min-height: 100px;
-    border-radius: 1px;
-    color: rgb(50, 50, 50);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.dropZonePreview--jss-0-464:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background-color: rgba(241, 241, 241, 0.2);
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .action--jss-0-457:hover {
-        background-color: rgb(24, 26, 27);
-    }
-    .inputImageWrap--jss-0-459 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputImageWrap--jss-0-459:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-    .dropZonePreview--jss-0-464 {
-        color: rgb(214, 211, 205);
-    }
-    .dropZonePreview--jss-0-464::before {
-        background-color: rgba(28, 30, 31, 0.2);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.InputSwitch--jss-0-476 {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.Inputlabel--jss-0-477 {
-    flex: 1 0 auto;
-    margin-left: 10px;
-}
-
-.InputSwitchTrack--jss-0-479 {
-    flex: 0 0 40px;
-    display: block;
-    vertical-align: middle;
-    width: 40px;
-    height: 20px;
-    border: 1px solid rgb(189, 189, 189);
-    border-radius: 10px;
-    background-color: rgb(245, 245, 245);
-    transition-property: background-color, box-shadow;
-    transition-duration: .4s;
-    box-shadow: inset 0 0 0 0px rgb(189, 189, 189);
-}
-
-.InputSwitchKnob--jss-0-481 {
-    float: left;
-    width: 18px;
-    height: 18px;
-    border-radius: inherit;
-    background-color: rgb(255, 255, 255);
-    transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
-    transition-duration: 0.4s;
-    transition-property: transform;
-    box-shadow: 0px 0px 3px rgb(189, 189, 189), 0px 0px 0 1px rgb(189, 189, 189);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .InputSwitchTrack--jss-0-479 {
-        border-color: rgb(64, 64, 64);
-        background-color: rgb(27, 29, 30);
-        box-shadow: rgb(43, 46, 48) 0px 0px 0px 0px inset;
-    }
-    .InputSwitchKnob--jss-0-481 {
-        background-color: rgb(24, 26, 27);
-        box-shadow: rgb(43, 46, 48) 0px 0px 3px, rgb(43, 46, 48) 0px 0px 0px 1px;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.modalContent--jss-0-515 {
-    flex: 1 auto;
-    max-width: 800px;
-    min-width: 230px;
-    min-height: 300px;
-    overflow-y: auto;
-    background-color: rgb(240, 240, 240);
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .modalContent--jss-0-515 {
-        background-color: rgb(28, 30, 31);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputPlainText--jss-0-858 {
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 14px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    -webkit-appearance: none;
-    height: 2.25rem;
-    padding: 0.5rem;
-    vertical-align: middle;
-    border: 0px;
-    border-style: solid;
-    border-color: rgb(240, 240, 240);
-    width: 100%;
-}
-
-.inputPlainText--jss-0-858:focus {
-    outline: none;
-    border: 1px solid rgb(189, 189, 189);
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputPlainText--jss-0-858 {
-        border-color: rgb(54, 54, 54);
-    }
-    .inputPlainText--jss-0-858:focus {
-        outline-color: initial;
-        border-color: rgb(64, 64, 64);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.FormInput--jss-0-896 {
-    margin-bottom: 20px;
-}
-
-.fieldTopBar--jss-0-898 {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 5px;
-}
-
-.fieldLabel--jss-0-901 {
-    flex: 1;
-    font-size: 14px;
-    color: rgb(110, 110, 110);
-}
-
-.fieldLang--jss-0-902 {
-    border: 1px solid rgb(189, 189, 189);
-    flex: 0 0 30px;
-    text-align: center;
-    font-size: 9px;
-    text-transform: uppercase;
-    color: rgb(130, 130, 130);
-    padding: 1px 2px;
-}
-
-.fieldRequired--jss-0-903 {
-    border: 1px solid rgb(189, 189, 189);
-    flex: 0 0 80px;
-    text-align: center;
-    font-size: 9px;
-    text-transform: uppercase;
-    color: rgb(130, 130, 130);
-    padding: 1px 2px;
-    margin-right: 4px;
-}
-
-.microCopy--jss-0-905 {
-    flex: 1;
-    color: rgb(130, 130, 130);
-    font-size: 10px;
-    margin-bottom: 5px;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .fieldLabel--jss-0-901 {
-        color: rgb(192, 188, 179);
-    }
-    .fieldLang--jss-0-902 {
-        border-color: rgb(64, 64, 64);
-        color: rgb(186, 181, 171);
-    }
-    .fieldRequired--jss-0-903 {
-        border-color: rgb(64, 64, 64);
-        color: rgb(186, 181, 171);
-    }
-    .microCopy--jss-0-905 {
-        color: rgb(186, 181, 171);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.wrapper--jss-0-1623 {
-    position: relative;
-    overflow-x: hidden;
-    min-height: 200px;
-    min-width: 200px;
-    flex: 1;
-}
-
-.slideview--jss-0-1624 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    transform: translate3d(0, 0, 0);
-}
-
-.slideview--jss-0-1624.center {
-    transform: translate3d(0, 0, 0);
-}
-
-.slideview--jss-0-1624.right {
-    transform: translate3d(100%, 0, 0);
-}
-
-.slideview--jss-0-1624.transition {
-    transition-duration: .25s;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.colTitle--jss-0-1795 {
-    background-color: rgb(255, 255, 255);
-    border-bottom: 1px solid rgb(189, 189, 189);
-    color: rgb(0, 0, 255);
-    font-size: 16px;
-    font-weight: 500;
-    box-shadow: 0 1px 0 0 white;
-    padding: 20px;
-    height: 61px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.colTitleButtons--jss-0-1797 {
-    align-items: center;
-    overflow: hidden;
-}
-
-.contentEditorWrap--jss-0-1805 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.contentEditorFooter--jss-0-1807 {
-    font-size: 12px;
-    width: 100%;
-    flex: 0 0 60px;
-    display: flex;
-    justify-content: flex-center;
-    padding: 10px;
-    padding-left: 40px;
-    background: rgb(255, 255, 255);
-    border-top: 1px solid rgb(255, 255, 255);
-    z-index: 10;
-    box-shadow: 0 -2px 1px -1px rgb(189, 189, 189);
-    color: rgb(255, 255, 255);
-}
-
-.contentEditorMain--jss-0-1808 {
-    flex: 1;
-    overflow: auto;
-    maxheight: 100%;
-}
-
-.contentEditorMain__detail--jss-0-1810 {
-    margin: 20px;
-    padding-bottom: 100px;
-}
-
-.detailHeadbar--jss-0-1823 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.detailTitlebar--jss-0-1826 {
-    flex: 1;
-    display: flex;
-    align-items: baseline;
-}
-
-.detailName--jss-0-1827 {
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.detailLang--jss-0-1828 {
-    margin: 0 5px;
-    min-width: 140px;
-}
-
-.detailStatus--jss-0-1829 {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .colTitle--jss-0-1795 {
-        background-color: rgb(24, 26, 27);
-        border-bottom-color: rgb(64, 64, 64);
-        color: rgb(51, 125, 255);
-        box-shadow: rgb(24, 26, 27) 0px 1px 0px 0px;
-    }
-    .contentEditorFooter--jss-0-1807 {
-        background-image: initial;
-        background-color: rgb(24, 26, 27);
-        border-top-color: rgb(51, 51, 51);
-        box-shadow: rgb(43, 46, 48) 0px -2px 1px -1px;
-        color: rgb(255, 255, 255);
+    .treeActionsRight--jss-0-1918 {
+        color: rgb(196, 191, 182);
     }
 }

@@ -10,7 +10,8 @@ gulp.task('css', function() {
       './*.css',
       '!./*.min.css'
     ])
-    .pipe(cleanCSS())
+    .pipe(cleanCSS({compatibility: 'ie9', advanced: false}))
+
     .pipe(rename({
       suffix: '.min'
     }))
