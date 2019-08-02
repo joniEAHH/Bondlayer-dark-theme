@@ -19,15 +19,8 @@ gulp.task('css', function() {
 });
 
 
-
-
-// Default task
-gulp.task('default', ['css', 'js']);
-
-
-
 // Dev task
-gulp.task('dev', ['css'], function() {
+gulp.task('watch-css', ['css'], function() {
   gulp.watch([ './*.css'], ['css']);
 
 });

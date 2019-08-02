@@ -15,13 +15,13 @@
 .valuesListItem--jss-0-303,
 body,
 select,
-.contentEditorWrap--jss-0-1086 {
+.contentEditorWrap--jss-0-1084 {
     background: var(--main-bg)!important;
     border-color: #575757;
     color: var(--main-color) !important
 }
 
-.contentCollectionsFooter--jss-0-1010,
+.contentCollectionsFooter--jss-0-1008,
 .inspectorBoard--jss-0-129>div>div,
 .libHeadbar--jss-0-3145,
 .libItem--jss-0-3111,
@@ -44,7 +44,8 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 [style*="color: rgb(136, 136, 136);"],
-[style*="color: rgb(102, 102, 102);"] {
+[style*="color: rgb(102, 102, 102);"],
+[style*="color: rgba(0, 0, 0, 0.6)"] {
     color: var(--main-color) !important;
 }
 
@@ -67,7 +68,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 [style*="background-color: rgb(221, 221, 221);"] {
-    background-color: var(--secondary-bg);
+    background-color: var(--secondary-bg) !important;
 }
 
 [style*="background: rgb(143, 253, 144);"] {
@@ -188,14 +189,6 @@ body {
     border-bottom: 1px solid #bdbdbd
 }
 
-.inspector--jss-0-120:hover {
-    background-color: #f9f9f9
-}
-
-.inspector--jss-0-120.open:hover {
-    background-color: #f1f1f1
-}
-
 .inspectorTitle--jss-0-125 {
     color: #828282
 }
@@ -204,11 +197,11 @@ body {
     border-bottom-color: #404040
 }
 
-.inspector--jss-0-120:hover {
+.inspector--jss-0-120 {
     background-color: #1a1c1d
 }
 
-.inspector--jss-0-120.open:hover {
+.inspector--jss-0-120.open {
     background-color: #1c1e1f
 }
 
@@ -878,28 +871,10 @@ body {
     box-shadow: inset 0 0 0 0 #bdbdbd
 }
 
-.InputSwitchKnob--jss-0-481 {
-    float: left;
-    width: 18px;
-    height: 18px;
-    border-radius: inherit;
-    background-color: #fff;
-    transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
-    transition-duration: .4s;
-    transition-property: transform;
-    box-shadow: 0 0 3px #bdbdbd, 0 0 0 1px #bdbdbd;
-    pointer-events: none
-}
-
 .InputSwitchTrack--jss-0-479 {
     border-color: #404040;
     background-color: #1b1d1e;
     box-shadow: #2b2e30 0 0 0 0 inset
-}
-
-.InputSwitchKnob--jss-0-481 {
-    background-color: #fff;
-    box-shadow: #2b2e30 0 0 3px, #2b2e30 0 0 0 1px
 }
 
 .inspectors--jss-0-511 {
@@ -1214,7 +1189,7 @@ body {
     background: rgba(32, 33, 35, .7)
 }
 
-.docmap--jss-0-3342 {
+.docmap--jss-0-3405 {
     background-color: #e8e8e8
 }
 
@@ -1300,7 +1275,7 @@ body {
     background-color: rgba(32, 34, 35, .7)
 }
 
-.docmap--jss-0-3342 {
+.docmap--jss-0-3405 {
     background-color: #1f2122
 }
 
@@ -1538,8 +1513,9 @@ body {
 
 .grid--jss-0-239>div>div,
 .inputCheckboxLabel--jss-0-242,
-.inputCheckboxToggle--jss-0-243 {
-    color: var(--main-color)!important
+.inputCheckboxToggle--jss-0-243,
+.repeaterName--jss-0-1605 {
+    color: var(--main-color);
 }
 
 .row--jss-0-296 {
@@ -1865,14 +1841,8 @@ body {
     border: 1px solid transparent
 }
 
-.button--jss-0-16:hover {
-    background-color: #0f0;
-    border-color: #0f0
-}
-
 .button--jss-0-16:focus {
     outline: 0;
-    border-color: #0f0;
     background-color: #0f0
 }
 
@@ -1887,25 +1857,6 @@ body {
 
 .buttonLabel--jss-0-31 {
     flex: 1 1 auto
-}
-
-.button--jss-0-16 {
-    outline-color: initial;
-    color: #fff;
-    background-image: initial;
-    background-color: #3d4043;
-    border-color: transparent
-}
-
-.button--jss-0-16:hover {
-    background-color: #0c0;
-    border-color: #0c0
-}
-
-.button--jss-0-16:focus {
-    outline-color: initial;
-    border-color: #0c0;
-    background-color: #0c0
 }
 
 .inputCheckboxLabel--jss-0-242 {
@@ -2222,61 +2173,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     color: #3f3
 }
 
-
-/*! CSS Used from: Embedded */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: 0;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: EuclidFlex, 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #fff;
-    background: var(--main-color);
-    border: 1px solid transparent;
-    border-radius: 1px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle
-}
-
-.button--jss-0-16:hover {
-    background-color: #0f0;
-    border-color: #0f0
-}
-
-.button--jss-0-16:focus {
-    outline: 0;
-    border-color: #0f0;
-    background-color: #0f0
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px)
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: .6
-}
-
-.button--jss-0-16.dynamic {
-    color: #00f;
-    background: #fff;
-    border: 1px solid #00f
-}
-
-.button--jss-0-16.dynamic:hover {
-    background-color: #00f;
-    color: #fff;
-    border-color: #0f0
-}
-
 .buttonLabel--jss-0-31 {
     flex: 1 1 auto
 }
@@ -2289,11 +2185,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     border-color: transparent
 }
 
-.button--jss-0-16:hover {
-    background-color: #0c0;
-    border-color: #0c0
-}
-
 .button--jss-0-16:focus {
     outline-color: initial;
     border-color: #0c0;
@@ -2304,13 +2195,13 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     color: #337dff;
     background-image: initial;
     background-color: #181a1b;
-    border-color: #00c
+    border-color: #337dff;
 }
 
 .button--jss-0-16.dynamic:hover {
     background-color: #00c;
     color: #fff;
-    border-color: #0c0
+    border-color: #fff;
 }
 
 
@@ -2543,7 +2434,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     padding: 10px
 }
 
-.contentEditorHeader--jss-0-1599 {
+.contentEditorHeader--jss-0-1597 {
     width: 100%;
     flex: 0 0 60px;
     background: #f0f0f0;
@@ -2554,7 +2445,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     color: var(--main-color)
 }
 
-.contentEditorFooter--jss-0-1600 {
+.contentEditorFooter--jss-0-1872 {
     font-size: 12px;
     width: 100%;
     flex: 0 0 60px;
@@ -2583,7 +2474,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     border-top-color: #3a3a3a
 }
 
-.contentEditorHeader--jss-0-1599 {
+.contentEditorHeader--jss-0-1597 {
     background-image: initial;
     background-color: #1c1e1f;
     border-bottom-color: #333;
@@ -2591,7 +2482,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     color: #c0bcb3
 }
 
-.contentEditorFooter--jss-0-1600 {
+.contentEditorFooter--jss-0-1872 {
     background-image: initial;
     background-color: #181a1b;
     border-top-color: #333;
@@ -2622,61 +2513,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     fill: currentcolor
 }
 
-
-/*! CSS Used from: Embedded */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: 0;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: EuclidFlex, 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: #fff;
-    background: var(--main-color);
-    border: 1px solid transparent;
-    border-radius: 1px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle
-}
-
-.button--jss-0-16:hover {
-    background-color: #0f0;
-    border-color: #0f0
-}
-
-.button--jss-0-16:focus {
-    outline: 0;
-    border-color: #0f0;
-    background-color: #0f0
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px)
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: .6
-}
-
-.button--jss-0-16.dynamic {
-    color: #00f;
-    background: #fff;
-    border: 1px solid #00f
-}
-
-.button--jss-0-16.dynamic:hover {
-    background-color: #00f;
-    color: #fff;
-    border-color: #0f0
-}
-
 .button--jss-0-16.ghost {
     color: var(--main-color);
     background: 0 0;
@@ -2691,38 +2527,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .buttonLabel--jss-0-31 {
     flex: 1 1 auto
-}
-
-.button--jss-0-16 {
-    outline-color: initial;
-    color: #fff;
-    background-image: initial;
-    background-color: #3d4043;
-    border-color: transparent
-}
-
-.button--jss-0-16:hover {
-    background-color: #0c0;
-    border-color: #0c0
-}
-
-.button--jss-0-16:focus {
-    outline-color: initial;
-    border-color: #0c0;
-    background-color: #0c0
-}
-
-.button--jss-0-16.dynamic {
-    color: #337dff;
-    background-image: initial;
-    background-color: #181a1b;
-    border-color: #00c
-}
-
-.button--jss-0-16.dynamic:hover {
-    background-color: #00c;
-    color: #fff;
-    border-color: #0c0
 }
 
 .button--jss-0-16.ghost {
@@ -3093,7 +2897,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 /*! CSS Used from: Embedded */
 
-.colTitle--jss-0-1795 {
+.colTitle--jss-0-1860 {
     background-color: #fff;
     border-bottom: 1px solid #bdbdbd;
     color: #00f
@@ -3107,7 +2911,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     color: #fff
 }
 
-.colTitle--jss-0-1795 {
+.colTitle--jss-0-1860 {
     background-color: #181a1b;
     border-bottom-color: #404040;
     color: #337dff;
@@ -3436,22 +3240,22 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     white-space: nowrap
 }
 
-.collectionItem--jss-0-952 {
+.collectionItem--jss-0-950 {
     margin: 0 auto;
     padding: 10px;
     border-bottom: 1px solid #bdbdbd
 }
 
-.collectionItem--jss-0-952:hover {
+.collectionItem--jss-0-950:hover {
     cursor: pointer;
     background-color: #f5f5f5
 }
 
-.collectionItem--jss-0-952 {
+.collectionItem--jss-0-950 {
     border-bottom-color: #404040
 }
 
-.collectionItem--jss-0-952:hover {
+.collectionItem--jss-0-950:hover {
     background-color: #1b1d1e
 }
 
@@ -3466,7 +3270,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     flex: 1
 }
 
-.contentCollectionsFooter--jss-0-1010 {
+.contentCollectionsFooter--jss-0-1008 {
     font-size: 12px;
     width: 100%;
     flex: 0 0 60px;
@@ -3485,7 +3289,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     overflow: auto
 }
 
-.contentCollectionsFooter--jss-0-1010 {
+.contentCollectionsFooter--jss-0-1008 {
     background-image: initial;
     background-color: #181a1b;
     border-top-color: #333;
@@ -4014,41 +3818,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 /*! CSS Used from: Embedded */
 
-.selectElement--jss-0-203 {
-    padding: 0 3px;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    vertical-align: middle;
-    font-family: Nitti, 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: 0 0;
-    background-color: transparent;
-    color: #828282
-}
-
-.selectElement--jss-0-203:focus {
-    outline: 0
-}
-
-.selectElement--jss-0-203:hover {
-    cursor: pointer
-}
-
-.selectElement--jss-0-203 {
-    outline-color: initial;
-    border-color: transparent;
-    background-image: none;
-    background-color: transparent;
-    color: #bab5ab
-}
-
-.selectElement--jss-0-203:focus {
-    outline-color: initial
-}
-
-
-/*! CSS Used from: Embedded */
-
 .itemTitle--jss-0-218 {
     background-color: #323232;
     color: #f0f0f0;
@@ -4204,127 +3973,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     background-image: initial;
     background-color: #1d1f20;
     box-shadow: rgba(61, 64, 67, .5) 2px 2px 10px 2px
-}
-
-
-/* backups */
-
-
-/*! CSS Used from: Embedded */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: rgb(255, 255, 255);
-    background: rgb(110, 110, 110);
-    border: 1px solid transparent;
-    border-radius: 1px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle;
-}
-
-.button--jss-0-16:hover {
-    background-color: rgb(0, 255, 0);
-    border-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    border-color: rgb(0, 255, 0);
-    background-color: rgb(0, 255, 0);
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.button--jss-0-16.small {
-    padding: 0.5em 0.5em;
-}
-
-.buttonLabel--jss-0-31 {
-    flex: 1 1 auto;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .button--jss-0-16 {
-        outline-color: initial;
-        color: rgb(255, 255, 255);
-        background-image: initial;
-        background-color: rgb(61, 64, 67);
-        border-color: transparent;
-    }
-    .button--jss-0-16:hover {
-        background-color: rgb(0, 204, 0);
-        border-color: rgb(0, 204, 0);
-    }
-    .button--jss-0-16:focus {
-        outline-color: initial;
-        border-color: rgb(0, 204, 0);
-        background-color: rgb(0, 204, 0);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.selectElement--jss-0-203 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 24px;
-    line-height: 24px;
-    width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border: 1px solid transparent;
-    border-radius: 1px;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: rgb(130, 130, 130);
-}
-
-.selectElement--jss-0-203:focus {
-    outline: none;
-}
-
-.selectElement--jss-0-203:hover {
-    cursor: pointer;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .selectElement--jss-0-203 {
-        outline-color: initial;
-        border-color: transparent;
-        background-image: none;
-        background-color: transparent;
-        color: rgb(186, 181, 171);
-    }
-    .selectElement--jss-0-203:focus {
-        outline-color: initial;
-    }
 }
 
 
@@ -4698,3 +4346,4301 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         color: rgb(196, 191, 182);
     }
 }
+
+
+/*! CSS Used from: Embedded */
+
+.treeNodeChildren--jss-0-1257.isActive {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.tree--jss-0-1260 {
+    display: flex;
+    flex-flow: column;
+    color: rgb(110, 110, 110);
+    z-index: 1;
+    font-size: 11px;
+}
+
+.tree--jss-0-1260.disabled {
+    opacity: 0.6;
+}
+
+.treeInner--jss-0-1265 {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.treeDetails--jss-0-1268 {
+    position: relative;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.treeActionsRight--jss-0-1269 {
+    color: rgb(189, 189, 189);
+    display: flex;
+}
+
+.treeActionsRight--jss-0-1269:hover {
+    color: rgb(23, 21, 28);
+}
+
+.treeDropIndicator--jss-0-1271 {
+    height: 2px;
+    position: relative;
+    background-color: transparent;
+    z-index: 100;
+}
+
+.treeItem--jss-0-1276 {
+    flex: 1;
+    z-index: 100;
+    border-bottom: 1px solid rgb(222, 222, 222);
+    position: relative;
+}
+
+.treeItem--jss-0-1276.active {
+    background: rgb(255, 255, 255);
+}
+
+.treeFold--jss-0-1280 {
+    padding: 0;
+    height: 12px;
+    width: 12px;
+    cursor: pointer;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(50, 50, 50);
+    position: absolute;
+    top: 10px;
+    left: 0px;
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-in-out;
+}
+
+.treeFold--jss-0-1280:hover {
+    background-color: rgb(50, 50, 50);
+    color: rgb(255, 255, 255);
+}
+
+.treeFold--jss-0-1280.isActive {
+    transform: rotate(0);
+}
+
+.treeIcon--jss-0-1283 {
+    flex: 0 0 16px;
+    margin: 0 5px;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    color: rgb(130, 130, 130);
+}
+
+.treeIcon--jss-0-1283.isActive {
+    color: rgb(0, 255, 0);
+}
+
+.treeLabel--jss-0-1286 {
+    flex: 1 1 auto;
+    border-radius: 1px;
+    width: 100%;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .treeNodeChildren--jss-0-1257.isActive {
+        background-image: initial;
+        background-color: rgba(24, 26, 27, 0.3);
+    }
+    .tree--jss-0-1260 {
+        color: rgb(192, 188, 179);
+    }
+    .treeActionsRight--jss-0-1269 {
+        color: rgb(196, 191, 182);
+    }
+    .treeActionsRight--jss-0-1269:hover {
+        color: rgb(223, 220, 215);
+    }
+    .treeDropIndicator--jss-0-1271 {
+        background-color: transparent;
+    }
+    .treeItem--jss-0-1276 {
+        border-bottom-color: rgb(58, 58, 58);
+    }
+    .treeItem--jss-0-1276.active {
+        background-image: initial;
+        background-color: rgb(24, 26, 27);
+    }
+    .treeItem--jss-0-1276.ishover {
+        background-color: rgb(24, 26, 27);
+    }
+    .treeFold--jss-0-1280 {
+        background-color: rgb(24, 26, 27);
+        color: rgb(214, 211, 205);
+    }
+    .treeFold--jss-0-1280:hover {
+        background-color: rgb(48, 50, 53);
+        color: rgb(255, 255, 255);
+    }
+    .treeIcon--jss-0-1283 {
+        color: rgb(186, 181, 171);
+    }
+    .treeIcon--jss-0-1283.isActive {
+        color: rgb(51, 255, 51);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.treeWrap--jss-0-1364 {
+    font-size: 12px;
+    flex: 1;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: rgb(23, 21, 28);
+    padding-bottom: 100px;
+    position: absolute;
+    min-width: 100%;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .treeWrap--jss-0-1364 {
+        color: rgb(223, 220, 215);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.docmap--jss-0-3405 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(232, 232, 232);
+    height: 100%;
+    flex: 1 1 auto;
+    transition: max-width 0.25s cubic-bezier(0.39, 0.58, 0.57, 1);
+    max-width: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.docmapExpand--jss-0-3408 {
+    width: 4px;
+    height: 100vh;
+    cursor: col-resize;
+    background-color: #ccc;
+}
+
+.docmapMain--jss-0-3410 {
+    width: 100%;
+    height: calc(100vh - 40px);
+    overflow: auto;
+    position: relative;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .docmap--jss-0-3405 {
+        background-color: rgb(31, 33, 34);
+    }
+    .docmapExpand--jss-0-3408 {
+        background-color: rgb(39, 41, 43);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.elementPathNode--jss-0-1104 {
+    padding: 0 0 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(163, 163, 163);
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+}
+
+.elementPathNode--jss-0-1104.isActive {
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+}
+
+.elementPathNode--jss-0-1104:hover {
+    color: rgb(50, 50, 50);
+}
+
+.elementIcon--jss-0-1107 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .elementPathNode--jss-0-1104 {
+        color: rgb(186, 181, 171);
+    }
+    .elementPathNode--jss-0-1104.isActive {
+        color: rgb(214, 211, 205);
+    }
+    .elementPathNode--jss-0-1104:hover {
+        color: rgb(214, 211, 205);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.wksBottomBar--jss-0-3400 {
+    flex: 0 0 30px;
+    text-align: left;
+    background-color: rgb(241, 241, 241);
+    display: flex;
+    border-top: 1px solid rgb(214, 214, 214);
+}
+
+.docmapTrigger--jss-0-3438 {
+    flex: 0 0 50px;
+    border-right: 1px solid rgb(214, 214, 214);
+}
+
+.docmapToggle--jss-0-3439 {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.docmapToggle--jss-0-3439:hover {
+    color: rgb(50, 50, 50);
+}
+
+.docmapMini--jss-0-3442 {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+}
+
+.canvasOperations--jss-0-3443 {
+    flex: 1 1 auto;
+    display: flex;
+    border-left: 1px solid rgb(214, 214, 214);
+}
+
+.canvasOperationsButton--jss-0-3444 {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvasOperationsButton--jss-0-3444:hover {
+    color: rgb(50, 50, 50);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .wksBottomBar--jss-0-3400 {
+        background-color: rgb(28, 30, 31);
+        border-top-color: rgb(59, 59, 59);
+    }
+    .docmapTrigger--jss-0-3438 {
+        border-right-color: rgb(59, 59, 59);
+    }
+    .docmapToggle--jss-0-3439:hover {
+        color: rgb(214, 211, 205);
+    }
+    .canvasOperations--jss-0-3443 {
+        border-left-color: rgb(59, 59, 59);
+    }
+    .canvasOperationsButton--jss-0-3444:hover {
+        color: rgb(214, 211, 205);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.button--jss-0-33 {
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(110, 110, 110);
+    border: 1px solid transparent;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.button--jss-0-33:hover {
+    background-color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-33:focus {
+    outline: none;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-33:active {
+    transform: translateY(1px);
+}
+
+.button--jss-0-33:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button--jss-0-33.ghost {
+    color: rgb(110, 110, 110);
+    background: transparent;
+    text-decoration: underline;
+}
+
+.button--jss-0-33.ghost:hover {
+    background: transparent;
+    color: rgb(23, 21, 28);
+    border-color: rgb(189, 189, 189);
+}
+
+.button--jss-0-33.tiny {
+    padding: 0.5em 0.2em;
+}
+
+.buttonIconLabel--jss-0-49 {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .button--jss-0-33 {
+        outline-color: initial;
+        color: rgb(255, 255, 255);
+        background-image: initial;
+        background-color: rgb(61, 64, 67);
+        border-color: transparent;
+    }
+    .button--jss-0-33:hover {
+        background-color: rgb(0, 204, 0);
+        border-color: rgb(0, 204, 0);
+    }
+    .button--jss-0-33:focus {
+        outline-color: initial;
+        border-color: rgb(0, 204, 0);
+        background-color: rgb(0, 204, 0);
+    }
+    .button--jss-0-33.ghost {
+        color: rgb(192, 188, 179);
+        background-image: initial;
+        background-color: transparent;
+        text-decoration-color: initial;
+    }
+    .button--jss-0-33.ghost:hover {
+        background-image: initial;
+        background-color: transparent;
+        color: rgb(223, 220, 215);
+        border-color: rgb(64, 64, 64);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.tabs--jss-0-90 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu--jss-0-91 {
+    display: flex;
+    flex: 0 0 40px;
+    position: relative;
+}
+
+.itemLabel--jss-0-95 {
+    width: 90%;
+}
+
+.tabsContainer--jss-0-97 {
+    background-color: rgb(241, 241, 241);
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .tabsContainer--jss-0-97 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.tabContent--jss-0-109 {
+    background-color: rgb(241, 241, 241);
+    flex: 1;
+    height: 100%;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .tabContent--jss-0-109 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.propGroup--jss-0-130 {
+    border-radius: 1px;
+}
+
+.propGroupTitle--jss-0-132 {
+    font-size: 10px;
+    position: relative;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(189, 189, 189);
+    padding: 5px 0;
+    height: 33px;
+    margin: 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.grouptTitleSeam--jss-0-133 {
+    height: 1px;
+    border-bottom: 1px dotted rgb(189, 189, 189);
+    flex: 1 1 auto;
+}
+
+.propGroupTitle__locale--jss-0-134 {
+    border: 1px solid rgb(189, 189, 189);
+    background-color: rgb(241, 241, 241);
+    flex: 0 0 auto;
+    width: auto;
+    text-align: center;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: rgb(130, 130, 130);
+    padding: 1px 2px;
+    margin-left: 5px;
+}
+
+.propGroupTitle__label--jss-0-135 {
+    padding: 5px;
+    flex: 0 0 auto;
+    width: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .propGroupTitle--jss-0-132 {
+        color: rgb(196, 191, 182);
+    }
+    .grouptTitleSeam--jss-0-133 {
+        border-bottom-color: rgb(64, 64, 64);
+    }
+    .propGroupTitle__locale--jss-0-134 {
+        border-color: rgb(64, 64, 64);
+        background-color: rgb(28, 30, 31);
+        color: rgb(186, 181, 171);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputElement--jss-0-140 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+}
+
+.inputElement--jss-0-140:focus {
+    outline: none;
+}
+
+.inputElement--jss-0-140:hover {
+    cursor: text;
+}
+
+.inputElement--jss-0-140:disabled {
+    background-color: rgb(214, 214, 214);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputElement--jss-0-140 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .inputElement--jss-0-140:focus {
+        outline-color: initial;
+    }
+    .inputElement--jss-0-140:disabled {
+        background-color: rgb(36, 38, 40);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputTextWrap--jss-0-145 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputTextWrap--jss-0-145:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputTextWrap--jss-0-145 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputTextWrap--jss-0-145:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.actions--jss-0-456 {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.action--jss-0-457 {
+    padding: 4px;
+    display: inline-block;
+}
+
+.action--jss-0-457:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.inputImageWrap--jss-0-459 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.dropZonePreview--jss-0-464 {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 1px;
+    color: rgb(50, 50, 50);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.dropZonePreview--jss-0-464:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(241, 241, 241, 0.2);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .action--jss-0-457:hover {
+        background-color: rgb(24, 26, 27);
+    }
+    .inputImageWrap--jss-0-459 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputImageWrap--jss-0-459:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+    .dropZonePreview--jss-0-464 {
+        color: rgb(214, 211, 205);
+    }
+    .dropZonePreview--jss-0-464::before {
+        background-color: rgba(28, 30, 31, 0.2);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalStyle--jss-0-512 {
+    position: absolute;
+    z-index: 1001;
+    box-shadow: 4px 20px 30px rgb(50, 50, 50);
+    display: flex;
+    flex-direction: column;
+}
+
+.modalTitle--jss-0-513 {
+    flex: 1 0;
+    flex-basis: 30px;
+    font-size: 10px;
+    color: rgb(130, 130, 130);
+    display: flex;
+    flex-direction: row;
+    text-transform: uppercase;
+    background-color: rgb(50, 50, 50);
+    justify-content: space-between;
+}
+
+.modalTitleLabel--jss-0-517 {
+    flex: 0 0 auto;
+    color: rgb(255, 255, 255);
+    margin: 5px 0;
+    padding: 3px 10px;
+    letter-spacing: 0.05em;
+}
+
+.modalTitleClose--jss-0-518 {
+    flex: 0 0 auto;
+    cursor: pointer;
+    align-self: center;
+    width: 20px;
+    height: 20px;
+    color: rgb(255, 255, 255);
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalTitleClose--jss-0-518:hover {
+    color: rgb(23, 21, 28);
+    background-color: rgb(0, 255, 0);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .modalStyle--jss-0-512 {
+        box-shadow: rgb(48, 50, 53) 4px 20px 30px;
+    }
+    .modalTitle--jss-0-513 {
+        color: rgb(186, 181, 171);
+        background-color: rgb(48, 50, 53);
+    }
+    .modalContent--jss-0-515 {
+        background-color: rgb(28, 30, 31);
+    }
+    .modalTitleLabel--jss-0-517 {
+        color: rgb(255, 255, 255);
+    }
+    .modalTitleClose--jss-0-518 {
+        color: rgb(255, 255, 255);
+    }
+    .modalTitleClose--jss-0-518:hover {
+        color: rgb(223, 220, 215);
+        background-color: rgb(0, 204, 0);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputTextArea--jss-0-875 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.inputTextArea--jss-0-875 textarea {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+    min-height: 150px;
+}
+
+.inputTextArea--jss-0-875 textarea:focus {
+    outline: none;
+}
+
+.inputTextArea--jss-0-875 textarea:hover {
+    cursor: text;
+}
+
+.inputTextAreaLabel--jss-0-880 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: rgb(110, 110, 110);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputTextArea--jss-0-875 {
+        background-color: rgb(24, 26, 27);
+    }
+    .inputTextArea--jss-0-875 textarea {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .inputTextArea--jss-0-875 textarea:focus {
+        outline-color: initial;
+    }
+    .inputTextAreaLabel--jss-0-880 {
+        color: rgb(192, 188, 179);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.wrapper--jss-0-1621 {
+    position: relative;
+    overflow-x: hidden;
+    min-height: 200px;
+    min-width: 200px;
+    flex: 1;
+}
+
+.slideview--jss-0-1622 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+
+.slideview--jss-0-1622.center {
+    transform: translate3d(0, 0, 0);
+}
+
+.slideview--jss-0-1622.right {
+    transform: translate3d(100%, 0, 0);
+}
+
+.slideview--jss-0-1622.transition {
+    transition-duration: .25s;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.tabItem--jss-0-1898 {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+    color: rgb(50, 50, 50);
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    text-transform: lowercase;
+    font-size: 14px;
+    background-color: rgb(233, 233, 233);
+}
+
+.tabItem--jss-0-1898:hover {
+    color: rgb(255, 255, 255);
+}
+
+.tabItem--jss-0-1898.active {
+    font-weight: 500;
+    background-color: rgb(189, 189, 189);
+}
+
+.contentEditorWrap--jss-0-1944 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.contentEditorFooter--jss-0-1946 {
+    font-size: 12px;
+    width: 100%;
+    flex: 0 0 60px;
+    display: flex;
+    justify-content: flex-center;
+    padding: 10px;
+    z-index: 10;
+    box-shadow: 0 -2px 1px -1px rgb(189, 189, 189);
+    color: rgb(255, 255, 255);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .tabItem--jss-0-1898 {
+        color: rgb(214, 211, 205);
+        background-color: rgb(30, 32, 34);
+    }
+    .tabItem--jss-0-1898:hover {
+        color: rgb(255, 255, 255);
+    }
+    .tabItem--jss-0-1898.active {
+        background-color: rgb(43, 46, 48);
+    }
+    .contentEditorFooter--jss-0-1946 {
+        box-shadow: rgb(43, 46, 48) 0px -2px 1px -1px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.tree--jss-0-1965 {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+    z-index: 1;
+}
+
+.treeDetails--jss-0-1978 {
+    position: relative;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.treeGuide--jss-0-1979 {
+    position: absolute;
+    top: -6px;
+    height: 100%;
+    border-width: 0px;
+    border-style: dashed;
+    border-color: rgb(189, 189, 189);
+    z-index: 10;
+}
+
+.treeIcon--jss-0-1980 {
+    flex: 0 0 auto;
+    padding: 3px 4px 0px 4px;
+    height: 22px;
+}
+
+.treeLabel--jss-0-1981:focus {
+    background-color: rgb(255, 255, 255);
+}
+
+.treeActionsRight--jss-0-1983 {
+    width: 30px;
+    color: rgb(189, 189, 189);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .treeItem--jss-0-1972 {
+        border-bottom-color: rgb(58, 58, 58);
+    }
+    .treeItem--jss-0-1972.ishover {
+        background-color: rgb(31, 33, 35);
+    }
+    .treeItem--jss-0-1972.isHome {
+        border-bottom-color: initial;
+    }
+    .treeItem--jss-0-1972.active {
+        background-image: initial;
+        background-color: rgb(0, 127, 0);
+    }
+    .treeGuide--jss-0-1979 {
+        border-color: rgb(64, 64, 64);
+    }
+    .treeLabel--jss-0-1981:focus {
+        background-color: rgb(24, 26, 27);
+    }
+    .treeActionsRight--jss-0-1983 {
+        color: rgb(196, 191, 182);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.listsSep--jss-0-2015 {
+    padding: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: space-between;
+}
+
+.addFolder--jss-0-2049 {
+    padding: 10px 10px 20px;
+    margin-bottom: 10px;
+    text-decoration: underline;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    color: rgb(23, 21, 28);
+}
+
+.addFolder--jss-0-2049:hover {
+    cursor: pointer;
+    color: rgb(50, 50, 50);
+}
+
+.treeWrap--jss-0-2055 {
+    font-size: 12px;
+    flex: 1;
+    overflow: auto;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    padding: 0px 0px;
+    width: 100%;
+    margin: 0 auto;
+    color: rgb(23, 21, 28);
+}
+
+.contentCollectionsMain--jss-0-2066 {
+    flex: 1;
+    overflow: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .listsSep--jss-0-2015 {
+        color: rgba(232, 230, 227, 0.4);
+    }
+    .addFolder--jss-0-2049 {
+        text-decoration-color: initial;
+        border-bottom-color: rgba(102, 102, 102, 0.2);
+        color: rgb(223, 220, 215);
+    }
+    .addFolder--jss-0-2049:hover {
+        color: rgb(214, 211, 205);
+    }
+    .treeWrap--jss-0-2055 {
+        color: rgb(223, 220, 215);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.returnDashboard--jss-0-2091 {
+    background: #ddd;
+    display: flex;
+    padding: 10px;
+}
+
+.returnText--jss-0-2092 {
+    margin-left: 10px;
+}
+
+.contentCollectionsWrap--jss-0-2147 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .returnDashboard--jss-0-2091 {
+        background-image: initial;
+        background-color: rgb(34, 36, 37);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.buttonGroup__itemLabel--jss-0-250 {
+    padding: 8px 5px;
+    display: block;
+    background-color: rgb(241, 241, 241);
+}
+
+.buttonGroup__itemLabel--jss-0-250.active {
+    background-color: rgb(128, 255, 128);
+    color: rgb(50, 50, 50);
+    box-shadow: none;
+}
+
+.buttonGroup__itemFirst--jss-0-255 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    border-left-width: 0px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.buttonGroup__itemLast--jss-0-258 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup__itemLabel--jss-0-250 {
+        background-color: rgb(28, 30, 31);
+    }
+    .buttonGroup__itemLabel--jss-0-250.active {
+        background-color: rgb(0, 127, 0);
+        color: rgb(214, 211, 205);
+        box-shadow: none;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.buttonGroup--jss-0-270 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(227, 227, 227);
+    border-bottom: 0px;
+    border-radius: 1px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    padding: 2px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup--jss-0-270 {
+        border-top-color: rgb(57, 57, 57);
+        border-right-color: rgb(57, 57, 57);
+        border-left-color: rgb(57, 57, 57);
+        border-bottom-color: initial;
+        background-color: rgb(27, 29, 30);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-515 {
+    flex: 1 auto;
+    max-width: 800px;
+    min-width: 230px;
+    min-height: 300px;
+    overflow-y: auto;
+    background-color: rgb(240, 240, 240);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .modalContent--jss-0-515 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.InputEditable--jss-0-3173 {
+    margin-bottom: 2px;
+    border: 1px solid transparent;
+}
+
+.InputEditable--jss-0-3173:hover {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.libItem--jss-0-3176 {
+    height: 70px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+}
+
+.libItemDetail--jss-0-3179 {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+}
+
+.libItemDetailUnits--jss-0-3180 {
+    flex: 1;
+}
+
+.libItemDetailUnits_dimensions--jss-0-3182 {
+    color: rgb(130, 130, 130);
+}
+
+.libItemDetailUnits_date--jss-0-3183 {
+    color: rgb(110, 110, 110);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.libItemDetailInfo--jss-0-3184 {
+    display: flex;
+}
+
+.libItemDetailText--jss-0-3185 {
+    max-width: 300px;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.libItemThumb--jss-0-3189 {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 1px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-right: 1px solid #ddd;
+    display: flex;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .InputEditable--jss-0-3173 {
+        border-color: transparent;
+    }
+    .InputEditable--jss-0-3173:hover {
+        border-color: rgb(58, 58, 58);
+        background-color: rgb(24, 26, 27);
+    }
+    .libItem--jss-0-3176 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libItemDetailUnits_dimensions--jss-0-3182 {
+        color: rgb(186, 181, 171);
+    }
+    .libItemDetailUnits_date--jss-0-3183 {
+        color: rgb(192, 188, 179);
+    }
+    .libItemThumb--jss-0-3189 {
+        border-right-color: rgb(58, 58, 58);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.pagination--jss-0-3197 {
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.pagination--jss-0-3197 li {
+    margin: 5px;
+}
+
+.pagination--jss-0-3197 li.disabled {
+    opacity: 0.4;
+}
+
+.paginationActive--jss-0-3200 {
+    font-weight: bold;
+}
+
+.lib--jss-0-3209 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.libHeadbar--jss-0-3210 {
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.libHeadbarSep--jss-0-3211 {
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-right: 10px;
+    color: rgb(189, 189, 189);
+    display: flex;
+}
+
+.libMain--jss-0-3212 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.libHeadbarLeft--jss-0-3215 {
+    flex: 1;
+    display: flex;
+}
+
+.libHeadbarRight--jss-0-3216 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropZone--jss-0-3243 {
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .pagination--jss-0-3197 {
+        background-image: initial;
+        background-color: rgb(28, 30, 31);
+        border-top-color: rgb(58, 58, 58);
+    }
+    .libHeadbar--jss-0-3210 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libHeadbarSep--jss-0-3211 {
+        color: rgb(196, 191, 182);
+    }
+    .dropZone--jss-0-3243 {
+        border-color: rgb(51, 51, 51);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTableCell--jss-0-1538 {
+    display: flex;
+    flex-flow: row nowrap;
+    flex-grow: 1;
+    flex-basis: 0;
+    align-items: center;
+    word-wrap: break-word;
+    padding: 15px;
+    word-break: break-word;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTableRow--jss-0-1541 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    border-top: 1px solid rgb(241, 241, 241);
+    border-bottom: 1px solid rgb(241, 241, 241);
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    z-index: 1;
+    margin-top: -1px;
+}
+
+.flexTableRow--jss-0-1541:hover {
+    z-index: 10;
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(189, 189, 189);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .flexTableRow--jss-0-1541 {
+        border-top-color: rgb(54, 54, 54);
+        border-bottom-color: rgb(54, 54, 54);
+        background-color: rgb(27, 29, 30);
+    }
+    .flexTableRow--jss-0-1541:hover {
+        background-color: rgb(24, 26, 27);
+        border-color: rgb(64, 64, 64);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTableHeader--jss-0-1545 {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    flex: 1 1 auto;
+    border-top: 0px;
+    border-bottom: 1px solid rgb(241, 241, 241);
+    background-color: rgb(189, 189, 189);
+    position: relative;
+    z-index: 1;
+    margin-top: 0px;
+    text-transform: uppercase;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .flexTableHeader--jss-0-1545 {
+        border-top-color: initial;
+        border-bottom-color: rgb(54, 54, 54);
+        background-color: rgb(43, 46, 48);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.flexTable--jss-0-1549 {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-betwwen;
+    border: 1px solid rgb(189, 189, 189);
+    color: rgb(50, 50, 50);
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .flexTable--jss-0-1549 {
+        border-color: rgb(64, 64, 64);
+        color: rgb(214, 211, 205);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.pagination--jss-0-1592 {
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.pagination--jss-0-1592 li {
+    margin: 5px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .pagination--jss-0-1592 {
+        background-image: initial;
+        background-color: rgb(28, 30, 31);
+        border-top-color: rgb(58, 58, 58);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.contentEditorFooter--jss-0-1598 {
+    font-size: 12px;
+    width: 100%;
+    flex: 0 0 60px;
+    display: flex;
+    justify-content: flex-center;
+    padding: 10px;
+    padding-left: 40px;
+    background: rgb(255, 255, 255);
+    border-top: 1px solid rgb(255, 255, 255);
+    z-index: 10;
+    box-shadow: 0 -2px 1px -1px rgb(189, 189, 189);
+    color: rgb(255, 255, 255);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .contentEditorFooter--jss-0-1598 {
+        background-image: initial;
+        background-color: rgb(24, 26, 27);
+        border-top-color: rgb(51, 51, 51);
+        box-shadow: rgb(43, 46, 48) 0px -2px 1px -1px;
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.gridItem--jss-0-237 {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-flow: column nowrap;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.grid--jss-0-239 {
+    display: flex;
+    flex: 1 1 auto;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputCheckboxLabel--jss-0-242 {
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: rgb(110, 110, 110);
+}
+
+.inputCheckboxToggle--jss-0-243 {
+    cursor: pointer;
+    color: rgb(110, 110, 110);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputCheckboxLabel--jss-0-242 {
+        color: rgb(192, 188, 179);
+    }
+    .inputCheckboxToggle--jss-0-243 {
+        color: rgb(192, 188, 179);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-344 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputNumberWrap--jss-0-345 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputNumberWrap--jss-0-345:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputElement--jss-0-349 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+}
+
+.inputElement--jss-0-349:focus {
+    outline: none;
+}
+
+.inputElement--jss-0-349:hover {
+    cursor: text;
+}
+
+.inputElement--jss-0-349:disabled {
+    background-color: rgb(214, 214, 214);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-344 {
+        border-color: transparent;
+    }
+    .inputNumberWrap--jss-0-345 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputNumberWrap--jss-0-345:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+    .inputElement--jss-0-349 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .inputElement--jss-0-349:focus {
+        outline-color: initial;
+    }
+    .inputElement--jss-0-349:disabled {
+        background-color: rgb(36, 38, 40);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.InputSwitch--jss-0-476 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Inputlabel--jss-0-477 {
+    flex: 1 0 auto;
+    margin-left: 10px;
+}
+
+.InputSwitchTrack--jss-0-479 {
+    flex: 0 0 40px;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 10px;
+    background-color: rgb(245, 245, 245);
+    transition-property: background-color, box-shadow;
+    transition-duration: .4s;
+    box-shadow: inset 0 0 0 0px rgb(189, 189, 189);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .InputSwitchTrack--jss-0-479 {
+        border-color: rgb(64, 64, 64);
+        background-color: rgb(27, 29, 30);
+        box-shadow: rgb(43, 46, 48) 0px 0px 0px 0px inset;
+    }
+    .InputSwitchKnob--jss-0-481 {
+        background-color: #fff;
+        box-shadow: rgb(43, 46, 48) 0px 0px 3px, rgb(43, 46, 48) 0px 0px 0px 1px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputPlainText--jss-0-858 {
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-appearance: none;
+    height: 2.25rem;
+    padding: 0.5rem;
+    vertical-align: middle;
+    border: 0px;
+    border-style: solid;
+    border-color: rgb(240, 240, 240);
+    width: 100%;
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline: none;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputPlainText--jss-0-858 {
+        border-color: rgb(54, 54, 54);
+    }
+    .inputPlainText--jss-0-858:focus {
+        outline-color: initial;
+        border-color: rgb(64, 64, 64);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.FormInput--jss-0-894 {
+    margin-bottom: 20px;
+}
+
+.fieldTopBar--jss-0-896 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.fieldLabel--jss-0-899 {
+    flex: 1;
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+}
+
+.microCopy--jss-0-903 {
+    flex: 1;
+    color: rgb(130, 130, 130);
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .fieldLabel--jss-0-899 {
+        color: rgb(192, 188, 179);
+    }
+    .microCopy--jss-0-903 {
+        color: rgb(186, 181, 171);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.addAttrMain--jss-0-1065 {
+    padding: 20px 20px 0;
+    background-color: rgb(245, 245, 245);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .addAttrMain--jss-0-1065 {
+        background-color: rgb(27, 29, 30);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.colTitle--jss-0-1432 {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(189, 189, 189);
+    color: rgb(0, 0, 255);
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 1px 0 0 white;
+    padding: 20px;
+    height: 61px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .colTitle--jss-0-1432 {
+        background-color: rgb(24, 26, 27);
+        border-bottom-color: rgb(64, 64, 64);
+        color: rgb(51, 125, 255);
+        box-shadow: rgb(24, 26, 27) 0px 1px 0px 0px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.small--jss-0-10 {
+    width: 16px;
+    height: 16px;
+}
+
+.small--jss-0-10 svg {
+    display: block;
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
+}
+
+.tiny--jss-0-14 {
+    width: 8px;
+    height: 8px;
+}
+
+.tiny--jss-0-14 svg {
+    display: block;
+    fill: currentColor;
+    width: 8px;
+    height: 8px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .small--jss-0-10 svg {
+        fill: currentcolor;
+    }
+    .tiny--jss-0-14 svg {
+        fill: currentcolor;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inspector--jss-0-120 {
+    padding: 0 10px;
+    border-bottom: 1px solid rgb(189, 189, 189);
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+}
+
+.inspector--jss-0-120:hover {
+    background-color: rgb(249, 249, 249);
+}
+
+.inspector--jss-0-120.open {
+    padding-bottom: 10px;
+}
+
+.inspector--jss-0-120.open:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+.inspectorToggleBar--jss-0-124 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.inspectorTitle--jss-0-125 {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    color: rgb(130, 130, 130);
+    padding-left: 5px;
+    flex: 1;
+}
+
+.inspectorBoard--jss-0-129 {
+    padding-top: 10px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inspector--jss-0-120 {
+        border-bottom-color: rgb(64, 64, 64);
+    }
+    .inspector--jss-0-120:hover {
+        background-color: rgb(26, 28, 29);
+    }
+    .inspector--jss-0-120.open:hover {
+        background-color: rgb(28, 30, 31);
+    }
+    .inspectorTitle--jss-0-125 {
+        color: rgb(186, 181, 171);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.propGroup--jss-0-130 {
+    border-radius: 1px;
+}
+
+.propGroupTitle--jss-0-132 {
+    font-size: 10px;
+    position: relative;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(189, 189, 189);
+    padding: 5px 0;
+    height: 33px;
+    margin: 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.grouptTitleSeam--jss-0-133 {
+    height: 1px;
+    border-bottom: 1px dotted rgb(189, 189, 189);
+    flex: 1 1 auto;
+}
+
+.propGroupTitle__label--jss-0-135 {
+    padding: 5px;
+    flex: 0 0 auto;
+    width: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .propGroupTitle--jss-0-132 {
+        color: rgb(196, 191, 182);
+    }
+    .grouptTitleSeam--jss-0-133 {
+        border-bottom-color: rgb(64, 64, 64);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.selectElement--jss-0-203 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+}
+
+.selectElement--jss-0-203:focus {
+    outline: none;
+}
+
+.selectElement--jss-0-203:hover {
+    cursor: pointer;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .selectElement--jss-0-203 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .selectElement--jss-0-203:focus {
+        outline-color: initial;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.buttonGroup__item--jss-0-247 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+}
+
+.buttonGroup__itemLabel--jss-0-250 {
+    padding: 8px 5px;
+    display: block;
+    background-color: rgb(241, 241, 241);
+}
+
+.buttonGroup__itemLabel--jss-0-250.active {
+    background-color: rgb(128, 255, 128);
+    color: rgb(50, 50, 50);
+    box-shadow: none;
+}
+
+.buttonGroup__itemFirst--jss-0-255 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    border-left-width: 0px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.buttonGroup__itemLast--jss-0-258 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup__itemLabel--jss-0-250 {
+        background-color: rgb(28, 30, 31);
+    }
+    .buttonGroup__itemLabel--jss-0-250.active {
+        background-color: rgb(0, 127, 0);
+        color: rgb(214, 211, 205);
+        box-shadow: none;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.buttonGroup--jss-0-270 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(227, 227, 227);
+    border-bottom: 0px;
+    border-radius: 1px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    padding: 2px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup--jss-0-270 {
+        border-top-color: rgb(57, 57, 57);
+        border-right-color: rgb(57, 57, 57);
+        border-left-color: rgb(57, 57, 57);
+        border-bottom-color: initial;
+        background-color: rgb(27, 29, 30);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.seam--jss-0-376 {
+    height: 0px;
+    width: 100%;
+    margin: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .seam--jss-0-376 {
+        border-top-color: rgba(102, 102, 102, 0.12);
+        border-bottom-color: rgba(51, 51, 51, 0.15);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inspectors--jss-0-939 {
+    flex: 1;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.smaller--jss-0-12 {
+    width: 12px;
+    height: 12px;
+}
+
+.smaller--jss-0-12 svg {
+    display: block;
+    fill: currentColor;
+    width: 12px;
+    height: 12px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .smaller--jss-0-12 svg {
+        fill: currentcolor;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.elementPathNode--jss-0-1104 {
+    padding: 0 0 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    color: rgb(163, 163, 163);
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+}
+
+.elementPathNode--jss-0-1104.isActive {
+    font-weight: 500;
+    color: rgb(50, 50, 50);
+}
+
+.elementPathNode--jss-0-1104:hover {
+    color: rgb(50, 50, 50);
+}
+
+.elementIcon--jss-0-1107 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .elementPathNode--jss-0-1104 {
+        color: rgb(186, 181, 171);
+    }
+    .elementPathNode--jss-0-1104.isActive {
+        color: rgb(214, 211, 205);
+    }
+    .elementPathNode--jss-0-1104:hover {
+        color: rgb(214, 211, 205);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.elementSep--jss-0-1182 {
+    display: inline-block;
+    width: 20px;
+    height: 28px;
+    position: relative;
+    overflow: hidden;
+    vertical-align: middle;
+    margin: 1px 0;
+}
+
+
+/*! CSS Used fontfaces */
+
+div.blocksWrapper--jss-0-1424>div:nth-child(1)>div:nth-child(2)>div,
+div.blocksWrapper--jss-0-1424>div:nth-child(2) {
+    background: var(--main-bg) !important;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.gridItem--jss-0-237 {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-flow: column nowrap;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.grid--jss-0-239 {
+    display: flex;
+    flex: 1 1 auto;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputCheckboxLabel--jss-0-242 {
+    cursor: pointer;
+    margin-left: 5px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: rgb(110, 110, 110);
+}
+
+.inputCheckboxToggle--jss-0-243 {
+    cursor: pointer;
+    color: rgb(110, 110, 110);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputCheckboxLabel--jss-0-242 {
+        color: rgb(192, 188, 179);
+    }
+    .inputCheckboxToggle--jss-0-243 {
+        color: rgb(192, 188, 179);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.row--jss-0-296 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+    min-height: 26px;
+    margin-left: -10px;
+}
+
+.rowItemAuto--jss-0-297 {
+    flex: 1 1;
+    margin-left: 10px;
+}
+
+.rowItemFixed--jss-0-298 {
+    flex: none;
+    margin-left: 10px;
+}
+
+.valuesListItem--jss-0-303 {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    margin-top: 2px;
+    display: flex;
+}
+
+.valuesListItem__drag--jss-0-307 {
+    padding: 3px;
+    opacity: 0.5;
+    cursor: -webkit-grab;
+}
+
+.valuesListItem__delete--jss-0-309 {
+    padding: 3px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.valuesListItem__label--jss-0-311 {
+    font-size: 10px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .valuesListItem--jss-0-303 {
+        background-color: rgb(24, 26, 27);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.valuesList--jss-0-323 {
+    background-color: rgb(227, 227, 227);
+    border-radius: 1px;
+    margin: 5px 0;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .valuesList--jss-0-323 {
+        background-color: rgb(32, 34, 36);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.actions--jss-0-456 {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.action--jss-0-457 {
+    padding: 4px;
+    display: inline-block;
+}
+
+.action--jss-0-457:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.inputImageWrap--jss-0-459 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputImageWrap--jss-0-459:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.dropZonePreview--jss-0-464 {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 1px;
+    color: rgb(50, 50, 50);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.dropZonePreview--jss-0-464:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: rgba(241, 241, 241, 0.2);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .action--jss-0-457:hover {
+        background-color: rgb(24, 26, 27);
+    }
+    .inputImageWrap--jss-0-459 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputImageWrap--jss-0-459:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+    .dropZonePreview--jss-0-464 {
+        color: rgb(214, 211, 205);
+    }
+    .dropZonePreview--jss-0-464::before {
+        background-color: rgba(28, 30, 31, 0.2);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-515 {
+    flex: 1 auto;
+    max-width: 800px;
+    min-width: 230px;
+    min-height: 300px;
+    overflow-y: auto;
+    background-color: rgb(240, 240, 240);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .modalContent--jss-0-515 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputPlainText--jss-0-858 {
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-appearance: none;
+    height: 2.25rem;
+    padding: 0.5rem;
+    vertical-align: middle;
+    border: 0px;
+    border-style: solid;
+    border-color: rgb(240, 240, 240);
+    width: 100%;
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline: none;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputPlainText--jss-0-858 {
+        border-color: rgb(54, 54, 54);
+    }
+    .inputPlainText--jss-0-858:focus {
+        outline-color: initial;
+        border-color: rgb(64, 64, 64);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputTextArea--jss-0-875 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+    background-color: white;
+    border-radius: 1px;
+}
+
+.inputTextArea--jss-0-875 textarea {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+    min-height: 150px;
+}
+
+.inputTextArea--jss-0-875 textarea:focus {
+    outline: none;
+}
+
+.inputTextArea--jss-0-875 textarea:hover {
+    cursor: text;
+}
+
+.inputTextAreaLabel--jss-0-880 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: rgb(110, 110, 110);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputTextArea--jss-0-875 {
+        background-color: rgb(24, 26, 27);
+    }
+    .inputTextArea--jss-0-875 textarea {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .inputTextArea--jss-0-875 textarea:focus {
+        outline-color: initial;
+    }
+    .inputTextAreaLabel--jss-0-880 {
+        color: rgb(192, 188, 179);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.FormInput--jss-0-894 {
+    margin-bottom: 20px;
+}
+
+.fieldTopBar--jss-0-896 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.fieldLabel--jss-0-899 {
+    flex: 1;
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+}
+
+.microCopy--jss-0-903 {
+    flex: 1;
+    color: rgb(130, 130, 130);
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .fieldLabel--jss-0-899 {
+        color: rgb(192, 188, 179);
+    }
+    .microCopy--jss-0-903 {
+        color: rgb(186, 181, 171);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.noResults--jss-0-908 {
+    color: rgb(240, 240, 240);
+    padding: 10px;
+}
+
+.results_wrapper--jss-0-918 {
+    position: absolute;
+    background: rgb(130, 130, 130);
+    border: 1px solid #444;
+    z-index: 10000;
+    width: 500px;
+    max-height: 200px;
+    overflow-y: scroll;
+    margin-top: -8px;
+    box-shadow: 0px 0px 5px #999;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .noResults--jss-0-908 {
+        color: rgb(242, 241, 239);
+    }
+    .results_wrapper--jss-0-918 {
+        background-image: initial;
+        background-color: rgb(60, 64, 66);
+        border-color: rgb(88, 88, 88);
+        box-shadow: rgb(53, 57, 59) 0px 0px 5px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.newWrap--jss-0-2614 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.newMain--jss-0-2615 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .newMain--jss-0-2615 {
+        background-color: rgb(27, 29, 30);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.project--jss-0-3658 {
+    display: block;
+    text-decoration: none;
+    border: 1px solid;
+    border-color: rgb(189, 189, 189);
+    background-color: rgb(255, 255, 255);
+    border-radius: 1px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.projectThumb--jss-0-3659 {
+    width: 100%;
+    position: relative;
+}
+
+.projectThumbContent--jss-0-3660 {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectRoles--jss-0-3662 {
+    display: flex;
+    cursor: pointer;
+    color: #666;
+    margin-top: 8px;
+}
+
+.projectInfo--jss-0-3663 {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(189, 189, 189);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 10px;
+}
+
+.projectName--jss-0-3669 {
+    color: rgb(50, 50, 50);
+    font-size: 14px;
+    width: 90%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.projectMgmt--jss-0-3671 {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    flex-direction: row;
+}
+
+.projectMgmtAction--jss-0-3673 {
+    border: 1px solid rgb(189, 189, 189);
+    display: block;
+    text-align: center;
+    padding: 5px;
+    max-width: 70px;
+    margin: 5px;
+    color: rgb(130, 130, 130);
+}
+
+.projectMgmtAction--jss-0-3673:hover {
+    cursor: pointer;
+    border: 1px solid rgb(110, 110, 110);
+    background-color: rgb(130, 130, 130);
+    color: #fff;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .project--jss-0-3658 {
+        text-decoration-color: initial;
+        border-color: rgb(64, 64, 64);
+        background-color: rgb(24, 26, 27);
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 2px;
+    }
+    .projectRoles--jss-0-3662 {
+        color: rgb(195, 191, 182);
+    }
+    .projectInfo--jss-0-3663 {
+        background-color: rgb(24, 26, 27);
+        border-bottom-color: rgb(64, 64, 64);
+    }
+    .projectName--jss-0-3669 {
+        color: rgb(214, 211, 205);
+    }
+    .projectMgmt--jss-0-3671 {
+        background-color: rgb(28, 30, 31);
+    }
+    .projectMgmtAction--jss-0-3673 {
+        border-color: rgb(64, 64, 64);
+        color: rgb(186, 181, 171);
+    }
+    .projectMgmtAction--jss-0-3673:hover {
+        border-color: rgb(80, 80, 80);
+        background-color: rgb(60, 64, 66);
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.button--jss-0-16 {
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(110, 110, 110);
+    border: 1px solid transparent;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.button--jss-0-16:hover {
+    background-color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:focus {
+    outline: none;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:active {
+    transform: translateY(1px);
+}
+
+.button--jss-0-16:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button--jss-0-16.small {
+    padding: 0.5em 0.5em;
+}
+
+.buttonLabel--jss-0-31 {
+    flex: 1 1 auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .button--jss-0-16 {
+        outline-color: initial;
+        color: rgb(255, 255, 255);
+        background-image: initial;
+        background-color: rgb(61, 64, 67);
+        border-color: transparent;
+    }
+    .button--jss-0-16:hover {
+        background-color: rgb(0, 204, 0);
+        border-color: rgb(0, 204, 0);
+    }
+    .button--jss-0-16:focus {
+        outline-color: initial;
+        border-color: rgb(0, 204, 0);
+        background-color: rgb(0, 204, 0);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.selectElement--jss-0-203 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+}
+
+.selectElement--jss-0-203:focus {
+    outline: none;
+}
+
+.selectElement--jss-0-203:hover {
+    cursor: pointer;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .selectElement--jss-0-203 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .selectElement--jss-0-203:focus {
+        outline-color: initial;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-3123 {
+    background-color: rgb(240, 240, 240);
+    flex: 1 auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .modalContent--jss-0-3123 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.InputEditable--jss-0-3173 {
+    margin-bottom: 2px;
+    border: 1px solid transparent;
+}
+
+.InputEditable--jss-0-3173:hover {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.libItem--jss-0-3176 {
+    height: 70px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+}
+
+.libItemActive--jss-0-3177:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 2px rgb(0, 255, 0);
+}
+
+.libItemDetail--jss-0-3179 {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+}
+
+.libItemDetailUnits--jss-0-3180 {
+    flex: 1;
+}
+
+.libItemDetailUnits_dimensions--jss-0-3182 {
+    color: rgb(130, 130, 130);
+}
+
+.libItemDetailUnits_date--jss-0-3183 {
+    color: rgb(110, 110, 110);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.libItemDetailInfo--jss-0-3184 {
+    display: flex;
+}
+
+.libItemDetailText--jss-0-3185 {
+    max-width: 300px;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.libItemThumb--jss-0-3189 {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 1px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-right: 1px solid #ddd;
+    display: flex;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .InputEditable--jss-0-3173 {
+        border-color: transparent;
+    }
+    .InputEditable--jss-0-3173:hover {
+        border-color: rgb(58, 58, 58);
+        background-color: rgb(24, 26, 27);
+    }
+    .libItem--jss-0-3176 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libItemActive--jss-0-3177:hover {
+        box-shadow: rgb(0, 204, 0) 0px 0px 0px 2px inset;
+    }
+    .libItemDetailUnits_dimensions--jss-0-3182 {
+        color: rgb(186, 181, 171);
+    }
+    .libItemDetailUnits_date--jss-0-3183 {
+        color: rgb(192, 188, 179);
+    }
+    .libItemThumb--jss-0-3189 {
+        border-right-color: rgb(58, 58, 58);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.pagination--jss-0-3197 {
+    background: #f1f1f1;
+    border-top: 1px solid #ddd;
+    display: flex;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.pagination--jss-0-3197 li {
+    margin: 5px;
+}
+
+.pagination--jss-0-3197 li.disabled {
+    opacity: 0.4;
+}
+
+.paginationActive--jss-0-3200 {
+    font-weight: bold;
+}
+
+.lib--jss-0-3209 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.libHeadbar--jss-0-3210 {
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.libHeadbarSep--jss-0-3211 {
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-right: 10px;
+    color: rgb(189, 189, 189);
+    display: flex;
+}
+
+.libMain--jss-0-3212 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.libHeadbarLeft--jss-0-3215 {
+    flex: 1;
+    display: flex;
+}
+
+.libHeadbarRight--jss-0-3216 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.dropZone--jss-0-3243 {
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .pagination--jss-0-3197 {
+        background-image: initial;
+        background-color: rgb(28, 30, 31);
+        border-top-color: rgb(58, 58, 58);
+    }
+    .libHeadbar--jss-0-3210 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libHeadbarSep--jss-0-3211 {
+        color: rgb(196, 191, 182);
+    }
+    .dropZone--jss-0-3243 {
+        border-color: rgb(51, 51, 51);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.button--jss-0-16 {
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(110, 110, 110);
+    border: 1px solid transparent;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.button--jss-0-16:hover {
+    background-color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:focus {
+    outline: none;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:active {
+    transform: translateY(1px);
+}
+
+.button--jss-0-16:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.button--jss-0-16.small {
+    padding: 0.5em 0.5em;
+}
+
+.buttonLabel--jss-0-31 {
+    flex: 1 1 auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .button--jss-0-16 {
+        outline-color: initial;
+        color: rgb(255, 255, 255);
+        background-image: initial;
+        background-color: rgb(61, 64, 67);
+        border-color: transparent;
+    }
+    .button--jss-0-16:hover {
+        background-color: rgb(0, 204, 0);
+        border-color: rgb(0, 204, 0);
+    }
+    .button--jss-0-16:focus {
+        outline-color: initial;
+        border-color: rgb(0, 204, 0);
+        background-color: rgb(0, 204, 0);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.selectElement--jss-0-203 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+}
+
+.selectElement--jss-0-203:focus {
+    outline: none;
+}
+
+.selectElement--jss-0-203:hover {
+    cursor: pointer;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .selectElement--jss-0-203 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .selectElement--jss-0-203:focus {
+        outline-color: initial;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.buttonGroup__itemLabel--jss-0-250 {
+    padding: 8px 5px;
+    display: block;
+    background-color: rgb(241, 241, 241);
+}
+
+.buttonGroup__itemLabel--jss-0-250.active {
+    background-color: rgb(128, 255, 128);
+    color: rgb(50, 50, 50);
+    box-shadow: none;
+}
+
+.buttonGroup__itemFirst--jss-0-255 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    border-left-width: 0px;
+    border-top-left-radius: 1px;
+    border-bottom-left-radius: 1px;
+}
+
+.buttonGroup__itemLast--jss-0-258 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 1px;
+    position: relative;
+    z-index: 1;
+    border-top-right-radius: 1px;
+    border-bottom-right-radius: 1px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup__itemLabel--jss-0-250 {
+        background-color: rgb(28, 30, 31);
+    }
+    .buttonGroup__itemLabel--jss-0-250.active {
+        background-color: rgb(0, 127, 0);
+        color: rgb(214, 211, 205);
+        box-shadow: none;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.buttonGroup--jss-0-270 {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border: 1px solid rgb(227, 227, 227);
+    border-bottom: 0px;
+    border-radius: 1px;
+    background-color: rgb(244, 244, 244);
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    padding: 2px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .buttonGroup--jss-0-270 {
+        border-top-color: rgb(57, 57, 57);
+        border-right-color: rgb(57, 57, 57);
+        border-left-color: rgb(57, 57, 57);
+        border-bottom-color: initial;
+        background-color: rgb(27, 29, 30);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-3123 {
+    background-color: rgb(240, 240, 240);
+    flex: 1 auto;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .modalContent--jss-0-3123 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.InputEditable--jss-0-3265 {
+    margin-bottom: 2px;
+    border: 1px solid transparent;
+}
+
+.InputEditable--jss-0-3265:hover {
+    border: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.libItem--jss-0-3268 {
+    height: 70px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    background-color: rgb(240, 240, 240);
+    width: 100%;
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+}
+
+.libItemActive--jss-0-3269:hover {
+    cursor: pointer;
+    box-shadow: inset 0px 0px 0px 2px rgb(0, 255, 0);
+}
+
+.libItemDetail--jss-0-3271 {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 70%;
+}
+
+.libItemDetailUnits--jss-0-3272 {
+    flex: 1;
+}
+
+.libItemDetailUnits_dimensions--jss-0-3274 {
+    color: rgb(130, 130, 130);
+}
+
+.libItemDetailUnits_date--jss-0-3275 {
+    color: rgb(110, 110, 110);
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.libItemDetailInfo--jss-0-3276 {
+    display: flex;
+}
+
+.libItemDetailText--jss-0-3277 {
+    max-width: 300px;
+    font-weight: bold;
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.libItemThumb--jss-0-3281 {
+    width: 30%;
+    height: 100%;
+    text-align: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top center;
+    border-radius: 1px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    border-right: 1px solid #ddd;
+    display: flex;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .InputEditable--jss-0-3265 {
+        border-color: transparent;
+    }
+    .InputEditable--jss-0-3265:hover {
+        border-color: rgb(58, 58, 58);
+        background-color: rgb(24, 26, 27);
+    }
+    .libItem--jss-0-3268 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libItemActive--jss-0-3269:hover {
+        box-shadow: rgb(0, 204, 0) 0px 0px 0px 2px inset;
+    }
+    .libItemDetailUnits_dimensions--jss-0-3274 {
+        color: rgb(186, 181, 171);
+    }
+    .libItemDetailUnits_date--jss-0-3275 {
+        color: rgb(192, 188, 179);
+    }
+    .libItemThumb--jss-0-3281 {
+        border-right-color: rgb(58, 58, 58);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.lib--jss-0-3297 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.libHeadbar--jss-0-3298 {
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: rgb(240, 240, 240);
+}
+
+.libHeadbarSep--jss-0-3299 {
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    margin-right: 10px;
+    color: rgb(189, 189, 189);
+    display: flex;
+}
+
+.libMain--jss-0-3300 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+.libHeadbarLeft--jss-0-3303 {
+    flex: 1;
+    display: flex;
+}
+
+.libHeadbarRight--jss-0-3304 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .libHeadbar--jss-0-3298 {
+        background-color: rgb(28, 30, 31);
+    }
+    .libHeadbarSep--jss-0-3299 {
+        color: rgb(196, 191, 182);
+    }
+    .libMain--jss-0-3300 {
+        background-color: rgb(24, 26, 27);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.button--jss-0-16 {
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    -webkit-appearance: none;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    background: rgb(110, 110, 110);
+    border: 1px solid transparent;
+    border-radius: 1px;
+    text-align: center;
+    line-height: 1em;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    vertical-align: middle;
+}
+
+.button--jss-0-16:hover {
+    background-color: rgb(0, 255, 0);
+    border-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:focus {
+    outline: none;
+    border-color: rgb(0, 255, 0);
+    background-color: rgb(0, 255, 0);
+}
+
+.button--jss-0-16:active {
+    transform: translateY(1px);
+}
+
+.button--jss-0-16:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.buttonLabel--jss-0-31 {
+    flex: 1 1 auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .button--jss-0-16 {
+        outline-color: initial;
+        color: rgb(255, 255, 255);
+        background-image: initial;
+        background-color: rgb(61, 64, 67);
+        border-color: transparent;
+    }
+    .button--jss-0-16:hover {
+        background-color: rgb(0, 204, 0);
+        border-color: rgb(0, 204, 0);
+    }
+    .button--jss-0-16:focus {
+        outline-color: initial;
+        border-color: rgb(0, 204, 0);
+        background-color: rgb(0, 204, 0);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.propGroup--jss-0-130 {
+    border-radius: 1px;
+}
+
+.propGroupTitle--jss-0-132 {
+    font-size: 10px;
+    position: relative;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: rgb(189, 189, 189);
+    padding: 5px 0;
+    height: 33px;
+    margin: 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.grouptTitleSeam--jss-0-133 {
+    height: 1px;
+    border-bottom: 1px dotted rgb(189, 189, 189);
+    flex: 1 1 auto;
+}
+
+.propGroupTitle__label--jss-0-135 {
+    padding: 5px;
+    flex: 0 0 auto;
+    width: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .propGroupTitle--jss-0-132 {
+        color: rgb(196, 191, 182);
+    }
+    .grouptTitleSeam--jss-0-133 {
+        border-bottom-color: rgb(64, 64, 64);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.selectElement--jss-0-203 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 24px;
+    line-height: 24px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border: 1px solid transparent;
+    border-radius: 1px;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: rgb(130, 130, 130);
+}
+
+.selectElement--jss-0-203:focus {
+    outline: none;
+}
+
+.selectElement--jss-0-203:hover {
+    cursor: pointer;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .selectElement--jss-0-203 {
+        outline-color: initial;
+        border-color: transparent;
+        background-image: none;
+        background-color: transparent;
+        color: rgb(186, 181, 171);
+    }
+    .selectElement--jss-0-203:focus {
+        outline-color: initial;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-208 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputSelectWrap--jss-0-209 {
+    border: 1px solid transparent;
+    background-color: rgb(248, 248, 248);
+    border-radius: 1px;
+    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
+    transition: box-shadow 0.2s linear;
+    position: relative;
+}
+
+.inputSelectWrap--jss-0-209:hover {
+    box-shadow: 0 0 0 2px rgb(214, 214, 214);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputSelect--jss-0-212 {
+    position: relative;
+}
+
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputWrap--jss-0-208 {
+        border-color: transparent;
+    }
+    .inputSelectWrap--jss-0-209 {
+        border-color: transparent;
+        background-color: rgb(26, 28, 29);
+        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
+    }
+    .inputSelectWrap--jss-0-209:hover {
+        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.backButton--jss-0-1828 {
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.colTitleRelated--jss-0-1861 {
+    border-bottom: 1px solid rgb(189, 189, 189);
+    font-size: 16px;
+    font-weight: 500;
+    box-shadow: 0 1px 0 0 white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(240, 240, 240);
+    color: rgb(23, 21, 28);
+}
+
+.colTitleButtons--jss-0-1862 {
+    align-items: center;
+    overflow: hidden;
+}
+
+.entryTitle--jss-0-1863 {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.entryTitleLabel--jss-0-1864 {
+    text-transform: uppercase;
+    font-size: 9px;
+    background-color: rgb(189, 189, 189);
+    color: rgb(110, 110, 110);
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    flex: 1 0 auto;
+}
+
+.entryTitleRef--jss-0-1865 {
+    flex: 0 1 auto;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    min-width: 0px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.detailHeadbar--jss-0-1888 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.detailTitlebar--jss-0-1891 {
+    flex: 1;
+    display: flex;
+    align-items: baseline;
+}
+
+.detailName--jss-0-1892 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.detailLang--jss-0-1893 {
+    margin: 0 5px;
+    min-width: 140px;
+}
+
+.detailStatus--jss-0-1894 {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .colTitleRelated--jss-0-1861 {
+        border-bottom-color: rgb(64, 64, 64);
+        box-shadow: rgb(24, 26, 27) 0px 1px 0px 0px;
+        background-color: rgb(28, 30, 31);
+        color: rgb(223, 220, 215);
+    }
+    .entryTitleLabel--jss-0-1864 {
+        background-color: rgb(43, 46, 48);
+        color: rgb(192, 188, 179);
+    }
+}
+
+
+/*! CSS Used fontfaces */
