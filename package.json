@@ -11,6 +11,8 @@
         "gulp-uglify": "3.0.0"
     },
     "scripts": {
+        "build": "gulp css",
+        "watch": "gulp watch-css",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": "",

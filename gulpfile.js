@@ -22,8 +22,4 @@ gulp.task('css', function() {
 // Dev task
 gulp.task('watch-css', ['css'], function() {
   gulp.watch([ './*.css'], ['css']);
-
 });
-
-
-
