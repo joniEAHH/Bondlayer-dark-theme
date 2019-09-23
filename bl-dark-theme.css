@@ -2,7 +2,7 @@
     --main-bg: rgb(28, 30, 31);
     --secondary-bg: rgb(34, 36, 37);
     --main-color: rgb(235, 235, 235);
-    --secondary-color: rgb(210, 210, 210);
+    --secondary-color: rgb(160, 160, 160);
     --main-border: rgb(64, 64, 64);
     --is-active: rgb(0, 255, 0);
     --is-active-bg: rgb(0, 127, 0);
@@ -14,7 +14,6 @@
 .newMain--jss-0-2550,
 .valuesListItem--jss-0-303,
 body,
-select,
 .contentEditorWrap--jss-0-1084 {
     background: var(--main-bg)!important;
     border-color: #575757;
@@ -25,11 +24,17 @@ select,
 .inspectorBoard--jss-0-129>div>div,
 .libHeadbar--jss-0-3145,
 .libItem--jss-0-3111,
-.medium-editor-element,
 .propGroup--jss-0-130.sub,
-input:not(.inputRangeElement--jss-0-157),
-textarea {
+.grid--jss-0-239 select,
+.contentWorkspace__cols--jss-0-3456,
+.contentWorkspace__colTitle--jss-0-3460 {
     background: var(--main-bg) !important
+}
+
+input:not(.inputRangeElement--jss-0-157),
+textarea,
+.medium-editor-element {
+    background: var(--secondary-bg) !important;
 }
 
 .inputRangeElement--jss-0-157::-webkit-slider-thumb {
@@ -73,6 +78,19 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 [style*="background: rgb(143, 253, 144);"] {
     background: var(--is-active-bg) !important;
+}
+
+[class*="colTitle"] {
+    color: rgb(51, 125, 255);
+    box-shadow: rgb(24, 26, 27) 0px 1px 0px 0px;
+}
+
+[class*="contentWorkspace"] {
+    border-color: rgb(64, 64, 64);
+}
+
+.treeDropIndicator--jss-0-1271.over {
+    background: var(--main-color);
 }
 
 .isHover .treeIcon--jss-0-1285>div>svg {
@@ -129,7 +147,7 @@ body {
 }
 
 ::placeholder {
-    color: #d1cec7
+    color: var(--secondary-color);
 }
 
 ::-webkit-scrollbar-track {
@@ -145,9 +163,13 @@ body {
     box-shadow: none
 }
 
+.listItem--jss-0-2487:hover {
+    background: none;
+}
+
 .item--jss-0-92 {
     color: var(--main-color);
-    background-color: #bdbdbd
+    background-color: var(--main-color)
 }
 
 .item--jss-0-92:hover {
@@ -173,7 +195,7 @@ body {
 }
 
 .item--jss-0-92.active {
-    color: #d6d3cd;
+    color: var(--main-color);
     background-color: #1c1e1f
 }
 
@@ -186,7 +208,7 @@ body {
 }
 
 .inspector--jss-0-120 {
-    border-bottom: 1px solid #bdbdbd
+    border-bottom: 1px solid var(--main-color)
 }
 
 .inspectorTitle--jss-0-125 {
@@ -206,19 +228,19 @@ body {
 }
 
 .inspectorTitle--jss-0-125 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .propGroupTitle--jss-0-132 {
-    color: #bdbdbd
+    color: var(--main-color)
 }
 
 .grouptTitleSeam--jss-0-133 {
-    border-bottom: 1px dotted #bdbdbd
+    border-bottom: 1px dotted var(--main-color)
 }
 
 .propGroupTitle__locale--jss-0-134 {
-    border: 1px solid #bdbdbd;
+    border: 1px solid var(--main-color);
     background-color: #f1f1f1;
     color: #828282
 }
@@ -234,7 +256,7 @@ body {
 .propGroupTitle__locale--jss-0-134 {
     border-color: #404040;
     background-color: #1c1e1f;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputElement--jss-0-140 {
@@ -246,7 +268,7 @@ body {
 }
 
 .inputElement--jss-0-140 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputElement--jss-0-140:focus {
@@ -284,21 +306,11 @@ body {
 }
 
 .selectElement--jss-0-203 {
-    color: #bab5ab
-}
-
-.inputSelectWrap--jss-0-209 {
-    background-color: #f8f8f8;
-    box-shadow: 0 1px 0 0 #d6d6d6
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px #d6d6d6;
-    transition: box-shadow .1s linear
+    color: var(--main-color)
 }
 
 .selectLabel--jss-0-216 {
-    color: #bdbdbd
+    color: var(--main-color)
 }
 
 .inputWrap--jss-0-208 {
@@ -307,7 +319,7 @@ body {
 
 .inputSelectWrap--jss-0-209 {
     border-color: transparent;
-    background-color: #1a1c1d;
+    background-color: var(--secondary-bg);
     box-shadow: #242628 0 1px 0 0
 }
 
@@ -390,7 +402,7 @@ body {
 .inputUnitsLabel--jss-0-235 {
     font-size: 10px;
     font-family: Nitti, 'Lucida Console', sans-serif;
-    color: #bdbdbd;
+    color: var(--main-color);
     padding: 3px;
     text-transform: uppercase
 }
@@ -423,7 +435,7 @@ body {
 .gridLabel--jss-0-238 {
     font-size: 10px;
     font-family: Nitti, 'Lucida Console', sans-serif;
-    color: #bdbdbd;
+    color: var(--main-color);
     padding: 3px;
     text-transform: uppercase;
     flex: 0 0 auto;
@@ -508,13 +520,13 @@ body {
 
 .buttonGroup__itemLabel--jss-0-250.active {
     background-color: var(--is-active-bg);
-    color: #d6d3cd;
+    color: var(--main-color);
     box-shadow: none
 }
 
 .buttonGroup__itemLabel--jss-0-250.inherited {
     background-color: #26292b;
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .buttonGroup--jss-0-270 {
@@ -590,7 +602,7 @@ body {
 .textLabel--jss-0-353 {
     font-size: 10px;
     font-family: Nitti, 'Lucida Console', sans-serif;
-    color: #bdbdbd;
+    color: var(--main-color);
     padding: 3px;
     text-transform: uppercase
 }
@@ -614,7 +626,7 @@ body {
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputElement--jss-0-349:focus {
@@ -630,7 +642,7 @@ body {
 }
 
 .trblSet--jss-0-369 {
-    border: 1px dashed #bdbdbd;
+    border: 1px dashed var(--main-color);
     position: relative;
     height: 80px;
     width: 60%;
@@ -735,7 +747,7 @@ body {
 .colorLabel--jss-0-404 {
     font-size: 10px;
     font-family: Nitti, 'Lucida Console', sans-serif;
-    color: #bdbdbd;
+    color: var(--main-color);
     padding: 3px;
     text-transform: uppercase
 }
@@ -846,7 +858,7 @@ body {
 }
 
 .dropZonePreview--jss-0-464 {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .dropZonePreview--jss-0-464::before {
@@ -868,7 +880,7 @@ body {
 }
 
 .InputSwitchTrack--jss-0-479 {
-    box-shadow: inset 0 0 0 0 #bdbdbd
+    box-shadow: inset 0 0 0 0 var(--main-color)
 }
 
 .InputSwitchTrack--jss-0-479 {
@@ -932,7 +944,7 @@ body {
 }
 
 .screenPreview--jss-0-679:hover {
-    color: #d6d3cd;
+    color: var(--main-color);
     background-color: var(--main-bg);
     border-color: #333
 }
@@ -971,7 +983,7 @@ body {
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputTextArea--jss-0-877 textarea:focus {
@@ -999,19 +1011,19 @@ body {
 }
 
 .elementPathNode--jss-0-1106 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .elementPathNode--jss-0-1106.isActive {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .elementPathNode--jss-0-1106:hover {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .treeActionsRight--jss-0-1271 {
-    color: #bdbdbd;
+    color: var(--main-color);
     display: flex
 }
 
@@ -1092,7 +1104,7 @@ body {
 
 .treeFold--jss-0-1282 {
     background-color: var(--main-bg);
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .treeItem--jss-0-1278.ishover {
@@ -1106,7 +1118,7 @@ body {
 }
 
 .treeIcon--jss-0-1285 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .treeIcon--jss-0-1285.isActive {
@@ -1296,7 +1308,7 @@ body {
 }
 
 .docmapToggle--jss-0-3376:hover {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .canvasOperations--jss-0-3380 {
@@ -1304,7 +1316,7 @@ body {
 }
 
 .canvasOperationsButton--jss-0-3381:hover {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .panelHeader__Element--jss-0-3386 {
@@ -1336,7 +1348,7 @@ body {
 
 .treeActionsRight--jss-0-1918 {
     width: 30px;
-    color: #bdbdbd
+    color: var(--main-color)
 }
 
 .treeItem--jss-0-1907 {
@@ -1365,7 +1377,7 @@ body {
 }
 
 .project--jss-0-3595 {
-    border-color: #bdbdbd;
+    border-color: var(--main-color);
     background-color: #fff
 }
 
@@ -1375,7 +1387,7 @@ body {
 
 .projectInfo--jss-0-3600 {
     background-color: #fff;
-    border-bottom: 1px solid #bdbdbd
+    border-bottom: 1px solid var(--main-color)
 }
 
 .projectName--jss-0-3606 {
@@ -1387,7 +1399,7 @@ body {
 }
 
 .projectMgmtAction--jss-0-3610 {
-    border: 1px solid #bdbdbd;
+    border: 1px solid var(--main-color);
     color: #828282
 }
 
@@ -1419,7 +1431,7 @@ body {
 }
 
 .projectName--jss-0-3606 {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .projectMgmt--jss-0-3608 {
@@ -1428,7 +1440,7 @@ body {
 
 .projectMgmtAction--jss-0-3610 {
     border-color: #404040;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .projectMgmtAction--jss-0-3610:hover {
@@ -1449,29 +1461,6 @@ body {
     fill: currentcolor
 }
 
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: #f8f8f8;
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 #d6d6d6;
-    transition: box-shadow .2s linear;
-    position: relative
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px #d6d6d6;
-    transition: box-shadow .1s linear
-}
-
-.inputSelect--jss-0-212 {
-    position: relative
-}
-
 .selectIndicator--jss-0-217 {
     position: absolute;
     top: 50%;
@@ -1482,16 +1471,6 @@ body {
 
 .inputWrap--jss-0-208 {
     border-color: transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border-color: transparent;
-    background-color: #1a1c1d;
-    box-shadow: #242628 0 1px 0 0
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: #242628 0 0 0 2px
 }
 
 .gridItem--jss-0-237 {
@@ -1640,7 +1619,7 @@ body {
 }
 
 .dropZonePreview--jss-0-464 {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .dropZonePreview--jss-0-464::before {
@@ -1707,7 +1686,7 @@ body {
 }
 
 .modalTitle--jss-0-513 {
-    color: #bab5ab;
+    color: var(--main-color);
     background-color: #303235
 }
 
@@ -1734,7 +1713,7 @@ body {
 
 .inputPlainText--jss-0-858:focus {
     outline: 0;
-    border: 1px solid #bdbdbd
+    border: 1px solid var(--main-color)
 }
 
 .inputPlainText--jss-0-858 {
@@ -1779,7 +1758,7 @@ body {
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputTextArea--jss-0-877 textarea:focus {
@@ -1803,7 +1782,7 @@ body {
 }
 
 .microCopy--jss-0-905 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .noResults--jss-0-910 {
@@ -1884,7 +1863,7 @@ body {
 
 .inputPlainText--jss-0-858:focus {
     outline: 0;
-    border: 1px solid #bdbdbd
+    border: 1px solid var(--main-color)
 }
 
 .inputPlainText--jss-0-858 {
@@ -1933,7 +1912,7 @@ body {
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputTextArea--jss-0-877 textarea:focus {
@@ -1957,7 +1936,7 @@ body {
 }
 
 .microCopy--jss-0-905 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .tip--jss-0-1104 {
@@ -1965,7 +1944,7 @@ body {
 }
 
 .tip--jss-0-1104 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .modalContent--jss-0-3058 {
@@ -2067,7 +2046,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .treeActionsRight--jss-0-1271 {
-    color: #bdbdbd;
+    color: var(--main-color);
     display: flex
 }
 
@@ -2157,7 +2136,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .treeFold--jss-0-1282 {
     background-color: #181a1b;
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .treeFold--jss-0-1282:hover {
@@ -2166,7 +2145,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .treeIcon--jss-0-1285 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .treeIcon--jss-0-1285.isActive {
@@ -2202,54 +2181,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     background-color: #00c;
     color: #fff;
     border-color: #fff;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: #f8f8f8;
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 #d6d6d6;
-    transition: box-shadow .2s linear;
-    position: relative
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px #d6d6d6;
-    transition: box-shadow .1s linear
-}
-
-.inputSelect--jss-0-212 {
-    position: relative
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none
-}
-
-.inputWrap--jss-0-208 {
-    border-color: transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border-color: transparent;
-    background-color: #1a1c1d;
-    box-shadow: #242628 0 1px 0 0
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: #242628 0 0 0 2px
 }
 
 
@@ -2315,7 +2246,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .modalTitle--jss-0-513 {
-    color: #bab5ab;
+    color: var(--main-color);
     background-color: #303235
 }
 
@@ -2369,7 +2300,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 .flexTableRow--jss-0-1543:hover {
     z-index: 10;
     background-color: #fff;
-    border-color: #bdbdbd
+    border-color: var(--main-color)
 }
 
 .flexTableRow--jss-0-1543 {
@@ -2393,7 +2324,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     flex: 1 1 auto;
     border-top: 0;
     border-bottom: 1px solid #f1f1f1;
-    background-color: #bdbdbd;
+    background-color: var(--main-color);
     position: relative;
     z-index: 1;
     margin-top: 0;
@@ -2413,14 +2344,14 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-betwwen;
-    border: 1px solid #bdbdbd;
+    border: 1px solid var(--main-color);
     color: #323232;
     font-family: Nitti, 'Lucida Console', sans-serif
 }
 
 .flexTable--jss-0-1551 {
     border-color: #404040;
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 
@@ -2441,7 +2372,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     border-bottom: 1px solid #fff;
     z-index: 10;
     padding: 10px;
-    box-shadow: 0 2px 1px -1px #bdbdbd;
+    box-shadow: 0 2px 1px -1px var(--main-color);
     color: var(--main-color)
 }
 
@@ -2456,7 +2387,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     background: #fff;
     border-top: 1px solid #fff;
     z-index: 10;
-    box-shadow: 0 -2px 1px -1px #bdbdbd;
+    box-shadow: 0 -2px 1px -1px var(--main-color);
     color: #fff
 }
 
@@ -2522,7 +2453,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 .button--jss-0-16.ghost:hover {
     background: 0 0;
     color: #17151c;
-    border-color: #bdbdbd
+    border-color: var(--main-color)
 }
 
 .buttonLabel--jss-0-31 {
@@ -2541,54 +2472,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     background-color: transparent;
     color: #dfdcd7;
     border-color: #404040
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: #f8f8f8;
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 #d6d6d6;
-    transition: box-shadow .2s linear;
-    position: relative
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px #d6d6d6;
-    transition: box-shadow .1s linear
-}
-
-.inputSelect--jss-0-212 {
-    position: relative
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none
-}
-
-.inputWrap--jss-0-208 {
-    border-color: transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border-color: transparent;
-    background-color: #1a1c1d;
-    box-shadow: #242628 0 1px 0 0
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: #242628 0 0 0 2px
 }
 
 
@@ -2662,7 +2545,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputElement--jss-0-349:focus {
@@ -2742,7 +2625,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .dropZonePreview--jss-0-464 {
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 .dropZonePreview--jss-0-464::before {
@@ -2785,7 +2668,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .inputPlainText--jss-0-858:focus {
     outline: 0;
-    border: 1px solid #bdbdbd
+    border: 1px solid var(--main-color)
 }
 
 .inputPlainText--jss-0-858 {
@@ -2817,7 +2700,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .fieldLang--jss-0-902 {
-    border: 1px solid #bdbdbd;
+    border: 1px solid var(--main-color);
     flex: 0 0 30px;
     text-align: center;
     font-size: 9px;
@@ -2827,7 +2710,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .fieldRequired--jss-0-903 {
-    border: 1px solid #bdbdbd;
+    border: 1px solid var(--main-color);
     flex: 0 0 80px;
     text-align: center;
     font-size: 9px;
@@ -2850,16 +2733,16 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .fieldLang--jss-0-902 {
     border-color: #404040;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .fieldRequired--jss-0-903 {
     border-color: #404040;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .microCopy--jss-0-905 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 
@@ -2899,7 +2782,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .colTitle--jss-0-1860 {
     background-color: #fff;
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid var(--main-color);
     color: #00f
 }
 
@@ -2907,7 +2790,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     background: #fff;
     border-top: 1px solid #fff;
     z-index: 10;
-    box-shadow: 0 -2px 1px -1px #bdbdbd;
+    box-shadow: 0 -2px 1px -1px var(--main-color);
     color: #fff
 }
 
@@ -2959,7 +2842,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .modalContent--jss-0-54 {
     background-color: #1c1e1f;
-    color: #d6d3cd
+    color: var(--main-color)
 }
 
 
@@ -3007,7 +2890,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     width: 100%;
     flex: 1 0 auto;
     padding: 20px;
-    background: #bdbdbd;
+    background: var(--main-color);
     z-index: 10;
     color: #fff
 }
@@ -3029,54 +2912,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .modalInner--jss-0-82 {
     box-shadow: #303235 0 4px 30px
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: #f8f8f8;
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 #d6d6d6;
-    transition: box-shadow .2s linear;
-    position: relative
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px #d6d6d6;
-    transition: box-shadow .1s linear
-}
-
-.inputSelect--jss-0-212 {
-    position: relative
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none
-}
-
-.inputWrap--jss-0-208 {
-    border-color: transparent
-}
-
-.inputSelectWrap--jss-0-209 {
-    border-color: transparent;
-    background-color: #1a1c1d;
-    box-shadow: #242628 0 1px 0 0
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: #242628 0 0 0 2px
 }
 
 
@@ -3225,7 +3060,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .screenPreview--jss-0-679:hover {
-    color: #d6d3cd;
+    color: var(--main-color);
     background-color: #181a1b;
     border-color: #333
 }
@@ -3243,7 +3078,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 .collectionItem--jss-0-950 {
     margin: 0 auto;
     padding: 10px;
-    border-bottom: 1px solid #bdbdbd
+    border-bottom: 1px solid var(--main-color)
 }
 
 .collectionItem--jss-0-950:hover {
@@ -3280,7 +3115,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     background: #fff;
     border-top: 1px solid #fff;
     z-index: 10;
-    box-shadow: 0 -2px 1px -1px #bdbdbd;
+    box-shadow: 0 -2px 1px -1px var(--main-color);
     color: #fff
 }
 
@@ -3396,14 +3231,14 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .contentWorkspace__col1--jss-0-3394 {
     flex: 0 1 250px;
-    border-right: 1px solid #bdbdbd;
+    border-right: 1px solid var(--main-color);
     display: flex;
     flex-direction: column
 }
 
 .contentWorkspace__colTitle--jss-0-3397 {
     background-color: #fff;
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid var(--main-color);
     font-size: 16px;
     font-weight: 500;
     color: #00f;
@@ -3525,7 +3360,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: #bab5ab
+        color: var(--main-color)
     }
     .selectElement--jss-0-203:focus {
         outline-color: initial
@@ -3663,7 +3498,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .inspector--jss-0-120 {
     padding: 0 10px;
-    border-bottom: 1px solid #bdbdbd;
+    border-bottom: 1px solid var(--main-color);
     font-family: Nitti, 'Lucida Console', sans-serif
 }
 
@@ -3722,7 +3557,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 }
 
 .inspectorTitle--jss-0-125 {
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 
@@ -3738,7 +3573,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     font-family: EuclidFlex, 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: .1em;
-    color: #bdbdbd;
+    color: var(--main-color);
     padding: 5px 0;
     height: 33px;
     margin: 0 0 5px;
@@ -3748,7 +3583,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 .grouptTitleSeam--jss-0-133 {
     height: 1px;
-    border-bottom: 1px dotted #bdbdbd;
+    border-bottom: 1px dotted var(--main-color);
     flex: 1 1 auto
 }
 
@@ -3804,7 +3639,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     border-color: transparent;
     background-image: none;
     background-color: transparent;
-    color: #bab5ab
+    color: var(--main-color)
 }
 
 .inputElement--jss-0-140:focus {
@@ -3883,7 +3718,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 .inputUnitsLabel--jss-0-235 {
     font-size: 10px;
     font-family: Nitti, 'Lucida Console', sans-serif;
-    color: #bdbdbd;
+    color: var(--main-color);
     padding: 3px;
     text-transform: uppercase
 }
@@ -3909,7 +3744,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 .gridLabel--jss-0-238 {
     font-size: 10px;
     font-family: Nitti, 'Lucida Console', sans-serif;
-    color: #bdbdbd;
+    color: var(--main-color);
     padding: 3px;
     text-transform: uppercase;
     flex: 0 0 auto;
@@ -3978,57 +3813,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 /*! CSS Used from: Embedded */
 
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
 .buttonGroup__itemLabel--jss-0-250 {
     padding: 8px 5px;
     display: block;
@@ -4079,7 +3863,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     }
     .buttonGroup__itemLabel--jss-0-250.active {
         background-color: rgb(0, 127, 0);
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
         box-shadow: none;
     }
 }
@@ -4226,7 +4010,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         box-shadow: rgb(0, 204, 0) 0px 0px 0px 2px inset;
     }
     .libItemDetailUnits_dimensions--jss-0-3209 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .libItemDetailUnits_date--jss-0-3210 {
         color: rgb(192, 188, 179);
@@ -4492,14 +4276,14 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     }
     .treeFold--jss-0-1280 {
         background-color: rgb(24, 26, 27);
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .treeFold--jss-0-1280:hover {
         background-color: rgb(48, 50, 53);
         color: rgb(255, 255, 255);
     }
     .treeIcon--jss-0-1283 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .treeIcon--jss-0-1283.isActive {
         color: rgb(51, 255, 51);
@@ -4572,57 +4356,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 /*! CSS Used from: Embedded */
 
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
 .elementPathNode--jss-0-1104 {
     padding: 0 0 0 10px;
     cursor: pointer;
@@ -4651,13 +4384,13 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 @media screen {
     .elementPathNode--jss-0-1104 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .elementPathNode--jss-0-1104.isActive {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .elementPathNode--jss-0-1104:hover {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
 }
 
@@ -4728,13 +4461,13 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         border-right-color: rgb(59, 59, 59);
     }
     .docmapToggle--jss-0-3439:hover {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .canvasOperations--jss-0-3443 {
         border-left-color: rgb(59, 59, 59);
     }
     .canvasOperationsButton--jss-0-3444:hover {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
 }
 
@@ -4949,7 +4682,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     .propGroupTitle__locale--jss-0-134 {
         border-color: rgb(64, 64, 64);
         background-color: rgb(28, 30, 31);
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
 }
 
@@ -4995,7 +4728,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .inputElement--jss-0-140:focus {
         outline-color: initial;
@@ -5106,7 +4839,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
     .dropZonePreview--jss-0-464 {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .dropZonePreview--jss-0-464::before {
         background-color: rgba(28, 30, 31, 0.2);
@@ -5170,7 +4903,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         box-shadow: rgb(48, 50, 53) 4px 20px 30px;
     }
     .modalTitle--jss-0-513 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
         background-color: rgb(48, 50, 53);
     }
     .modalContent--jss-0-515 {
@@ -5245,7 +4978,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .inputTextArea--jss-0-875 textarea:focus {
         outline-color: initial;
@@ -5339,7 +5072,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 @media screen {
     .tabItem--jss-0-1898 {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
         background-color: rgb(30, 32, 34);
     }
     .tabItem--jss-0-1898:hover {
@@ -5480,7 +5213,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         color: rgb(223, 220, 215);
     }
     .addFolder--jss-0-2049:hover {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .treeWrap--jss-0-2055 {
         color: rgb(223, 220, 215);
@@ -5515,57 +5248,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     .returnDashboard--jss-0-2091 {
         background-image: initial;
         background-color: rgb(34, 36, 37);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
 }
 
@@ -5622,7 +5304,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     }
     .buttonGroup__itemLabel--jss-0-250.active {
         background-color: rgb(0, 127, 0);
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
         box-shadow: none;
     }
 }
@@ -5763,7 +5445,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         background-color: rgb(28, 30, 31);
     }
     .libItemDetailUnits_dimensions--jss-0-3182 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .libItemDetailUnits_date--jss-0-3183 {
         color: rgb(192, 188, 179);
@@ -5865,57 +5547,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 /*! CSS Used from: Embedded */
 
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
 .flexTableCell--jss-0-1538 {
     display: flex;
     flex-flow: row nowrap;
@@ -6010,7 +5641,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 @media screen {
     .flexTable--jss-0-1549 {
         border-color: rgb(64, 64, 64);
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
 }
 
@@ -6068,57 +5699,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         border-top-color: rgb(51, 51, 51);
         box-shadow: rgb(43, 46, 48) 0px -2px 1px -1px;
         color: rgb(255, 255, 255);
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
 }
 
@@ -6244,7 +5824,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .inputElement--jss-0-349:focus {
         outline-color: initial;
@@ -6369,7 +5949,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         color: rgb(192, 188, 179);
     }
     .microCopy--jss-0-903 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
 }
 
@@ -6409,15 +5989,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 
 /*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .colTitle--jss-0-1432 {
-        background-color: rgb(24, 26, 27);
-        border-bottom-color: rgb(64, 64, 64);
-        color: rgb(51, 125, 255);
-        box-shadow: rgb(24, 26, 27) 0px 1px 0px 0px;
-    }
-}
 
 
 /*! CSS Used from: Embedded */
@@ -6514,7 +6085,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         background-color: rgb(28, 30, 31);
     }
     .inspectorTitle--jss-0-125 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
 }
 
@@ -6601,61 +6172,10 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .selectElement--jss-0-203:focus {
         outline-color: initial;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
 }
 
@@ -6724,7 +6244,7 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
     }
     .buttonGroup__itemLabel--jss-0-250.active {
         background-color: rgb(0, 127, 0);
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
         box-shadow: none;
     }
 }
@@ -6841,13 +6361,13 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 
 @media screen {
     .elementPathNode--jss-0-1104 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .elementPathNode--jss-0-1104.isActive {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .elementPathNode--jss-0-1104:hover {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
 }
 
@@ -6870,57 +6390,6 @@ div.grid--jss-0-239>div:nth-child(1)>div>div>div>div>div:nth-child(2)>div:nth-ch
 div.blocksWrapper--jss-0-1424>div:nth-child(1)>div:nth-child(2)>div,
 div.blocksWrapper--jss-0-1424>div:nth-child(2) {
     background: var(--main-bg) !important;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
 }
 
 
@@ -7115,7 +6584,7 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
     .dropZonePreview--jss-0-464 {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .dropZonePreview--jss-0-464::before {
         background-color: rgba(28, 30, 31, 0.2);
@@ -7236,7 +6705,7 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .inputTextArea--jss-0-875 textarea:focus {
         outline-color: initial;
@@ -7280,7 +6749,7 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         color: rgb(192, 188, 179);
     }
     .microCopy--jss-0-903 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
 }
 
@@ -7391,16 +6860,6 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
     padding: 10px;
 }
 
-.projectName--jss-0-3669 {
-    color: rgb(50, 50, 50);
-    font-size: 14px;
-    width: 90%;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    margin: 5px;
-}
-
 .projectMgmt--jss-0-3671 {
     background-color: rgb(240, 240, 240);
     display: flex;
@@ -7410,16 +6869,6 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
     width: 100%;
     padding: 20px;
     flex-direction: row;
-}
-
-.projectMgmtAction--jss-0-3673 {
-    border: 1px solid rgb(189, 189, 189);
-    display: block;
-    text-align: center;
-    padding: 5px;
-    max-width: 70px;
-    margin: 5px;
-    color: rgb(130, 130, 130);
 }
 
 .projectMgmtAction--jss-0-3673:hover {
@@ -7447,14 +6896,14 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         border-bottom-color: rgb(64, 64, 64);
     }
     .projectName--jss-0-3669 {
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
     }
     .projectMgmt--jss-0-3671 {
         background-color: rgb(28, 30, 31);
     }
     .projectMgmtAction--jss-0-3673 {
         border-color: rgb(64, 64, 64);
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .projectMgmtAction--jss-0-3673:hover {
         border-color: rgb(80, 80, 80);
@@ -7574,61 +7023,10 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .selectElement--jss-0-203:focus {
         outline-color: initial;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
 }
 
@@ -7745,7 +7143,7 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         box-shadow: rgb(0, 204, 0) 0px 0px 0px 2px inset;
     }
     .libItemDetailUnits_dimensions--jss-0-3182 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .libItemDetailUnits_date--jss-0-3183 {
         color: rgb(192, 188, 179);
@@ -7955,61 +7353,10 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .selectElement--jss-0-203:focus {
         outline-color: initial;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
 }
 
@@ -8066,7 +7413,7 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
     }
     .buttonGroup__itemLabel--jss-0-250.active {
         background-color: rgb(0, 127, 0);
-        color: rgb(214, 211, 205);
+        color: var(--main-color);
         box-shadow: none;
     }
 }
@@ -8213,7 +7560,7 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         box-shadow: rgb(0, 204, 0) 0px 0px 0px 2px inset;
     }
     .libItemDetailUnits_dimensions--jss-0-3274 {
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .libItemDetailUnits_date--jss-0-3275 {
         color: rgb(192, 188, 179);
@@ -8436,112 +7783,10 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
         border-color: transparent;
         background-image: none;
         background-color: transparent;
-        color: rgb(186, 181, 171);
+        color: var(--main-color);
     }
     .selectElement--jss-0-203:focus {
         outline-color: initial;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
-    }
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputWrap--jss-0-208 {
-    position: relative;
-    border: 3px solid transparent;
-}
-
-.inputSelectWrap--jss-0-209 {
-    border: 1px solid transparent;
-    background-color: rgb(248, 248, 248);
-    border-radius: 1px;
-    box-shadow: 0 1px 0 0 rgb(214, 214, 214);
-    transition: box-shadow 0.2s linear;
-    position: relative;
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px rgb(214, 214, 214);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded ; media=screen */
-
-@media screen {
-    .inputWrap--jss-0-208 {
-        border-color: transparent;
-    }
-    .inputSelectWrap--jss-0-209 {
-        border-color: transparent;
-        background-color: rgb(26, 28, 29);
-        box-shadow: rgb(36, 38, 40) 0px 1px 0px 0px;
-    }
-    .inputSelectWrap--jss-0-209:hover {
-        box-shadow: rgb(36, 38, 40) 0px 0px 0px 2px;
     }
 }
 
@@ -8639,6 +7884,129 @@ div.blocksWrapper--jss-0-1424>div:nth-child(2) {
     .entryTitleLabel--jss-0-1864 {
         background-color: rgb(43, 46, 48);
         color: rgb(192, 188, 179);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.modalContent--jss-0-515 {
+    flex: 1 auto;
+    max-width: 800px;
+    min-width: 230px;
+    min-height: 300px;
+    overflow-y: auto;
+    background-color: rgb(240, 240, 240);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .modalContent--jss-0-515 {
+        background-color: rgb(28, 30, 31);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputPlainText--jss-0-858 {
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    -webkit-appearance: none;
+    height: 2.25rem;
+    padding: 0.5rem;
+    vertical-align: middle;
+    border: 0px;
+    border-style: solid;
+    border-color: rgb(240, 240, 240);
+    width: 100%;
+}
+
+.inputPlainText--jss-0-858:focus {
+    outline: none;
+    border: 1px solid rgb(189, 189, 189);
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .inputPlainText--jss-0-858 {
+        border-color: rgb(54, 54, 54);
+    }
+    .inputPlainText--jss-0-858:focus {
+        outline-color: initial;
+        border-color: rgb(64, 64, 64);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.FormInput--jss-0-894 {
+    margin-bottom: 20px;
+}
+
+.fieldTopBar--jss-0-896 {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 5px;
+}
+
+.fieldLabel--jss-0-899 {
+    flex: 1;
+    font-size: 14px;
+    color: rgb(110, 110, 110);
+}
+
+.microCopy--jss-0-903 {
+    flex: 1;
+    color: rgb(130, 130, 130);
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .fieldLabel--jss-0-899 {
+        color: rgb(192, 188, 179);
+    }
+    .microCopy--jss-0-903 {
+        color: rgb(186, 181, 171);
+    }
+}
+
+
+/*! CSS Used from: Embedded */
+
+.newWrap--jss-0-2658 {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.newMain--jss-0-2659 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    overflow-y: auto;
+}
+
+
+/*! CSS Used from: Embedded ; media=screen */
+
+@media screen {
+    .newMain--jss-0-2659 {
+        background-color: rgb(27, 29, 30);
     }
 }
 
