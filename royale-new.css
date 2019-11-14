@@ -20,10 +20,10 @@
     --colormap-docmapTreeItem__active: rgb(53, 53, 56);
     --colormap-docmapTreeGuideBorder: rgb(0, 0, 0);
     --colormap-docmapTreeFold: rgb(205, 205, 205);
-    --colormap-docmapTreeFoldBackground: rgb(38, 38, 38);
+    --colormap-docmapTreeFoldBackground: none;
     --colormap-docmapTreeFold__hover: rgb(255, 255, 255);
-    --colormap-docmapTreeFoldBackground__hover: unset;
-    --colormap-docmapTreeIcon: rgb(190, 190, 190);
+    --colormap-docmapTreeFoldBackground__hover: none;
+    --colormap-docmapTreeIcon: rgb(145, 145, 145);
     --colormap-docmapTreeIcon__is_hover: rgb(125, 92, 198);
     --colormap-docmapTreeIcon__is_active: rgb(0, 255, 0);
     --colormap-docmapTreeLabel__is_active__focus: rgb(38, 38, 38);
@@ -74,9 +74,9 @@
     --colormap-modalFlyoutTitleClose__hoverBackground: rgb(0, 255, 0);
     --colormap-modalInfoInnerBoxShadow: rgb(32, 34, 36);
     --colormap-modalInfoWrapscrollBackground: rgb(145, 145, 145);
-    --colormap-modalInfoContent: white;
+    --colormap-modalInfoContent: rgb(205, 205, 205);
     --colormap-modalInfoContentBackgrond: rgb(32, 34, 36);
-    --colormap-modalInfoHeadbar: white;
+    --colormap-modalInfoHeadbar: rgb(205, 205, 205);
     --colormap-modalInfoHeadbarBackground: rgb(22, 23, 25);
     --colormap-modalInfoActions__hover: rgb(0, 255, 0);
     --colormap-modalInfoFooter: rgb(255, 255, 255);
@@ -734,861 +734,67 @@
     --colormap-workspaceContentWorkspace__colTitleBoxShadow: rgb(255, 255, 255);
     --colormap-groupWrapPropGroupTitle__label: grey;
     --colormap-groupWrapPropGroupTitle__label__selected: #ddd;
-    --colormap-controlbarStagingUrl: rgb(145, 145, 145);
-    --colormap-controlbarLastPublish: rgb(247, 247, 247);
 }
 
-.workspace--jss-0-3391 {
-    background-color: var(--colormap-workspaceBackground);
-    color: var(--colormap-workspaceColor);
-}
-
-.item--jss-0-92 {
-    cursor: pointer;
-    flex: 1;
-    display: flex;
-    text-align: center;
-    align-items: stretch;
-    justify-content: center;
-    color: var(--colormap-tabs__inactive);
-    letter-spacing: 0.5px;
-    line-height: 41px;
-    text-transform: lowercase;
-    font-size: 13px;
-    background-color: var(--colormap-tabs__inactiveBackground);
-    transition: transform 0.2s ease-in-out;
-}
-
-.item--jss-0-92.active {
-    font-weight: 500;
-    color: var(--colormap-tabs__active);
-    background-color: var(--colormap-tabs__activeBackground);
-}
-
-.itemLabel--jss-0-101 {
-    width: 90%;
-}
-
-.tabsContainer--jss-0-97 {
-    background-color: var(--colormap-rightedge);
-    flex: 1;
-    height: 100%;
-    overflow: hidden;
-}
-
-.tabsPane--jss-0-104 {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.tabContent--jss-0-109 {
-    background-color: var(--colormap-rightedge);
-    flex: 1;
-    height: 100%;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inspector--jss-0-120 {
-    padding: 0 10px;
-    border-bottom: 1px solid var(--colormap-inspectorBorder);
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-}
-
-.inspector--jss-0-120:hover {
-    background-color: var(--colormap-inspectorBackground__hover);
-}
-
-.inspector--jss-0-120.open {
-    padding-bottom: 10px;
-}
-
-.inspector--jss-0-120.open:hover {
-    background-color: var(--colormap-rightedge);
-}
-
-.inspectorTitle--jss-0-125 {
-    font-size: 12px;
-    text-transform: capitalize;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    color: var(--colormap-inspectorTitle);
-    padding-left: 5px;
-    flex: 1;
-}
-
-.propGroupTitle--jss-0-132 {
-    font-size: 10px;
-    position: relative;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: var(--colormap-propGroupTitle);
-    padding: 5px 0;
-    height: 33px;
-    margin: 0 0 5px;
-    display: flex;
-    align-items: center;
-}
-
-.grouptTitleSeam--jss-0-133 {
-    height: 1px;
-    border-bottom: 1px dotted var(--colormap-grouptTitleSeamBorder);
-    flex: 1 1 auto;
-}
-
-.propGroupTitle__locale--jss-0-134 {
-    border: 1px solid rgb(189, 189, 189);
-    color: var(--colormap-propGroupTitle__locale);
-    background-color: var(--colormap-propGroupTitle__localeBackground);
-    flex: 0 0 auto;
-    width: auto;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 1px 2px;
-    margin-left: 5px;
-    font-size: 9px;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputElement--jss-0-140 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 30px;
-    line-height: 30px;
+.toastWrap--jss-0-0 {
+    position: fixed;
+    top: 2%;
+    height: 0px;
     width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: var(--colormap-workspaceInputText);
+    z-index: 9999999;
 }
 
-.inputElement--jss-0-140:focus {
-    outline: none;
-}
-
-.inputElement--jss-0-140:hover {
-    cursor: text;
-}
-
-.inputElement--jss-0-140:disabled {
-    background-color: var(--colormap-workspaceInput__disabled);
+.toast--jss-0-2 {
+    transition: opacity 300ms linear;
+    background: white;
+    opacity: 0;
+    border-left: 1rem solid #8a8a8a;
+    box-shadow: 0rem 0rem 20px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: spaceBetween;
+    font-size: 0.8rem;
+    padding: 1rem;
+    margin: 1rem auto;
+    width: 25rem;
 }
 
 
 /*! CSS Used from: Embedded */
 
-.inputTextWrap--jss-0-145 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputTextWrap--jss-0-145:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.selectElement--jss-0-203 {
-    color: var(--colormap-workspaceInputText);
-}
-
-.inputSelectWrap--jss-0-209 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.selectLabel--jss-0-216 {
-    font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: var(--colormap-workspaceInputLabel);
-    padding: 3px;
-    text-transform: uppercase;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.itemTitle--jss-0-218 {
-    background-color: var(--colormap-titleTipItemTitleBackgroundColor);
-    color: var(--colormap-titleTipItemTitle);
-}
-
-.itemTitle--jss-0-218:after {
-    border-color: var(--colormap-titleTipItemTitleBorderColor__after);
-}
-
-.inputUnitsWrap--jss-0-229 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputUnitsWrap--jss-0-229:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputUnitsLabel--jss-0-235 {
-    color: var(--colormap-workspaceInputLabel);
-}
-
-.gridLabel--jss-0-238 {
-    color: var(--colormap-workspaceInputLabel);
-}
-
-.buttonGroup__itemLabel--jss-0-250 {
-    padding: 8px 5px;
-    display: flex;
-    min-width: 30px;
-    min-height: 30px;
-    justify-content: center;
-    align-items: center;
-    color: var(--colormap-inspectorButtonColor);
-    background-color: var(--colormap-rightedge);
-}
-
-.buttonGroup__itemLabel--jss-0-250:hover {
-    color: var(--colormap-inspectorButtonColor);
-}
-
-.buttonGroup__itemLabel--jss-0-250.active {
-    color: var(--colormap-buttonGroup__itemLabel__active);
-    background-color: var(--colormap-valuecomputed);
-    box-shadow: none;
-}
-
-.buttonGroup__itemLabel--jss-0-250.inherited {
-    background-color: var(--colormap-backgroundInherit);
-    color: var(--colormap-colorInherited);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.buttonGroup--jss-0-270 {
-    border: 1px solid var(--colormap-buttonGroupBorder);
-    background-color: var(--colormap-buttonGroupBackground);
-    box-shadow: 0 1px 0 0 var(--colormap-buttonGroupBoxShadow);
-    padding: 0;
-}
-
-.inputNumberWrap--jss-0-343 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputNumberWrap--jss-0-343:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputElement--jss-0-140 {
-    color: var(--colormap-workspaceInputText);
-}
-
-.inputElement--jss-0-140:focus {
-    outline: none;
-}
-
-.inputElement--jss-0-140:hover {
-    cursor: text;
-}
-
-.inputElement--jss-0-140:disabled {
-    background-color: var(--colormap-inputNumberElementBackgroundColor__disabled);
-}
-
-.textLabel--jss-0-144 {
-    color: var(--colormap-workspaceInputLabel);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.trblSet--jss-0-355 {
-    border: 1px dashed var(--colormap-linkedSidesBoxBorder);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.swatchesColor--jss-0-382 {
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--colormap-inputColorswatchesColorBorder);
-    border-radius: 4px;
-}
-
-.swatchesColor--jss-0-382:hover {
-    opacity: 0.8;
-}
-
-.swatchesWrapper--jss-0-385 {
-    display: flex;
-    border-top: 1px solid var(--colormap-inputColorswatchesWrapperBorderTop);
-    width: 100%;
-    justify-content: space-around;
-    padding: 4px;
-    align-items: center;
-    height: 40px;
-    background: var(--colormap-inputColorswatchesWrapperBackground);
-}
-
-.inputColorWrap--jss-0-400 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-    min-height: auto;
-}
-
-.inputColorWrap--jss-0-400:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.colorLabel--jss-0-391 {
-    color: var(--colormap-workspaceInputLabel);
-}
-
-.action--jss-0-457:hover {
-    background-color: var(--colormap-inputAction);
-}
-
-.inputImageWrap--jss-0-459 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputColorToggle--jss-0-403 {
-    height: 24px;
-    border-radius: 4px;
-}
-
-.dropZonePreview--jss-0-464 {
-    border-radius: 4px;
-    color: var(--colormap-inputDropZonePreview);
-}
-
-.dropZonePreview--jss-0-464:before {
-    background-color: var(--colormap-dropZonePreviewBackground);
-}
-
-.InputSwitchTrack--jss-0-479 {
-    flex: 0 0 40px;
-    display: block;
-    width: 40px;
-    height: 20px;
-    border: 1px solid var(--colormap-inputSwitchTrackBorder);
-    border-radius: 10px;
-    background-color: var(--colormap-inputSwitchTrackBackground);
-    transition-property: background-color, box-shadow;
-    transition-duration: .4s;
-    box-shadow: inset 0 0 0 0px var(--colormap-inputSwitchTrackBoxShadow);
-}
-
-.InputSwitchKnob--jss-0-481 {
-    float: left;
-    width: 18px;
-    height: 18px;
-    border-radius: inherit;
-    background-color: var(--colormap-inputSwitchKnobBackgroundColor);
-    transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
-    transition-duration: 0.4s;
-    transition-property: transform;
-    box-shadow: 0px 0px 3px var(--colormap-inputSwitchKnobBoxShadow), 0px 0px 0 1px var(--colormap-inputSwitchKnobBoxShadow);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputTextArea--jss-0-875 {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 0;
-    align-items: center;
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    color: var(--colormap-workspaceInputSelect);
-}
-
-.inputTextArea--jss-0-875 textarea {
-    -webkit-appearance: none;
-    outline: none;
-    height: 30px;
-    line-height: 30px;
-    width: 100%;
-    margin: 0px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: var(--colormap-workspaceInputText);
-    min-height: 150px;
-}
-
-.inputTextArea--jss-0-875 textarea:focus {
-    outline: none;
-}
-
-.inputTextArea--jss-0-875 textarea:hover {
-    cursor: text;
-}
-
-.inputTextAreaLabel--jss-0-861 {
-    font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: var(--colormap-inputTextAreaLabel);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.rightEdge--jss-0-3392 {
-    flex: 0 0 272px;
-    height: 100vh;
-    max-width: 272px;
-    background-color: var(--colormap-rightedge);
-    border-left: 1px solid var(--colormap-navbarBorder);
-}
-
-.panelHeader__Element--jss-0-3449 {
-    border: 1px solid var(--colormap-workspacePanelHeader__ElementBorder);
-}
-
-.panelHeader__Operations--jss-0-3451 {
-    border-bottom: 1px solid var(--colormap-inspectorBorder);
-}
-
-.wksPlayground--jss-0-3396 {
-    height: calc(100vh - 70px);
-}
-
-
-/* wksBottomBar */
-
-.inputSelectWrap--jss-0-209 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.elementPathNode--jss-0-1104 {
-    padding: 0 0 0 10px;
-    cursor: pointer;
-    display: inline-block;
-    color: var(--colormap-elementNode);
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-}
-
-.elementPathNode--jss-0-1104.isActive {
-    font-weight: 500;
-    color: var(--colormap-elementNodeActive);
-}
-
-.elementPathNode--jss-0-1104:hover {
-    color: var(--colormap-elementNodeHover);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.wksBottomBar--jss-0-3400 {
-    flex: 0 0 30px;
-    text-align: left;
-    background-color: var(--colormap-navbarBackground);
-    display: flex;
-    border-top: 1px solid var(--colormap-navbarBorder);
-}
-
-.docmapTrigger--jss-0-3438 {
-    flex: 0 0 50px;
-    border-right: 1px solid var(--colormap-docmapTriggerBorderRight);
-}
-
-.docmapToggle--jss-0-3439 {
-    cursor: pointer;
-    width: 100%;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s ease-in-out;
-    transform: rotate(180deg);
-    color: var(--colormap-docmapToggle);
-}
-
-.docmapToggle--jss-0-3439:hover {
-    color: var(--colormap-docmapToggle__hover);
-}
-
-.canvasOperations--jss-0-3443 {
-    flex: 1 1 auto;
-    display: flex;
-    border-left: 1px solid var(--colormap-canvasOperationsBorderLeft);
-}
-
-.canvasOperationsButton--jss-0-3444:hover {
-    color: var(--colormap-canvasOperationsButton__hover);
-}
-
-.canvasOperationsButton--jss-0-3444.active {
-    background-color: var(--colormap-canvasOperationsButton__activeBackground);
-    color: var(--colormap-canvasOperationsButton__active);
-}
-
-
-/* top bar  TODO */
-
-
-/*! CSS Used from: Embedded */
-
-.wrap--jss-0-625 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: center;
-    color: var(--colormap-navbarLabel);
-    letter-spacing: 1px;
-}
-
-.wrapLeft--jss-0-626 {
-    color: var(--colormap-controlbarWrapLeft);
-    flex: 1;
-    display: flex;
-    align-items: stretch;
-}
-
-.sideButtonSettings--jss-0-629 {
-    cursor: pointer;
-    height: 40px;
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-right: 1px solid var(--colormap-navbarBorder);
-}
-
-.sideButtonSettings--jss-0-629:hover {
-    color: var(--colormap-navbarButton__hover);
-    background-color: var(--colormap-navbarButton__hoverBackground);
-}
-
-.controlIcon--jss-0-635:hover {
-    opacity: 0.3;
-    color: var(--colormap-controlbarControlIcon__hover);
-}
-
-.screenPreview--jss-0-637:hover {
-    opacity: 1;
-    color: var(--colormap-controlbarScreenPreview__hover);
-    background-color: var(--colormap-controlbarScreenPreviewBackgroundColor__hover);
-    border-color: var(--colormap-controlbarScreenPreviewBorderColor__hover);
-}
-
-.breakpointPicker--jss-0-654 {
-    color: var(--colormap-breakpointPicker);
-    display: flex;
-    width: 300px;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.wksTopBar--jss-0-3341 {
-    flex: 0 0 40px;
-    text-align: center;
-    position: relative;
-    background-color: var(--colormap-navbarBackground);
-    width: 100%;
-    border-bottom: 1px solid var(--colormap-navbarBorder);
-}
-
-
-/* docmap */
-
-
-/*! CSS Used from: Embedded */
-
-.tree--jss-0-1260 {
-    color: var(--colormap-docmapTree);
-}
-
-.treeDetails--jss-0-1249 {
-    position: relative;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.treeActionsRight--jss-0-1250 {
-    color: var(--colormap-docmapTreeActionsRight);
-    display: flex;
-}
-
-.treeActionsRight--jss-0-1250:hover {
-    color: var(--colormap-docmapTreeActionsRight__hover);
-}
-
-.treeItem--jss-0-1276 {
-    flex: 1;
-    z-index: 1;
-    border-bottom: 1px solid var(--colormap-docmapTreeItemBorder);
-    position: relative;
-}
-
-.treeItem--jss-0-1276.active {
-    background: var(--colormap-docmapTreeItem__active);
-}
-
-.treeItem--jss-0-1276.ishover {
-    background: var(--colormap-docmapTreeItem__is_hover);
-}
-
-.treeIcon--jss-0-1264 {
-    flex: 0 0 16px;
-    margin: 0 5px;
-    padding: 0;
-    height: 16px;
+.small--jss-0-16 {
     width: 16px;
-    position: relative;
-    color: var(--colormap-docmapTreeIcon);
+    height: 16px;
 }
 
-.treeIcon--jss-0-1264.isActive {
-    color: var(--colormap-docmapTreeIcon__is_active);
+.small--jss-0-16 svg {
+    display: block;
+    fill: currentColor;
+    width: 16px;
+    height: 16px;
 }
 
-.treeLabel--jss-0-1267.isActive:focus {
-    background-color: var(--colormap-docmapTreeLabelBackground__is_active__focus);
-    color: var(--colormap-docmapTreeLabel__is_active__focus);
+.smaller--jss-0-18 {
+    width: 12px;
+    height: 12px;
 }
 
-
-/*! CSS Used from: Embedded */
-
-.treeWrap--jss-0-1364 {
-    font-size: 12px;
-    flex: 1;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: var(--colormap-docmapTreeWrap);
-    padding-bottom: 100px;
-    position: absolute;
-    min-width: 100%;
+.smaller--jss-0-18 svg {
+    display: block;
+    fill: currentColor;
+    width: 12px;
+    height: 12px;
 }
 
-.treeSearchInput--jss-0-1347 {
-    padding: 5px;
-    background: var(--colormap-docmapTreeSearchInputBackground);
-    color: var(--colormap-docmapTreeSearchInput);
-    border: 0px;
-    width: 100%;
-    border-bottom: 1px solid var(--colormap-docmapTreeSearchInputBorder);
+.tiny--jss-0-20 {
+    width: 8px;
+    height: 8px;
 }
 
-
-/*! CSS Used from: Embedded */
-
-.docmap--jss-0-3405 {
-    display: flex;
-    flex-direction: row;
-    background-color: var(--colormap-docmapBackground);
-    height: 100%;
-    flex: 1 1 auto;
-    transition: max-width 0.25s cubic-bezier(0.39, 0.58, 0.57, 1);
-    max-width: 0px;
-    overflow: hidden;
-    position: relative;
-}
-
-.docmapExpand--jss-0-3408 {
-    background-color: var(--colormap-docmapExpandBackground);
-}
-
-
-/* content collectioons */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: var(--colormap-button);
-    background: var(--colormap-buttonBackground);
-    border: 1px solid transparent;
-    border-radius: 4px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle;
-}
-
-.button--jss-0-16:hover {
-    background-color: var(--colormap-button__hoverBackground);
-    border-color: var(--colormap-button__hoverBorder);
-    color: var(--colormap-button__hover);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    background-color: var(--colormap-button__focusBackground);
-    border-color: var(--colormap-button__focusBorder);
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.button--jss-0-16.ghost {
-    color: var(--colormap-buttonGhost);
-    background: transparent;
-    text-decoration: underline;
-}
-
-.button--jss-0-16.ghost:hover {
-    background: transparent;
-    color: var(--colormap-buttonGhost__hover);
-    border-color: var(--colormap-buttonGhost__hoverBorder);
-}
-
-.buttonLabel--jss-0-77 {
-    flex: 1 1 auto;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.button--jss-0-79 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: var(--colormap-button);
-    background: var(--colormap-buttonBackground);
-    border: 1px solid transparent;
-    border-radius: 4px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle;
-}
-
-.button--jss-0-79:hover {
-    background-color: var(--colormap-button__hoverBackground);
-    border-color: var(--colormap-button__hoverBorder);
-    color: var(--colormap-button__hover);
-}
-
-.button--jss-0-79:focus {
-    outline: none;
-    background-color: var(--colormap-button__focusBackground);
-    border-color: var(--colormap-button__focusBorder);
-}
-
-.button--jss-0-79:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-79:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.button--jss-0-79.ghost {
-    color: var(--colormap-buttonGhost);
-    background: transparent;
-    text-decoration: underline;
-}
-
-.button--jss-0-79.ghost:hover {
-    background: transparent;
-    color: var(--colormap-buttonGhost__hover);
-    border-color: var(--colormap-buttonGhost__hoverBorder);
-}
-
-.button--jss-0-79.tiny {
-    padding: 0.5em 0.2em;
-}
-
-.buttonIconLabel--jss-0-95 {
-    flex: 1 1 auto;
-    text-align: left;
+.tiny--jss-0-20 svg {
+    display: block;
+    fill: currentColor;
+    width: 8px;
+    height: 8px;
 }
 
 
@@ -1607,6 +813,28 @@
     position: relative;
 }
 
+.item--jss-0-98 {
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-items: stretch;
+    justify-content: center;
+    color: var(--colormap-tabs__inactive);
+    letter-spacing: 0.5px;
+    line-height: 41px;
+    text-transform: lowercase;
+    font-size: 13px;
+    background-color: var(--colormap-tabs__inactiveBackground);
+    transition: transform 0.2s ease-in-out;
+}
+
+.item--jss-0-98.active {
+    font-weight: 500;
+    color: var(--colormap-tabs__active);
+    background-color: var(--colormap-tabs__activeBackground);
+}
+
 .itemLabel--jss-0-101 {
     width: 90%;
 }
@@ -1616,6 +844,12 @@
     flex: 1;
     height: 100%;
     overflow: hidden;
+}
+
+.tabsPane--jss-0-104 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 
@@ -1630,11 +864,62 @@
 
 /*! CSS Used from: Embedded */
 
+.inspector--jss-0-126 {
+    padding: 0 10px;
+    border-bottom: 1px solid var(--colormap-inspectorBorder);
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+}
+
+.inspector--jss-0-126:hover {
+    background-color: var(--colormap-inspectorBackground__hover);
+}
+
+.inspector--jss-0-126.open {
+    padding-bottom: 10px;
+}
+
+.inspector--jss-0-126.open:hover {
+    background-color: var(--colormap-rightedge);
+}
+
+.inspectorToggleBar--jss-0-130 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+}
+
+.inspectorTitle--jss-0-131 {
+    font-size: 12px;
+    text-transform: capitalize;
+    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
+    color: var(--colormap-inspectorTitle);
+    padding-left: 5px;
+    flex: 1;
+}
+
+.inspectorToggleIndicator--jss-0-133 {
+    flex-basis: 8px;
+    opacity: 0.2;
+}
+
+.inspectorToggleIndicator--jss-0-133:hover {
+    opacity: 0.5;
+}
+
+.inspectorBoard--jss-0-135 {
+    padding-top: 10px;
+}
+
+
+/*! CSS Used from: Embedded */
+
 .propGroup--jss-0-136 {
     border-radius: 4px;
 }
 
-.propGroupTitle--jss-0-132 {
+.propGroupTitle--jss-0-138 {
     font-size: 10px;
     position: relative;
     font-family: 'EuclidFlex', 'Open Sans', sans-serif;
@@ -1676,7 +961,7 @@
 
 /*! CSS Used from: Embedded */
 
-.inputElement--jss-0-140 {
+.inputElement--jss-0-164 {
     -webkit-appearance: none;
     outline: none;
     height: 30px;
@@ -1694,22 +979,22 @@
     color: var(--colormap-workspaceInputText);
 }
 
-.inputElement--jss-0-140:focus {
+.inputElement--jss-0-164:focus {
     outline: none;
 }
 
-.inputElement--jss-0-140:hover {
+.inputElement--jss-0-164:hover {
     cursor: text;
 }
 
-.inputElement--jss-0-140:disabled {
+.inputElement--jss-0-164:disabled {
     background-color: var(--colormap-workspaceInput__disabled);
 }
 
 
 /*! CSS Used from: Embedded */
 
-.inputTextWrap--jss-0-145 {
+.inputTextWrap--jss-0-169 {
     background-color: var(--colormap-workspaceInputBackground);
     border-radius: 4px;
     transition: box-shadow 0.2s linear;
@@ -1718,1026 +1003,9 @@
     border: 1px solid var(--colormap-workspaceInputBorder);
 }
 
-.inputTextWrap--jss-0-145:hover {
+.inputTextWrap--jss-0-169:hover {
     box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
     transition: box-shadow 0.1s linear;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.actions--jss-0-433 {
-    display: flex;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.action--jss-0-457 {
-    padding: 4px;
-    display: inline-block;
-}
-
-.action--jss-0-457:hover {
-    background-color: var(--colormap-inputAction);
-}
-
-.inputImageWrap--jss-0-459 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.dropZonePreview--jss-0-464 {
-    position: relative;
-    width: 100%;
-    min-height: 100px;
-    border-radius: 4px;
-    color: var(--colormap-inputDropZonePreview);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.dropZonePreview--jss-0-464:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background-color: var(--colormap-dropZonePreviewBackground);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputTextArea--jss-0-875 {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 0;
-    align-items: center;
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    color: var(--colormap-workspaceInputSelect);
-}
-
-.inputTextArea--jss-0-875 textarea {
-    -webkit-appearance: none;
-    outline: none;
-    height: 30px;
-    line-height: 30px;
-    width: 100%;
-    margin: 0px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: var(--colormap-workspaceInputText);
-    min-height: 150px;
-}
-
-.inputTextArea--jss-0-875 textarea:focus {
-    outline: none;
-}
-
-.inputTextArea--jss-0-875 textarea:hover {
-    cursor: text;
-}
-
-.inputTextAreaLabel--jss-0-861 {
-    font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: var(--colormap-inputTextAreaLabel);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.wrapper--jss-0-1604 {
-    position: relative;
-    overflow-x: hidden;
-    min-height: 200px;
-    min-width: 200px;
-    flex: 1;
-}
-
-.slideview--jss-0-1605 {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    transform: translate3d(0, 0, 0);
-}
-
-.slideview--jss-0-1605.center {
-    transform: translate3d(0, 0, 0);
-}
-
-.slideview--jss-0-1605.right {
-    transform: translate3d(100%, 0, 0);
-}
-
-.slideview--jss-0-1605.transition {
-    transition-duration: .25s;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.tabItem--jss-0-1882 {
-    cursor: pointer;
-    flex: 1;
-    display: flex;
-    text-align: center;
-    align-items: stretch;
-    justify-content: center;
-    color: var(--colormap-tabItem);
-    letter-spacing: 0.5px;
-    line-height: 40px;
-    text-transform: lowercase;
-    font-size: 14px;
-    background-color: var(--colormap-tabItemBackground);
-}
-
-.tabItem--jss-0-1882:hover {
-    color: var(--colormap-tabItem__hover);
-}
-
-.tabItem--jss-0-1882.active {
-    font-weight: 500;
-}
-
-.contentEditorWrap--jss-0-1928 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.contentEditorFooter--jss-0-1930 {
-    font-size: 12px;
-    width: 100%;
-    flex: 0 0 60px;
-    display: flex;
-    justify-content: flex-center;
-    padding: 10px;
-    z-index: 10;
-    box-shadow: 0 -2px 1px -1px var(--colormap-sitemapContentEditorFooterBoxShadow);
-    color: var(--colormap-sitemapContentEditorFooter);
-}
-
-.contentEditorMain--jss-0-1931 {
-    flex: 1;
-    overflow: auto;
-    max-height: 100%;
-}
-
-.contentEditorMain__detail--jss-0-1933 {
-    margin: 10px;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.tree--jss-0-1950 {
-    display: flex;
-    flex-flow: column;
-    position: relative;
-    z-index: 1;
-}
-
-.treeItem--jss-0-1957 {
-    flex: 1;
-    z-index: 1;
-    display: flex;
-    border-bottom: 1px solid var(--colormap-sitemapTreeItemBorderBottom);
-    color: var(--colormap-sitemapTreeItem);
-    transition: background 200ms;
-}
-
-.treeItem--jss-0-1957.isHome {
-    border-bottom: 0px;
-    padding: 5px 5px!important;
-}
-
-.treeItem--jss-0-1957.active {
-    background: var(--colormap-valuecomputed);
-    color: var(--colormap-sitemapTreeItem__active);
-}
-
-.treeDetails--jss-0-1963 {
-    position: relative;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.treeGuide--jss-0-1964 {
-    position: absolute;
-    top: -6px;
-    height: 100%;
-    border-width: 0px;
-    border-style: dashed;
-    border-color: var(--colormap-sitemapTreeGuideBorderColor);
-    z-index: 10;
-}
-
-.treeIcon--jss-0-1965 {
-    flex: 0 0 auto;
-    padding: 3px 4px 0px 4px;
-    height: 22px;
-}
-
-.treeLabel--jss-0-1966 {
-    flex: 1 1 auto;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden;
-    height: 18px;
-    padding-right: 4px;
-    padding-left: 4px;
-    padding-top: 4px;
-}
-
-.treeLabel--jss-0-1966:focus {
-    background-color: var(--colormap-sitemapTreeLabelBackgroundColor__focus);
-}
-
-.treeActionsRight--jss-0-1968 {
-    width: 30px;
-    color: var(--colormap-sitemapTreeActionsRightColor);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.listsSep--jss-0-2001 {
-    padding: 10px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 10px;
-    color: var(--colormap-sitemapListsSep);
-    display: flex;
-    justify-content: space-between;
-}
-
-.emptySep--jss-0-2004 {
-    border: 1px dashed var(--colormap-sitemapEmptySepBorder);
-    color: var(--colormap-sitemapEmptySep);
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-.addFolder--jss-0-2035 {
-    padding: 10px 10px 20px;
-    margin-bottom: 10px;
-    text-decoration: underline;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    color: var(--colormap-sitemapAddFolder);
-}
-
-.addFolder--jss-0-2035:hover {
-    cursor: pointer;
-    color: var(--colormap-sitemapAddFolder__hover);
-}
-
-.treeWrap--jss-0-2041 {
-    font-size: 12px;
-    flex: 1;
-    overflow: auto;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    padding: 0px 0px;
-    width: 100%;
-    margin: 0 auto;
-    background-color: var(--colormap-sitemapTreeWrapBackground);
-    color: var(--colormap-sitemapTreeWrap);
-}
-
-.contentCollectionsMain--jss-0-2052 {
-    flex: 1;
-    overflow: auto;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.returnDashboard--jss-0-2077 {
-    color: var(--colormap-sitemapReturnDashboard);
-    background: var(--colormap-sitemapReturnDashboardBackground);
-    display: flex;
-    padding: 10px;
-}
-
-.returnDashboard--jss-0-2077:hover {
-    color: var(--colormap-sitemapReturnDashboard__hover);
-}
-
-
-/* listWrap */
-
-.listLabel--jss-0-2477 {
-    width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-}
-
-.listItem--jss-0-2478 {
-    margin: 0 auto;
-    padding: 10px;
-    color: var(--colormap-projectListItem);
-    border-bottom: 1px solid var(--colormap-projectListItemBorderBottom);
-    transition: background-color 200ms;
-}
-
-.listItem--jss-0-2478:hover {
-    cursor: pointer;
-    background-color: var(--colormap-projectListItemBackground__hover);
-}
-
-
-/* newMain */
-
-.inputSelectWrap--jss-0-209 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-    height: 100%;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.gridItem--jss-0-237 {
-    display: flex;
-    flex: 1;
-    height: auto;
-    flex-flow: column nowrap;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.grid--jss-0-239 {
-    display: flex;
-    flex: 1 1 auto;
-    height: auto;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: flex-start;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputCheckboxLabel--jss-0-242 {
-    color: #666 !important;
-}
-
-.inputCheckboxToggle--jss-0-243 {
-    cursor: pointer;
-    color: var(--colormap-inputCheckboxToggle);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.valuesList--jss-0-323 {
-    background-color: var(--colormap-valuesListBackground);
-    border-radius: 4px;
-    margin: 5px 0;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.actions--jss-0-433 {
-    display: flex;
-    height: 20px;
-    align-items: center;
-    justify-content: center;
-}
-
-.action--jss-0-457 {
-    padding: 4px;
-    display: inline-block;
-}
-
-.action--jss-0-457:hover {
-    background-color: var(--colormap-inputAction);
-}
-
-.inputImageWrap--jss-0-459 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputImageWrap--jss-0-459:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.dropZonePreview--jss-0-464 {
-    position: relative;
-    width: 100%;
-    min-height: 100px;
-    border-radius: 4px;
-    color: var(--colormap-inputDropZonePreview);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
-
-.dropZonePreview--jss-0-464:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    bottom: 0px;
-    right: 0px;
-    background-color: var(--colormap-dropZonePreviewBackground);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputPlainText--jss-0-837 {
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 14px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    -webkit-appearance: none;
-    height: 2.25rem;
-    padding: 0.5rem;
-    vertical-align: middle;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-    border-style: solid;
-    background-color: var(--colormap-workspaceInputBackground);
-    color: var(--colormap-workspaceInputSelect);
-    border-radius: 4px;
-    width: 100%;
-}
-
-.inputPlainText--jss-0-837:focus {
-    outline: none;
-    border: 1px solid var(--colormap-workspaceInputBorder__focus);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputTextArea--jss-0-875 {
-    display: flex;
-    flex-direction: row;
-    margin: 5px 0;
-    align-items: center;
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    color: var(--colormap-workspaceInputSelect);
-}
-
-.inputTextArea--jss-0-875 textarea {
-    -webkit-appearance: none;
-    outline: none;
-    height: 30px;
-    line-height: 30px;
-    width: 100%;
-    margin: 0px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: var(--colormap-workspaceInputText);
-    min-height: 150px;
-}
-
-.inputTextArea--jss-0-875 textarea:focus {
-    outline: none;
-}
-
-.inputTextArea--jss-0-875 textarea:hover {
-    cursor: text;
-}
-
-.inputTextAreaLabel--jss-0-861 {
-    font-size: 10px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: var(--colormap-inputTextAreaLabel);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.noResults--jss-0-869 {
-    color: var(--colormap-inputTypeaheadNoResults);
-    padding: 10px;
-}
-
-.results_wrapper--jss-0-879 {
-    position: absolute;
-    background: var(--colormap-inputTypeaheadResults_wrapperBackground);
-    border: 1px solid var(--colormap-inputTypeaheadResults_wrapperBorder);
-    z-index: 10000;
-    width: 500px;
-    max-height: 200px;
-    overflow-y: scroll;
-    margin-top: -8px;
-    box-shadow: 0px 0px 5px var(--colormap-inputTypeaheadResults_wrapperBoxShadow);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.FormInput--jss-0-1005 {
-    margin-bottom: 20px;
-}
-
-.fieldTopBar--jss-0-1007 {
-    display: flex;
-    align-items: baseline;
-    margin-bottom: 5px;
-}
-
-.fieldLabel--jss-0-1010 {
-    flex: 1;
-    font-size: 14px;
-    color: var(--colormap-formInputFieldLabel);
-}
-
-.microCopy--jss-0-1014 {
-    flex: 1;
-    color: var(--colormap-microCopy);
-    font-size: 10px;
-    margin-bottom: 5px;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.newMain--jss-0-2606 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background-color: var(--colormap-projectNewMainBackground);
-    padding: 20px;
-    overflow-y: auto;
-}
-
-
-/* dropWrapper */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: var(--colormap-button);
-    background: var(--colormap-buttonBackground);
-    border: 1px solid transparent;
-    border-radius: 4px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle;
-}
-
-.button--jss-0-16:hover {
-    background-color: var(--colormap-button__hoverBackground);
-    border-color: var(--colormap-button__hoverBorder);
-    color: var(--colormap-button__hover);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    background-color: var(--colormap-button__focusBackground);
-    border-color: var(--colormap-button__focusBorder);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.selectElement--jss-0-183 {
-    -webkit-appearance: none;
-    outline: none;
-    height: 30px;
-    line-height: 30px;
-    width: 100%;
-    margin: 0px;
-    padding: 0 3px;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    font-size: 12px;
-    background: none;
-    background-color: transparent;
-    color: var(--colormap-workspaceInputText);
-}
-
-.selectElement--jss-0-183:focus {
-    outline: none;
-}
-
-.selectElement--jss-0-183:hover {
-    cursor: pointer;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.inputSelectWrap--jss-0-209 {
-    background-color: var(--colormap-workspaceInputBackground);
-    border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
-}
-
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
-}
-
-.inputSelect--jss-0-212 {
-    position: relative;
-    height: 100%;
-}
-
-.selectIndicator--jss-0-217 {
-    position: absolute;
-    top: 50%;
-    right: 8px;
-    transform: translateY(-50%);
-    pointer-events: none;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.buttonGroup__itemLabel--jss-0-250 {
-    padding: 8px 5px;
-    display: flex;
-    min-width: 30px;
-    min-height: 30px;
-    justify-content: center;
-    align-items: center;
-    color: var(--colormap-inspectorButtonColor);
-    background-color: var(--colormap-rightedge);
-}
-
-.buttonGroup__itemLabel--jss-0-250:hover {
-    color: var(--colormap-inspectorButtonColor);
-}
-
-.buttonGroup__itemLabel--jss-0-250.active {
-    color: var(--colormap-buttonGroup__itemLabel__active);
-    background-color: var(--colormap-valuecomputed);
-    box-shadow: none;
-}
-
-.buttonGroup__itemFirst--jss-0-256 {
-    font-size: 10px;
-    line-height: 1em;
-    flex: 1 1 auto;
-    text-align: center;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    cursor: pointer;
-    border-radius: 4px;
-    position: relative;
-    z-index: 1;
-    border-left-width: 0px;
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-}
-
-.buttonGroup__itemLast--jss-0-259 {
-    font-size: 10px;
-    line-height: 1em;
-    flex: 1 1 auto;
-    text-align: center;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    cursor: pointer;
-    border-radius: 4px;
-    position: relative;
-    z-index: 1;
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.buttonGroup--jss-0-270 {
-    display: inline-flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    border: 1px solid var(--colormap-buttonGroupBorder);
-    border-bottom: 0px;
-    border-radius: 4px;
-    background-color: var(--colormap-buttonGroupBackground);
-    box-shadow: 0 1px 0 0 var(--colormap-buttonGroupBoxShadow);
-    overflow: hidden;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.pagination--jss-0-3144 {
-    background: var(--colormap-assetsPaginationBackground);
-    border-top: 1px solid var(--colormap-assetsPaginationBorderTop);
-    display: flex;
-    margin-top: 20px;
-    padding: 10px;
-}
-
-.pagination--jss-0-3144 li {
-    margin: 5px;
-}
-
-.pagination--jss-0-3144 li.disabled {
-    opacity: 0.4;
-}
-
-.lib--jss-0-3156 {
-    flex: 1;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.libHeadbar--jss-0-3157 {
-    flex: 0 0 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: var(--colormap-leftedge);
-}
-
-.libHeadbarSep--jss-0-3158 {
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    margin-right: 10px;
-    color: var(--colormap-assetsLibHeadbarSep);
-    display: flex;
-}
-
-.libMain--jss-0-3159 {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-}
-
-.libHeadbarLeft--jss-0-3303 {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.libHeadbarRight--jss-0-3163 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.dropPlaceholder--jss-0-3189 {
-    text-align: center;
-    font-size: 1.5rem;
-    width: 100%;
-    color: var(--colormap-assetsDropPlaceholder);
-    padding: 80px;
-}
-
-.dropZone--jss-0-3190 {
-    border-radius: 5px;
-    border-color: var(--colormap-assetsDropZoneBorderColor);
-}
-
-
-/* contentCollections */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: var(--colormap-button);
-    background: var(--colormap-buttonBackground);
-    border: 1px solid transparent;
-    border-radius: 4px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding: 1em;
-    vertical-align: middle;
-}
-
-.button--jss-0-16:hover {
-    background-color: var(--colormap-button__hoverBackground);
-    border-color: var(--colormap-button__hoverBorder);
-    color: var(--colormap-button__hover);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    background-color: var(--colormap-button__focusBackground);
-    border-color: var(--colormap-button__focusBorder);
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.button--jss-0-16.dynamic {
-    color: var(--colormap-buttonDynamic);
-    background: var(--colormap-buttonDynamicBackground);
-    border: 1px solid var(--colormap-buttonDynamicBorder);
-}
-
-.button--jss-0-16.dynamic:hover {
-    color: var(--colormap-buttonDynamic__hover);
-    background-color: var(--colormap-buttonDynamic__hoverBackground);
-    border-color: var(--colormap-buttonDynamic__hoverBorder);
-}
-
-.buttonLabel--jss-0-77 {
-    flex: 1 1 auto;
-}
-
-
-/*! CSS Used from: Embedded */
-
-.collectionItemNew--jss-0-941 {
-    cursor: pointer;
-}
-
-.collectionItemNew--jss-0-941:hover {
-    cursor: pointer;
-    color: var(--colormap-schemasCollectionItemNew__hover);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.contentCollectionsWrap--jss-0-963 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-}
-
-.contentCollectionsFooter--jss-0-965 {
-    font-size: 12px;
-    width: 100%;
-    flex: 0 0 60px;
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    background: var(--colormap-schemasContentCollectionsFooterBackground);
-    border-top: 1px solid var(--colormap-schemasContentCollectionsFooterBorderTop);
-    z-index: 10;
-    box-shadow: 0 -2px 1px -1px var(--colormap-schemasContentCollectionsFooterBoxShadow);
-    color: var(--colormap-schemasContentCollectionsFooter);
-}
-
-
-/* modalInner */
-
-
-/*
-[class^="modalContent"] {
-    font-size: 14px;
-    color: var(--colormap-modalInfoContent);
-    background-color: var(--colormap-modalInfoContentBackgrond);
-    padding: 40px 40px;
-    flex: 1 auto;
-    overflow-y: auto;
-}
-
-
-
-[class^="modalHeadbar"] {
-    display: flex;
-    flex: 0 0 40px;
-    color: var(--colormap-modalInfoHeadbar);
-    background-color: var(--colormap-modalInfoHeadbarBackground);
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-
-[class^="modalActions"]:hover {
-    cursor: pointer;
-    color: var(--colormap-modalInfoActions__hover);
-}
-
-
-[class^="modalFooter"] {
-    color: var(--colormap-modalInfoFooter);
-    background: var(--colormap-modalInfoFooterBackground);
-    z-index: 10;
-}
-
-
-
-[class^="modalInner"] {
-    width: 50%;
-    margin: 0 auto;
-    box-shadow: 0px 4px 30px var(--colormap-modalInfoInnerBoxShadow);
-}
-
- */
-
-.button--jss-0-16 {
-    color: var(--colormap-button);
-    background: var(--colormap-buttonBackground);
-}
-
-.button--jss-0-16:hover {
-    background-color: var(--colormap-button__hoverBackground);
-    border-color: var(--colormap-button__hoverBorder);
-    color: var(--colormap-button__hover);
-}
-
-.button--jss-0-16:focus {
-    outline: none;
-    background-color: var(--colormap-button__focusBackground);
-    border-color: var(--colormap-button__focusBorder);
-}
-
-.button--jss-0-16:active {
-    transform: translateY(1px);
-}
-
-.button--jss-0-16:disabled {
-    cursor: not-allowed;
-    opacity: 0.6;
-}
-
-.buttonLabel--jss-0-77 {
-    flex: 1 1 auto;
 }
 
 
@@ -2775,8 +1043,6 @@
 .inputWrap--jss-0-208 {
     position: relative;
     border: 3px solid transparent;
-    border-top: 0;
-    border-bottom: 0;
 }
 
 .inputSelectWrap--jss-0-209 {
@@ -2793,183 +1059,164 @@
     transition: box-shadow 0.1s linear;
 }
 
-
-/*! CSS Used from: Embedded */
-
-.inputCheckboxLabel--jss-0-242 {
-    cursor: pointer;
-    margin-left: 5px;
-    font-family: 'Nitti', 'Lucida Console', sans-serif;
-    color: var(--colormap-inputCheckboxLabel);
-}
-
-.inputCheckboxToggle--jss-0-243 {
-    cursor: pointer;
-    color: var(--colormap-inputCheckboxToggle);
-}
-
-
-/* treeWrap /*
-
-
-/*! CSS Used from: Embedded */
-
-.treeNodeChildren--jss-0-1257.isActive {
-    background: var(--colormap-docmapTreeNodeChildren__is_active);
-}
-
-.treeNodeChildren--jss-0-1257.isHover {
-    background: var(--colormap-docmapTreeNodeChildren__is_hover);
-}
-
-.tree--jss-0-1257 {
-    display: flex;
-    flex-flow: column;
-    color: var(--colormap-docmapTree);
-    z-index: 1;
-    font-size: 11px;
-}
-
-.treeInner--jss-0-1265:hover {
-    outline: 1px dashed var(--colormap-docmapTreeInnerOverOutline);
-}
-
-.treeActionsRight--jss-0-1266 {
-    color: var(--colormap-docmapTreeActionsRight);
-}
-
-.treeActionsRight--jss-0-1266:hover {
-    color: var(--colormap-docmapTreeActionsRight__hover);
-}
-
-[class^="treeDropIndicator"].over {
-    background: black;
-}
-
-.treeDropIndicator--jss-0-1268:hover:before {
-    border-color: transparent transparent transparent var(--colormap-docmapTreeDropIndicatorBackground__hover__before);
-}
-
-.treeDropIndicator--jss-0-1268:hover:after {
-    border-color: transparent var(--colormap-docmapTreeDropIndicatorBackground__hover__after) transparent transparent;
-}
-
-.treeItem--jss-0-1273 {
-    border-bottom: 1px solid var(--colormap-docmapTreeItemBorder);
-}
-
-.treeItem--jss-0-1273.active {
-    background: var(--colormap-docmapTreeItem__active);
-}
-
-.treeFold--jss-0-1280 {
-    background-color: var(--colormap-docmapTreeFoldBackground);
-    color: var(--colormap-docmapTreeFold);
-}
-
-.treeFold--jss-0-1280:hover {
-    color: var(--colormap-docmapTreeFold__hover);
-}
-
-.treeFold--jss-0-1280.isActive {
-    transform: rotate(0);
-}
-
-.treeIcon--jss-0-1283 {
-    flex: 0 0 16px;
-    margin: 0 5px;
-    padding: 0;
-    height: 16px;
-    width: 16px;
+.inputSelect--jss-0-212 {
     position: relative;
-    color: var(--colormap-docmapTreeIcon);
+    height: 100%;
 }
 
-.treeIcon--jss-0-1283.isHover {
-    color: var(--colormap-docmapTreeIcon__is_hover);
-    cursor: grab;
+.selectLabel--jss-0-216 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: var(--colormap-workspaceInputLabel);
+    padding: 3px;
+    text-transform: uppercase;
 }
 
-.treeIcon--jss-0-1283.isActive {
-    color: var(--colormap-docmapTreeIcon__is_active);
-}
-
-.treeLabel--jss-0-1283.isActive:focus {
-    background-color: var(--colormap-docmapTreeLabelBackground__is_active__focus);
-    color: var(--colormap-docmapTreeLabel__is_active__focus);
+.selectIndicator--jss-0-217 {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
 }
 
 
 /*! CSS Used from: Embedded */
 
-.treeWrap--jss-0-1364 {
-    color: var(--colormap-docmapTreeWrap);
-}
-
-.treeWrap--jss-0-1364 input {
-    background: var(--colormap-docmapTreeSearchInputBackground) !important;
-    color: var(--colormap-docmapTreeSearchInput) !important;
-    border-bottom: 1px solid var(--colormap-docmapTreeSearchInputBorder) !important;
-}
-
-
-/* modalInner backups */
-
-.button--jss-0-16 {
-    cursor: pointer;
-    outline: none;
-    white-space: nowrap;
-    -webkit-appearance: none;
-    font-family: 'EuclidFlex', 'Open Sans', sans-serif;
-    font-size: 14px;
-    color: var(--colormap-button);
-    background: var(--colormap-buttonBackground);
-    border: 1px solid transparent;
+.itemTitle--jss-0-218 {
+    background-color: var(--colormap-titleTipItemTitleBackgroundColor);
+    color: var(--colormap-titleTipItemTitle);
     border-radius: 4px;
-    text-align: center;
-    line-height: 1em;
-    height: auto;
+    padding: 5px;
+    position: absolute;
+    transform: translateY(-110%);
+    z-index: 0;
+    visibility: hidden;
+    transition: all 0.1s linear 0s;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.itemTitle--jss-0-218:after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-color: var(--colormap-titleTipItemTitleBorderColor__after);
+    border-width: 10px;
+    border-style: solid;
+    white-space: nowrap;
+}
+
+.itemTitle--jss-0-218.tl {
+    top: -10px;
+    left: 0px;
+}
+
+.itemTitle--jss-0-218.tl:after {
+    left: 5px;
+    top: 100%;
+    border-width: 5px;
+    border-left-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputWrap--jss-0-228 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputUnitsWrap--jss-0-229 {
+    background-color: var(--colormap-workspaceInputBackground);
+    border-radius: 4px;
+    transition: box-shadow 0.2s linear;
+    position: relative;
+    box-shadow: none;
+    border: 1px solid var(--colormap-workspaceInputBorder);
+}
+
+.inputUnitsWrap--jss-0-229:hover {
+    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputUnits--jss-0-232 {
     display: flex;
     align-items: center;
-    padding: 1em;
-    vertical-align: middle;
+    height: 30px;
 }
 
-.button--jss-0-16:hover {
-    background-color: var(--colormap-button__hoverBackground);
-    border-color: var(--colormap-button__hoverBorder);
-    color: var(--colormap-button__hover);
+.inputValue--jss-0-233 {
+    flex: 1;
 }
 
-.button--jss-0-16:focus {
-    outline: none;
-    background-color: var(--colormap-button__focusBackground);
-    border-color: var(--colormap-button__focusBorder);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.selectElement--jss-0-203 {
-    color: var(--colormap-workspaceInputText);
-}
-
-.inputSelectWrap--jss-0-209 {
-    background-color: var(--colormap-workspaceInputBackground);
+.unitPicker--jss-0-234 {
+    flex: 0 0;
+    flex-basis: 30px;
+    cursor: pointer;
+    margin-left: 5px;
     border-radius: 4px;
-    transition: box-shadow 0.2s linear;
-    position: relative;
-    box-shadow: none;
-    border: 1px solid var(--colormap-workspaceInputBorder);
 }
 
-.inputSelectWrap--jss-0-209:hover {
-    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
-    transition: box-shadow 0.1s linear;
+.inputUnitsLabel--jss-0-235 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: var(--colormap-workspaceInputLabel);
+    padding: 3px;
+    text-transform: uppercase;
 }
 
 
 /*! CSS Used from: Embedded */
+
+.gridItem--jss-0-237 {
+    display: flex;
+    flex: 1;
+    height: auto;
+    flex-flow: column nowrap;
+}
+
+.gridLabel--jss-0-238 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: var(--colormap-workspaceInputLabel);
+    padding: 3px;
+    text-transform: uppercase;
+    flex: 0 0 auto;
+    width: 100%;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.grid--jss-0-239 {
+    display: flex;
+    flex: 1 1 auto;
+    height: auto;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.buttonGroup__item--jss-0-247 {
+    font-size: 10px;
+    line-height: 1em;
+    flex: 1 1 auto;
+    text-align: center;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    cursor: pointer;
+    border-radius: 4px;
+    position: relative;
+    z-index: 1;
+}
 
 .buttonGroup__itemLabel--jss-0-250 {
     padding: 8px 5px;
@@ -2990,6 +1237,11 @@
     color: var(--colormap-buttonGroup__itemLabel__active);
     background-color: var(--colormap-valuecomputed);
     box-shadow: none;
+}
+
+.buttonGroup__itemLabel--jss-0-250.inherited {
+    background-color: var(--colormap-backgroundInherit);
+    color: var(--colormap-colorInherited);
 }
 
 .buttonGroup__itemFirst--jss-0-256 {
@@ -3036,182 +1288,930 @@
     overflow: hidden;
 }
 
-.modalContent--jss-0-3123 {
-    background-color: var(--colormap-modalContentBackgroundColor);
-}
-
 
 /*! CSS Used from: Embedded */
 
-.modalInner--jss-0-3104 {
-    width: 50%;
-    margin: 0 auto;
-}
-
-.modalHeadbar--jss-0-3107 {
-    display: flex;
-    flex: 0 0 40px;
-    background-color: var(--colormap-modalHeadbarBackgroundColor);
-    color: var(--colormap-modalHeadbar);
-    align-items: center;
-    padding: 10px;
-}
-
-.modalTitle--jss-0-3108 {
-    font-size: 16px;
-    flex: 1;
-    text-align: center;
-}
-
-.modalActions--jss-0-3109 {
-    flex: 0 0 20px;
-}
-
-.modalActions--jss-0-3109:hover {
-    cursor: pointer;
-    color: var(--colormap-modalActions__hover);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.lib--jss-0-3260 {
-    flex: 1;
+.inputWrap--jss-0-342 {
     position: relative;
-    display: flex;
-    flex-direction: column;
+    border: 3px solid transparent;
 }
 
-.libHeadbar--jss-0-3298 {
-    flex: 0 0 50px;
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-color: var(--colormap-leftedge);
-}
-
-.libHeadbarSep--jss-0-3299 {
-    color: var(--colormap-backupsLibHeadbarSep);
-}
-
-.libMain--jss-0-3300 {
-    background-color: var(--colormap-backupsLibMainBackgroundColor);
-}
-
-.libHeadbarLeft--jss-0-3266 {
-    flex: 1;
-    display: flex;
-    align-items: center;
-}
-
-.libHeadbarRight--jss-0-3304 {
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-/* breakpointsWrap */
-
-.inputElement--jss-0-164 {
-    color: var(--colormap-workspaceInputText);
-}
-
-.inputElement--jss-0-164:disabled {
-    background-color: var(--colormap-workspaceInput__disabled);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.selectElement--jss-0-203 {
-    color: var(--colormap-workspaceInputText);
-}
-
-
-/*! CSS Used from: Embedded */
-
-.itemTitle--jss-0-218 {
-    background-color: var(--colormap-titleTipItemTitleBackgroundColor);
-    color: var(--colormap-titleTipItemTitle);
-    border-radius: 4px;
-    padding: 5px;
-    position: absolute;
-    transform: translateY(-110%);
-    z-index: 0;
-    visibility: hidden;
-    transition: all 0.1s linear 0s;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-.itemTitle--jss-0-218:after {
-    content: '';
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-color: var(--colormap-titleTipItemTitleBorderColor__after);
-    border-width: 10px;
-    border-style: solid;
-    white-space: nowrap;
-}
-
-.inputUnitsWrap--jss-0-229 {
+.inputNumberWrap--jss-0-343 {
     background-color: var(--colormap-workspaceInputBackground);
+    border-radius: 4px;
+    transition: box-shadow 0.2s linear;
+    position: relative;
+    box-shadow: none;
     border: 1px solid var(--colormap-workspaceInputBorder);
 }
 
-.inputUnitsWrap--jss-0-229:hover {
+.inputNumberWrap--jss-0-343:hover {
     box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputElement--jss-0-347 {
+    -webkit-appearance: none;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0 3px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: var(--colormap-workspaceInputText);
+}
+
+.inputElement--jss-0-347:focus {
+    outline: none;
+}
+
+.inputElement--jss-0-347:hover {
+    cursor: text;
+}
+
+.inputElement--jss-0-347:disabled {
+    background-color: var(--colormap-inputNumberElementBackgroundColor__disabled);
+}
+
+.textLabel--jss-0-351 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: var(--colormap-workspaceInputLabel);
+    padding: 3px;
+    text-transform: uppercase;
 }
 
 
 /*! CSS Used from: Embedded */
 
-#app>div>div>div:nth-child(4)>div>div:not(:last-child) {
-    border-bottom: 1px solid var(--colormap-controlbarBreakpointItemBorderBottom) !important;
+.trblSet--jss-0-360 {
+    border: 1px dashed var(--colormap-linkedSidesBoxBorder);
+    position: relative;
+    height: 80px;
+    width: 60%;
+    margin: 20px auto;
 }
 
-#app>div>div>div:nth-child(4) {
-    background: var(--colormap-workspaceBreakpointsWrapBackground) !important;
-    color: var(--colormap-workspaceBreakpointsWrap) !important;
+.trblSet__ItemTop--jss-0-363 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    top: -20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-[class^="valuesListItem--"] {
-    background-color: var(--colormap-valuesListItemBackground);
-    color: white;
+.trblSet__ItemRight--jss-0-364 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-[class^="valuesListItem--"].selected {
-    background-color: var(--colormap-valuesListItemBackground__selected);
-    color: var(--colormap-valuesListItem__selected);
+.trblSet__ItemBottom--jss-0-365 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.medium-editor-element {
-    background-color: black !important;
-    color: white;
-}
-
-[class^="propGroup--"].sub {
-    background: unset !important;
-}
-
-[class^="objectItem--"] {
-    color: var(--colormap-docmapObjectItem);
-}
-
-[class^="objectItemIcon--"] {
-    border: 1px solid var(--colormap-itemIconBorder);
-    background-color: var(--colormap-itemIconBorderBackground);
-}
-
-[class^="objectItemIcon--"]:hover {
-    border-color: var(--colormap-itemIconBorder__hover);
-    background-color: var(--colormap-itemIconBorderBackground__hover);
+.trblSet__ItemLeft--jss-0-366 {
+    display: flex;
+    position: absolute;
+    width: 60%;
+    left: -30%;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 
-/* BG docmap rich blocks */
+/*! CSS Used from: Embedded */
 
-#app>div>div>div.blocksOverlay--jss-0-1423>div.blocksWrapper--jss-0-1424>div:nth-child(1)>div:nth-child(1) {
-    background: var(--colormap-docmapBackground) !important;
+.swatchesColor--jss-0-372 {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--colormap-inputColorswatchesColorBorder);
+    border-radius: 4px;
 }
+
+.swatchesColor--jss-0-372:hover {
+    opacity: 0.8;
+}
+
+.swatchesWrapper--jss-0-375 {
+    display: flex;
+    border-top: 1px solid var(--colormap-inputColorswatchesWrapperBorderTop);
+    width: 100%;
+    justify-content: space-around;
+    padding: 4px;
+    align-items: center;
+    height: 40px;
+    background: var(--colormap-inputColorswatchesWrapperBackground);
+}
+
+.inputWrap--jss-0-376 {
+    position: relative;
+    border: 3px solid transparent;
+}
+
+.inputColorWrap--jss-0-377 {
+    background-color: var(--colormap-workspaceInputBackground);
+    border-radius: 4px;
+    transition: box-shadow 0.2s linear;
+    position: relative;
+    box-shadow: none;
+    border: 1px solid var(--colormap-workspaceInputBorder);
+    min-height: auto;
+}
+
+.inputColorWrap--jss-0-377:hover {
+    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
+    transition: box-shadow 0.1s linear;
+}
+
+.inputColorToggle--jss-0-380 {
+    cursor: pointer;
+    width: 100%;
+    height: 24px;
+    border-radius: 4px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPSc1JyBoZWlnaHQ9JzUnPgo8cmVjdCB3aWR0aD0nNScgaGVpZ2h0PSc1JyBmaWxsPScjZmZmJy8+CjxyZWN0IHdpZHRoPScxJyBoZWlnaHQ9JzEnIGZpbGw9JyNjY2MnLz4KPC9zdmc+);
+    background-repeat: repeat;
+}
+
+.colorLabel--jss-0-381 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: var(--colormap-workspaceInputLabel);
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.positionPreset__item--jss-0-417 {
+    cursor: pointer;
+    flex: none;
+    padding: 10px;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.positionPreset--jss-0-419 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.actions--jss-0-433 {
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.action--jss-0-434 {
+    padding: 4px;
+    display: inline-block;
+}
+
+.action--jss-0-434:hover {
+    background-color: var(--colormap-inputAction);
+}
+
+.inputImageWrap--jss-0-436 {
+    background-color: var(--colormap-workspaceInputBackground);
+    border-radius: 4px;
+    transition: box-shadow 0.2s linear;
+    position: relative;
+    box-shadow: none;
+    border: 1px solid var(--colormap-workspaceInputBorder);
+}
+
+.inputImageWrap--jss-0-436:hover {
+    box-shadow: 0 0 0 2px var(--colormap-workspaceInputboxShadow);
+    transition: box-shadow 0.1s linear;
+}
+
+.dropZonePreview--jss-0-441 {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    border-radius: 4px;
+    color: var(--colormap-inputDropZonePreview);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.dropZonePreview--jss-0-441:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    background-color: var(--colormap-dropZonePreviewBackground);
+}
+
+
+/*! CSS Used from: Embedded */
+
+.seam--jss-0-448 {
+    height: 0px;
+    width: 100%;
+    margin: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+
+/*! CSS Used from: Embedded */
+
+.InputSwitch--jss-0-452 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.Inputlabel--jss-0-453 {
+    flex: 1 0 auto;
+    margin-left: 10px;
+}
+
+.InputSwitchTrack--jss-0-455 {
+    flex: 0 0 40px;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border: 1px solid var(--colormap-inputSwitchTrackBorder);
+    border-radius: 10px;
+    background-color: var(--colormap-inputSwitchTrackBackground);
+    transition-property: background-color, box-shadow;
+    transition-duration: .4s;
+    box-shadow: inset 0 0 0 0px var(--colormap-inputSwitchTrackBoxShadow);
+}
+
+.InputSwitchKnob--jss-0-457 {
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: inherit;
+    background-color: var(--colormap-inputSwitchKnobBackgroundColor);
+    transition-timing-function: cubic-bezier(.54, 1.85, .5, 1);
+    transition-duration: 0.4s;
+    transition-property: transform;
+    box-shadow: 0px 0px 3px var(--colormap-inputSwitchKnobBoxShadow), 0px 0px 0 1px var(--colormap-inputSwitchKnobBoxShadow);
+    pointer-events: none;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inspectors--jss-0-475 {
+    flex: 1;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.wrap--jss-0-636 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    color: var(--colormap-navbarLabel);
+    letter-spacing: 1px;
+}
+
+.wrapLeft--jss-0-637 {
+    color: var(--colormap-controlbarWrapLeft);
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+}
+
+.wrapRight--jss-0-639 {
+    flex: 1;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+    margin-right: 10px;
+}
+
+.sideButtonSettings--jss-0-640 {
+    cursor: pointer;
+    height: 40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid var(--colormap-navbarBorder);
+}
+
+.sideButtonSettings--jss-0-640:hover {
+    color: var(--colormap-navbarButton__hover);
+    background-color: var(--colormap-navbarButton__hoverBackground);
+}
+
+.controlIcon--jss-0-646 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-right: 5px;
+    padding: 5px 10px;
+    opacity: 0.4;
+    text-transform: lowercase;
+}
+
+.controlIcon--jss-0-646:hover {
+    opacity: 0.3;
+    color: var(--colormap-controlbarControlIcon__hover);
+}
+
+.screenPreview--jss-0-648 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+    margin-left: 10px;
+    padding: 5px 10px;
+    text-transform: lowercase;
+}
+
+.screenPreview--jss-0-648:hover {
+    opacity: 1;
+    color: var(--colormap-controlbarScreenPreview__hover);
+    background-color: var(--colormap-controlbarScreenPreviewBackgroundColor__hover);
+    border-color: var(--colormap-controlbarScreenPreviewBorderColor__hover);
+}
+
+.breakpointPicker--jss-0-654 {
+    color: var(--colormap-breakpointPicker);
+    display: flex;
+    width: 300px;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.breakpointItem--jss-0-699 {
+    border-bottom: 1px solid var(--colormap-controlbarBreakpointItemBorderBottom);
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.row--jss-0-700 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+    margin-left: -10px;
+}
+
+.rowItemAuto--jss-0-701 {
+    flex: 1 1;
+    margin-left: 10px;
+}
+
+.rowItemFixed--jss-0-702 {
+    flex: none;
+    margin-left: 10px;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inputTextArea--jss-0-856 {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    align-items: center;
+    background-color: var(--colormap-workspaceInputBackground);
+    border-radius: 4px;
+    color: var(--colormap-workspaceInputSelect);
+}
+
+.inputTextArea--jss-0-856 textarea {
+    -webkit-appearance: none;
+    outline: none;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    vertical-align: middle;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    font-size: 12px;
+    background: none;
+    background-color: transparent;
+    color: var(--colormap-workspaceInputText);
+    min-height: 150px;
+}
+
+.inputTextArea--jss-0-856 textarea:focus {
+    outline: none;
+}
+
+.inputTextArea--jss-0-856 textarea:hover {
+    cursor: text;
+}
+
+.inputTextAreaLabel--jss-0-861 {
+    font-size: 10px;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: var(--colormap-inputTextAreaLabel);
+}
+
+
+/*! CSS Used from: Embedded */
+
+.inspectors--jss-0-896 {
+    flex: 1;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.elementPathNode--jss-0-1081 {
+    padding: 0 0 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--colormap-elementNode);
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+}
+
+.elementPathNode--jss-0-1081.isActive {
+    font-weight: 500;
+    color: var(--colormap-elementNodeActive);
+}
+
+.elementPathNode--jss-0-1081:hover {
+    color: var(--colormap-elementNodeHover);
+}
+
+.elementIcon--jss-0-1084 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+
+/*! CSS Used from: Embedded */
+
+.tree--jss-0-1241 {
+    display: flex;
+    flex-flow: column;
+    color: var(--colormap-docmapTree);
+    z-index: 1;
+    font-size: 11px;
+}
+
+.treeInner--jss-0-1246 {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.treeInner--jss-0-1246:hover {
+    cursor: copy;
+    outline: 1px dashed var(--colormap-docmapTreeInnerOverOutline);
+}
+
+.treeDetails--jss-0-1249 {
+    position: relative;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.treeActionsRight--jss-0-1250 {
+    color: var(--colormap-docmapTreeActionsRight);
+    display: flex;
+}
+
+.treeActionsRight--jss-0-1250:hover {
+    color: var(--colormap-docmapTreeActionsRight__hover);
+}
+
+.treeItem--jss-0-1257 {
+    flex: 1;
+    z-index: 1;
+    border-bottom: 1px solid var(--colormap-docmapTreeItemBorder);
+    position: relative;
+}
+
+.treeItem--jss-0-1257.active {
+    background: var(--colormap-docmapTreeItem__active);
+}
+
+.treeIcon--jss-0-1264 {
+    flex: 0 0 16px;
+    margin: 0 5px;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    position: relative;
+    color: var(--colormap-docmapTreeIcon);
+}
+
+.treeIcon--jss-0-1264.isActive {
+    color: var(--colormap-docmapTreeIcon__is_active);
+}
+
+.treeLabel--jss-0-1267 {
+    flex: 1 1 auto;
+    border-radius: 4px;
+    width: 100%;
+    line-height: 18px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding-right: 4px;
+    padding-left: 4px;
+    padding-top: 4px;
+}
+
+.treeLabel--jss-0-1267.isActive {
+    cursor: text;
+}
+
+.treeLabel--jss-0-1267.isActive:focus {
+    background-color: var(--colormap-docmapTreeLabelBackground__is_active__focus);
+    color: var(--colormap-docmapTreeLabel__is_active__focus);
+}
+
+
+/*! CSS Used from: Embedded */
+
+.treeWrap--jss-0-1346 {
+    font-size: 12px;
+    flex: 1;
+    font-family: 'Nitti', 'Lucida Console', sans-serif;
+    color: var(--colormap-docmapTreeWrap);
+    padding-bottom: 100px;
+    position: absolute;
+    min-width: 100%;
+}
+
+.treeSearchInput--jss-0-1347 {
+    padding: 5px;
+    background: var(--colormap-docmapTreeSearchInputBackground);
+    color: var(--colormap-docmapTreeSearchInput);
+    border: 0px;
+    width: 100%;
+    border-bottom: 1px solid var(--colormap-docmapTreeSearchInputBorder);
+}
+
+
+/*! CSS Used from: Embedded */
+
+.screenPreviewWrap--jss-0-3331 {
+    z-index: 20000;
+    display: flex;
+    position: fixed;
+    width: 120px;
+    top: 10px;
+    right: 20px;
+    flex-direction: column;
+    background-color: var(--colormap-workspaceScreenPreviewWrap);
+}
+
+.screenPreviewLanguage--jss-0-3332 {
+    color: var(--colormap-workspaceScreenPreviewLanguage);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.screenPreviewBreakpoint--jss-0-3333 {
+    color: var(--colormap-workspaceScreenPreviewBreakpoint);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.screenPreview--jss-0-3334 {
+    color: var(--colormap-workspaceScreenPreview);
+    text-align: center;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 40px;
+}
+
+.appWrap--jss-0-3337 {
+    flex: 1;
+    display: flex;
+    user-select: none;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;
+}
+
+.workspace--jss-0-3338 {
+    flex: 1 1 auto;
+    flex-flow: column;
+    background-color: var(--colormap-workspaceBackground);
+    overflow: hidden;
+    align-items: stretch;
+    color: var(--colormap-workspaceColor);
+}
+
+.rightEdge--jss-0-3339 {
+    flex: 0 0 272px;
+    height: 100vh;
+    max-width: 272px;
+    background-color: var(--colormap-rightedge);
+    border-left: 1px solid var(--colormap-navbarBorder);
+}
+
+.wksTopBar--jss-0-3341 {
+    flex: 0 0 40px;
+    text-align: center;
+    position: relative;
+    background-color: var(--colormap-navbarBackground);
+    width: 100%;
+    border-bottom: 1px solid var(--colormap-navbarBorder);
+}
+
+.wksPlayground--jss-0-3343 {
+    height: calc(100vh - 72px);
+    display: flex;
+    align-items: stretch;
+    background-color: var(--colormap-workspace);
+}
+
+.wksPlaygroundWrapper--jss-0-3346 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wksBottomBar--jss-0-3347 {
+    flex: 0 0 30px;
+    text-align: left;
+    background-color: var(--colormap-navbarBackground);
+    display: flex;
+    border-top: 1px solid var(--colormap-navbarBorder);
+}
+
+.loadingOverlay--jss-0-3348 {
+    z-index: 10000;
+    left: 0px;
+    background: var(--colormap-workspaceLoadingOverlayBackground);
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-delay: 0s;
+}
+
+.docmap--jss-0-3352 {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--colormap-docmapBackground);
+    height: 100%;
+    flex: 1 1 auto;
+    transition: max-width 0.25s cubic-bezier(0.39, 0.58, 0.57, 1);
+    max-width: 0px;
+    overflow: hidden;
+    position: relative;
+}
+
+.docmapExpand--jss-0-3356 {
+    width: 1px;
+    height: 100vh;
+    cursor: col-resize;
+    background-color: var(--colormap-docmapExpandBackground);
+}
+
+.docmapMain--jss-0-3358 {
+    width: 100%;
+    height: calc(100vh - 40px);
+    overflow: auto;
+    position: relative;
+}
+
+.breakpointsWrap--jss-0-3378 {
+    position: absolute;
+    display: none;
+    top: 42px;
+    z-index: 2000;
+    background: var(--colormap-workspaceBreakpointsWrapBackground);
+    color: var(--colormap-workspaceBreakpointsWrap);
+    padding: 20px;
+    left: calc(50% - 280px);
+    box-shadow: 0px 1px 3px #222;
+}
+
+.stage--jss-0-3381 {
+    flex: 1;
+    background-color: var(--colormap-workspaceBackground);
+    position: relative;
+    z-index: 1;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.stage--jss-0-3381:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: var(--colormap-navbarBackground);
+}
+
+.canvas--jss-0-3385 {
+    position: relative;
+    box-sizing: content-box;
+    display: block;
+    margin: 0 auto;
+    transition: all .4s cubic-bezier(.19, 1, .22, 1);
+    transform: translateY(0%);
+    opacity: 1;
+    flex: 1;
+    align-self: center;
+    flex-direction: column;
+    width: 100%!important;
+    text-align: center;
+}
+
+.iframe--jss-0-3388 {
+    height: 100%;
+    width: 100%;
+    background-color: var(--colormap-stageBackground);
+    flex: 1;
+    display: inline-block;
+}
+
+.docmapTrigger--jss-0-3389 {
+    flex: 0 0 50px;
+    border-right: 1px solid var(--colormap-docmapTriggerBorderRight);
+}
+
+.docmapToggle--jss-0-3390 {
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+    transform: rotate(180deg);
+    color: var(--colormap-docmapToggle);
+}
+
+.docmapToggle--jss-0-3390:hover {
+    color: var(--colormap-docmapToggle__hover);
+}
+
+.docmapMini--jss-0-3393 {
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+
+.canvasOperations--jss-0-3394 {
+    flex: 1 1 auto;
+    display: flex;
+    border-left: 1px solid var(--colormap-canvasOperationsBorderLeft);
+}
+
+.canvasOperationsButton--jss-0-3395 {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.canvasOperationsButton--jss-0-3395:hover {
+    color: var(--colormap-canvasOperationsButton__hover);
+}
+
+.canvasOperationsButton--jss-0-3395.active {
+    background-color: var(--colormap-canvasOperationsButton__activeBackground);
+    color: var(--colormap-canvasOperationsButton__active);
+}
+
+.panelBody--jss-0-3398 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.panelHeader--jss-0-3399 {
+    flex: 0 0 auto;
+    position: relative;
+    z-index: 1000;
+}
+
+.panelHeader__Element--jss-0-3400 {
+    margin: 10px 10px 0;
+    border: 1px solid var(--colormap-workspacePanelHeader__ElementBorder);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.panelHeader__ElementIcon--jss-0-3401 {
+    margin-right: 5px;
+    border-radius: 4px;
+}
+
+.panelHeader__Operations--jss-0-3402 {
+    padding: 10px 10px 10px;
+    border-bottom: 1px solid var(--colormap-inspectorBorder);
+}
+
+.panelContent--jss-0-3404 {
+    flex: 1 1 auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 0 0 20px 0;
+}
+
+.gridColumnsWrap--jss-0-3412 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 10000;
+    text-align: center;
+    max-width: 1280px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0 auto;
+    overflow: hidden;
+    display: none;
+}
+
+.gridColumns--jss-0-3414 {
+    margin-left: -20px;
+    height: 102%;
+    margin-top: -4px;
+    overflow: hidden;
+}
+
+.gridColumn--jss-0-3415 {
+    width: 8.333%;
+    height: 100%;
+    float: left;
+    padding-left: 20px;
+}
+
+.gridBox--jss-0-3416 {
+    width: 100%;
+    height: 100%;
+    box-shadow: inset 0 0 0 1px rgba(255, 0, 0, 0.2);
+}
+
+
+/*! CSS Used from: Embedded */
