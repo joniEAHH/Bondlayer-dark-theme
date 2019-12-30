@@ -3215,3 +3215,12 @@
 #app>div>div>div.blocksOverlay--jss-0-1423>div.blocksWrapper--jss-0-1424>div:nth-child(1)>div:nth-child(1) {
     background: var(--colormap-docmapBackground) !important;
 }
+
+div.inspectorBoard--jss-0-129>div>div:nth-child(3)>div:nth-child(3)>div:nth-child(1)>div:nth-child(2) {
+    background: var(--colormap-docmapBackground) !important;
+}
+
+.FormInput--jss-0-894,
+.collectionItem--jss-0-950 {
+    color: black;
+}
